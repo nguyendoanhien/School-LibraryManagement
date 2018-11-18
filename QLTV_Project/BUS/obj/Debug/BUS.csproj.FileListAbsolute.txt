@@ -1,6 +1,0 @@
-C:\Users\Admin\source\QuanLyThuVien\BUS\bin\Debug\BUS.dll
-C:\Users\Admin\source\QuanLyThuVien\BUS\bin\Debug\BUS.pdb
-C:\Users\Admin\source\QuanLyThuVien\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
-C:\Users\Admin\source\QuanLyThuVien\BUS\obj\Debug\BUS.dll
-C:\Users\Admin\source\QuanLyThuVien\BUS\obj\Debug\BUS.pdb
-C:\Users\Admin\source\QuanLyThuVien\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
