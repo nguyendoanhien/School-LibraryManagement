@@ -705,6 +705,42 @@
   <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>Mã đầu sách</value>
+  </data>
+  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Thể loại</value>
+  </data>
+  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>Tên Đầu Sách</value>
+  </data>
+  <data name="columnHeader3.Width" type="System.Int32, mscorlib">
+    <value>179</value>
+  </data>
+  <data name="columnHeader4.Text" xml:space="preserve">
+    <value>Số lượng quy định</value>
+  </data>
+  <data name="columnHeader4.Width" type="System.Int32, mscorlib">
+    <value>159</value>
+  </data>
+  <data name="columnHeader5.Text" xml:space="preserve">
+    <value>Giá tiền</value>
+  </data>
+  <data name="columnHeader5.Width" type="System.Int32, mscorlib">
+    <value>141</value>
+  </data>
+  <data name="columnHeader6.Text" xml:space="preserve">
+    <value>Số lượng còn lại</value>
+  </data>
+  <data name="columnHeader6.Width" type="System.Int32, mscorlib">
+    <value>154</value>
+  </data>
   <data name="listView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -2067,6 +2103,24 @@
   <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="columnHeader10.Text" xml:space="preserve">
+    <value>Mã phiếu trả</value>
+  </data>
+  <data name="columnHeader10.Width" type="System.Int32, mscorlib">
+    <value>242</value>
+  </data>
+  <data name="columnHeader11.Text" xml:space="preserve">
+    <value>Mã phiếu mượn</value>
+  </data>
+  <data name="columnHeader11.Width" type="System.Int32, mscorlib">
+    <value>287</value>
+  </data>
+  <data name="columnHeader12.Text" xml:space="preserve">
+    <value>Mã độc giả</value>
+  </data>
+  <data name="columnHeader12.Width" type="System.Int32, mscorlib">
+    <value>252</value>
+  </data>
   <data name="listView3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -2519,6 +2573,24 @@
   </data>
   <data name="&gt;&gt;tabPage5.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="columnHeader7.Text" xml:space="preserve">
+    <value>Mã phiếu mượn</value>
+  </data>
+  <data name="columnHeader7.Width" type="System.Int32, mscorlib">
+    <value>234</value>
+  </data>
+  <data name="columnHeader8.Text" xml:space="preserve">
+    <value>Mã độc giả</value>
+  </data>
+  <data name="columnHeader8.Width" type="System.Int32, mscorlib">
+    <value>253</value>
+  </data>
+  <data name="columnHeader9.Text" xml:space="preserve">
+    <value>Ngày hẹn trả</value>
+  </data>
+  <data name="columnHeader9.Width" type="System.Int32, mscorlib">
+    <value>184</value>
   </data>
   <data name="listView4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -3145,13 +3217,13 @@
     <value>Đăng xuất</value>
   </data>
   <data name="tTNgườiDùngToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>155, 22</value>
   </data>
   <data name="tTNgườiDùngToolStripMenuItem.Text" xml:space="preserve">
     <value>TT Người dùng</value>
   </data>
   <data name="tTĐộcGiảToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>155, 22</value>
   </data>
   <data name="tTĐộcGiảToolStripMenuItem.Text" xml:space="preserve">
     <value>TT Độc giả</value>
@@ -3163,25 +3235,25 @@
     <value>Thông tin</value>
   </data>
   <data name="phiếuMượnToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>139, 22</value>
   </data>
   <data name="phiếuMượnToolStripMenuItem.Text" xml:space="preserve">
     <value>Phiếu Mượn</value>
   </data>
   <data name="phiếuTrảToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>139, 22</value>
   </data>
   <data name="phiếuTrảToolStripMenuItem.Text" xml:space="preserve">
     <value>Phiếu Trả</value>
   </data>
   <data name="phiếuNhậpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>139, 22</value>
   </data>
   <data name="phiếuNhậpToolStripMenuItem.Text" xml:space="preserve">
     <value>Phiếu Nhập</value>
   </data>
   <data name="phiếuGiaoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>139, 22</value>
   </data>
   <data name="phiếuGiaoToolStripMenuItem.Text" xml:space="preserve">
     <value>Phiếu Giao</value>
@@ -3193,13 +3265,13 @@
     <value>Tạo Phiếu</value>
   </data>
   <data name="tKĐộcGiảToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="tKĐộcGiảToolStripMenuItem.Text" xml:space="preserve">
     <value>TK Độc giả</value>
   </data>
   <data name="tKThủThưToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="tKThủThưToolStripMenuItem.Text" xml:space="preserve">
     <value>TK Thủ thư</value>
@@ -6550,6 +6622,78 @@
   </data>
   <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader1.Name" xml:space="preserve">
+    <value>columnHeader1</value>
+  </data>
+  <data name="&gt;&gt;columnHeader1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader2.Name" xml:space="preserve">
+    <value>columnHeader2</value>
+  </data>
+  <data name="&gt;&gt;columnHeader2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader3.Name" xml:space="preserve">
+    <value>columnHeader3</value>
+  </data>
+  <data name="&gt;&gt;columnHeader3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader4.Name" xml:space="preserve">
+    <value>columnHeader4</value>
+  </data>
+  <data name="&gt;&gt;columnHeader4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader5.Name" xml:space="preserve">
+    <value>columnHeader5</value>
+  </data>
+  <data name="&gt;&gt;columnHeader5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader6.Name" xml:space="preserve">
+    <value>columnHeader6</value>
+  </data>
+  <data name="&gt;&gt;columnHeader6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader7.Name" xml:space="preserve">
+    <value>columnHeader7</value>
+  </data>
+  <data name="&gt;&gt;columnHeader7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader8.Name" xml:space="preserve">
+    <value>columnHeader8</value>
+  </data>
+  <data name="&gt;&gt;columnHeader8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader9.Name" xml:space="preserve">
+    <value>columnHeader9</value>
+  </data>
+  <data name="&gt;&gt;columnHeader9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader10.Name" xml:space="preserve">
+    <value>columnHeader10</value>
+  </data>
+  <data name="&gt;&gt;columnHeader10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader11.Name" xml:space="preserve">
+    <value>columnHeader11</value>
+  </data>
+  <data name="&gt;&gt;columnHeader11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader12.Name" xml:space="preserve">
+    <value>columnHeader12</value>
+  </data>
+  <data name="&gt;&gt;columnHeader12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmChinh</value>
