@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.SqlClient;
+using System.Data.Sql;
+
 namespace QuanLyThuVien
 {
     public partial class frmChinh : Form
@@ -54,5 +57,31 @@ namespace QuanLyThuVien
             frmPhieuTra frmMuon = new frmPhieuTra();
             frmMuon.Show();
         }
+
+        private void phiếuNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPhieuNhap frmNhap = new frmPhieuNhap();
+            frmNhap.Show();
+        }
+
+        private void phiếuGiaoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPhieuGiao frmGiao = new frmPhieuGiao();
+            frmGiao.Show();
+        }
+
+        private void tKĐộcGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmThemDocGia frmThemDG = new frmThemDocGia();
+            frmThemDG.Show();
+        }
+
+        private void tTĐộcGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+        
     }
 }

@@ -214,5 +214,15 @@
     <Folder Include="bin\Release\" />
     <Folder Include="obj\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{1c59a72c-cdda-4c59-b2e3-ebe3c1d5e30e}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{d78d123a-27a4-4caa-b217-81ddfab53cb2}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

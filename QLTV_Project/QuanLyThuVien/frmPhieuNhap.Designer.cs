@@ -36,7 +36,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDSNCC = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -103,7 +103,7 @@
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnDSNCC);
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox2);
@@ -173,15 +173,16 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(213, 23);
             this.dateTimePicker1.TabIndex = 13;
             // 
-            // button1
+            // btnDSNCC
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(445, 90);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 26);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDSNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDSNCC.Location = new System.Drawing.Point(445, 90);
+            this.btnDSNCC.Name = "btnDSNCC";
+            this.btnDSNCC.Size = new System.Drawing.Size(46, 26);
+            this.btnDSNCC.TabIndex = 12;
+            this.btnDSNCC.Text = "...";
+            this.btnDSNCC.UseVisualStyleBackColor = true;
+            this.btnDSNCC.Click += new System.EventHandler(this.btnDSNCC_Click);
             // 
             // textBox4
             // 
@@ -446,7 +447,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDSNCC;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel3;

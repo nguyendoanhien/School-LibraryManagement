@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DocGia
+    public class DocGia
     {
         int Ma { get; set; }
         int MaLoai { get; set; }

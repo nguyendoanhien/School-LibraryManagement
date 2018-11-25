@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BUS;
 namespace QuanLyThuVien
 {
     public partial class frmThemDocGia : Form
@@ -25,6 +25,21 @@ namespace QuanLyThuVien
             {
                 picBoxAvatar.ImageLocation = ofd.FileName;
             }
+        }
+
+        private void frmThemDocGia_Load(object sender, EventArgs e)
+        {
+            LoaiDocGia_BUS loaidocgia_bus = new LoaiDocGia_BUS();
+            foreach (DataRow dr in loaidocgia_bus.LoadCboLoaiDG().Rows)
+            {
+                cboLoaiDG.Items.Add(dr["TenLoai"].ToString());
+            }
+
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

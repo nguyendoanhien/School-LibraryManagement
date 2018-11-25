@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class NCC
+    public class NCC
     {
-        int Ma { get; set; }
-        string Ten { get; set; }
-        string Email { get; set; }
-        string Fax { get; set; }
+        public int Ma { get; set; }
+        public string Ten { get; set; }
+        public string Email { get; set; }
+        public string Fax { get; set; }
     }
 }

@@ -14,6 +14,7 @@ namespace QuanLyThuVien
     {
         public frmPhieuNhap()
         {
+            
             InitializeComponent();
         }
 
@@ -22,5 +23,16 @@ namespace QuanLyThuVien
             Close();
 
         }
+        private void btnDSNCC_Click(object sender, EventArgs e)
+        {
+            frmPhieuNhap frmNhap = new frmPhieuNhap();
+            if(frmNhap.ShowDialog() == DialogResult.OK )
+            {
+               
+            }
+
+        }
+
+
     }
 }
