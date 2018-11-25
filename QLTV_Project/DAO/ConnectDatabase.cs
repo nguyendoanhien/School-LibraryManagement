@@ -12,7 +12,7 @@ namespace DAO
     {
         
 
-        protected SqlConnection _conn = new SqlConnection("Server=.\\SQLEXPRESS;Database=QLTV;Integrated Security=true");
+        protected SqlConnection _conn = new SqlConnection("Server=HIENCOMPUTER\\DOANHIEN;Database=QuanLyThuVien;Integrated Security=true");
 
     }
 }
