@@ -27,6 +27,7 @@ namespace DAO
                 // Query và kiểm tra
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
+                return false;
 
             }
             catch (Exception e)
