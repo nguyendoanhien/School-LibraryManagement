@@ -25,7 +25,7 @@ namespace DAO
                 SqlCommand cmd = new SqlCommand(SQL, _conn);
 
                 // Query và kiểm tra
-                //if (cmd.ExecuteNonQuery() > 0)
+                if (cmd.ExecuteNonQuery() > 0)
                     return true;
 
             }
