@@ -45,6 +45,7 @@
     <Compile Include="DocGia.cs" />
     <Compile Include="DocGiaLoai.cs" />
     <Compile Include="NCC.cs" />
+    <Compile Include="NguoiDung.cs" />
     <Compile Include="NhanVien.cs" />
     <Compile Include="PhieuGiao.cs" />
     <Compile Include="PhieuGiaoChiTiet.cs" />

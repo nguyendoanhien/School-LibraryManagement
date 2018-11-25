@@ -8,8 +8,8 @@ namespace DTO
 {
     public class DocGia
     {
-        int Ma { get; set; }
-        int MaLoai { get; set; }
-        int Ten { get; set; }
+        public int Ma { get; set; }
+        public int MaLoai { get; set; }
+        public int Ten { get; set; }
     }
 }

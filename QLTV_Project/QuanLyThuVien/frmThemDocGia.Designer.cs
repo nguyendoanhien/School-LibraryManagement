@@ -31,13 +31,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtHoTen = new System.Windows.Forms.TextBox();
+            this.txtMaDG = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,13 +42,15 @@
             this.picBoxAvatar = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtmNgayTao = new System.Windows.Forms.DateTimePicker();
             this.cboLoaiDG = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnChonAnh = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.rdoGioiTinh = new System.Windows.Forms.RadioButton();
+            this.rdoGioiTinh1 = new System.Windows.Forms.RadioButton();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxAvatar)).BeginInit();
             this.panel2.SuspendLayout();
@@ -97,61 +96,38 @@
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // textBox6
+            // txtEmail
             // 
-            this.textBox6.Location = new System.Drawing.Point(294, 154);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(190, 23);
-            this.textBox6.TabIndex = 28;
+            this.txtEmail.Location = new System.Drawing.Point(294, 127);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(190, 23);
+            this.txtEmail.TabIndex = 27;
             // 
-            // textBox5
+            // txtHoTen
             // 
-            this.textBox5.Location = new System.Drawing.Point(294, 127);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(190, 23);
-            this.textBox5.TabIndex = 27;
+            this.txtHoTen.Location = new System.Drawing.Point(294, 73);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(190, 23);
+            this.txtHoTen.TabIndex = 25;
             // 
-            // textBox4
+            // txtMaDG
             // 
-            this.textBox4.Location = new System.Drawing.Point(294, 98);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(190, 23);
-            this.textBox4.TabIndex = 26;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(294, 73);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(190, 23);
-            this.textBox3.TabIndex = 25;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(294, 43);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(190, 23);
-            this.textBox2.TabIndex = 24;
+            this.txtMaDG.Location = new System.Drawing.Point(294, 43);
+            this.txtMaDG.Name = "txtMaDG";
+            this.txtMaDG.Size = new System.Drawing.Size(190, 23);
+            this.txtMaDG.TabIndex = 24;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(181, 185);
+            this.label8.Location = new System.Drawing.Point(181, 158);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(72, 20);
             this.label8.TabIndex = 22;
             this.label8.Text = "Ngày tạo";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(181, 157);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(102, 20);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Số điện thoại";
             // 
             // label6
             // 
@@ -215,16 +191,15 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.rdoGioiTinh1);
+            this.groupBox1.Controls.Add(this.rdoGioiTinh);
+            this.groupBox1.Controls.Add(this.dtmNgayTao);
             this.groupBox1.Controls.Add(this.cboLoaiDG);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.btnChonAnh);
+            this.groupBox1.Controls.Add(this.txtEmail);
+            this.groupBox1.Controls.Add(this.txtHoTen);
+            this.groupBox1.Controls.Add(this.txtMaDG);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -240,6 +215,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin độc giả";
             // 
+            // dtmNgayTao
+            // 
+            this.dtmNgayTao.CustomFormat = "dd/MM/yyyy";
+            this.dtmNgayTao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtmNgayTao.Location = new System.Drawing.Point(294, 156);
+            this.dtmNgayTao.Name = "dtmNgayTao";
+            this.dtmNgayTao.Size = new System.Drawing.Size(190, 23);
+            this.dtmNgayTao.TabIndex = 32;
+            // 
             // cboLoaiDG
             // 
             this.cboLoaiDG.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -249,15 +233,15 @@
             this.cboLoaiDG.Size = new System.Drawing.Size(190, 24);
             this.cboLoaiDG.TabIndex = 31;
             // 
-            // button1
+            // btnChonAnh
             // 
-            this.button1.Location = new System.Drawing.Point(41, 175);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 30);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "Chọn ảnh";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnChonAnh.Location = new System.Drawing.Point(41, 175);
+            this.btnChonAnh.Name = "btnChonAnh";
+            this.btnChonAnh.Size = new System.Drawing.Size(93, 30);
+            this.btnChonAnh.TabIndex = 30;
+            this.btnChonAnh.Text = "Chọn ảnh";
+            this.btnChonAnh.UseVisualStyleBackColor = true;
+            this.btnChonAnh.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -294,14 +278,27 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // dateTimePicker1
+            // rdoGioiTinh
             // 
-            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(294, 183);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(190, 23);
-            this.dateTimePicker1.TabIndex = 32;
+            this.rdoGioiTinh.AutoSize = true;
+            this.rdoGioiTinh.Location = new System.Drawing.Point(294, 100);
+            this.rdoGioiTinh.Name = "rdoGioiTinh";
+            this.rdoGioiTinh.Size = new System.Drawing.Size(55, 21);
+            this.rdoGioiTinh.TabIndex = 33;
+            this.rdoGioiTinh.Text = "Nam";
+            this.rdoGioiTinh.UseVisualStyleBackColor = true;
+            // 
+            // rdoGioiTinh1
+            // 
+            this.rdoGioiTinh1.AutoSize = true;
+            this.rdoGioiTinh1.Checked = true;
+            this.rdoGioiTinh1.Location = new System.Drawing.Point(364, 100);
+            this.rdoGioiTinh1.Name = "rdoGioiTinh1";
+            this.rdoGioiTinh1.Size = new System.Drawing.Size(44, 21);
+            this.rdoGioiTinh1.TabIndex = 34;
+            this.rdoGioiTinh1.TabStop = true;
+            this.rdoGioiTinh1.Text = "Nữ";
+            this.rdoGioiTinh1.UseVisualStyleBackColor = true;
             // 
             // frmThemDocGia
             // 
@@ -326,13 +323,10 @@
 
         #endregion
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtHoTen;
+        private System.Windows.Forms.TextBox txtMaDG;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -345,9 +339,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnChonAnh;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ComboBox cboLoaiDG;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtmNgayTao;
+        private System.Windows.Forms.RadioButton rdoGioiTinh1;
+        private System.Windows.Forms.RadioButton rdoGioiTinh;
     }
 }
