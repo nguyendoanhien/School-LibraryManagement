@@ -16,18 +16,26 @@ namespace DAO
             try
             {
                 // Ket noi
-                _conn.Open();
+                string conn = ConnectDatabase.GetConnString();
 
                 // Query string - vì mình để TV_ID là identity (giá trị tự tăng dần) nên ko cần fải insert ID
-                string SQL = string.Format("INSERT INTO NguoiDung (HoVaTen,GioiTinh,Email,NgayTao) VALUES  ('{0}', '{1}', '{2}', '{3}')", ng.HoVaTen, ng.GioiTinh, ng.Email, ng.NgayTao);
+                string sql = "INSERT INTO NguoiDung (HoVaTen,GioiTinh,Email,NgayTao) VALUES  (@HoVaTen, @GioiTinh, @Email, @NgayTao)";
+                SqlParameter[] pars =
+                {
+                    new SqlParameter("@HoVaTen", SqlDbType.NVarChar) { Value = ng.HoVaTen },
+                    new SqlParameter("@GioiTinh", SqlDbType.Bit) { Value = ng.GioiTinh },
+                    new SqlParameter("@Email", SqlDbType.VarChar) { Value = ng.Email },
+                    new SqlParameter("@NgayTao", SqlDbType.DateTime) { Value = ng.NgayTao }
+                };
+              
+               int soLuongOK = SqlHelper.ExecuteNonQuery(conn, sql, CommandType.Text, pars);
 
-                // Command (mặc định command type = text nên chúng ta khỏi fải làm gì nhiều).
-                SqlCommand cmd = new SqlCommand(SQL, _conn);
+                if (soLuongOK > 0) return true;
 
-                // Query và kiểm tra
-                if (cmd.ExecuteNonQuery() > 0)
-                    return true;
                 return false;
+              
+                // Query và kiểm tra
+              
 
             }
             catch (Exception e)
@@ -41,6 +49,6 @@ namespace DAO
             }
 
             return false;
-        } 
+        }
     }
 }

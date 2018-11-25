@@ -10,9 +10,14 @@ namespace DAO
 {
     public class ConnectDatabase
     {
-        
 
-        protected SqlConnection _conn = new SqlConnection("Server=HIENCOMPUTER\\DOANHIEN;Database=QuanLyThuVien;Integrated Security=true");
+        private static string _connString = "Server=DESKTOP-TEQ1LNV\\SQLEXPRESS;Database=QLTV;Integrated Security=true";
+        protected SqlConnection _conn = new SqlConnection("Server=DESKTOP-TEQ1LNV\\SQLEXPRESS;Database=QLTV;Integrated Security=true");
+
+         public static string GetConnString()
+        {
+            return _connString;
+        }
 
     }
 }
