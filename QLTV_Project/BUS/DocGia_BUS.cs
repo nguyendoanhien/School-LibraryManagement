@@ -16,5 +16,35 @@ namespace BUS
             DocGia_DAO docgia_dao = new DocGia_DAO();
             return docgia_dao.themNguoiDung(ng);
         }
+
+        public bool ThemDocGia(DTO.DocGia dg)
+        {
+            DocGia_DAO docgia_dao = new DocGia_DAO();
+            return docgia_dao.ThemDocGia(dg);
+        }
+
+        public string TraVeGiaTriMaLoaiDG(string a)
+        {
+            DocGia_DAO docgia_dao = new DocGia_DAO();
+            return docgia_dao.TraVeGiaTriMaLoaiDG(a);
+        }
+
+        public int MaMax()
+        {
+            DocGia_DAO docgia_dao = new DocGia_DAO();
+            return docgia_dao.MaMax();
+        }
+
+        public DataTable LoadBangDocGia()
+        {
+            DocGia_DAO docgia_dao = new DocGia_DAO();
+            return docgia_dao.LoadBangDocGia();
+        }
+
+        public bool XoaDocGia(int maCanXoa)
+        {
+            DocGia_DAO docgia_dao = new DocGia_DAO();
+            return docgia_dao.XoaDocGia(maCanXoa);
+        }
     }
 }

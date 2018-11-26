@@ -76,7 +76,6 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.listView2 = new System.Windows.Forms.ListView();
             this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button7 = new System.Windows.Forms.Button();
@@ -86,7 +85,7 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnXoaDocGia = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -144,8 +143,51 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.panel46 = new System.Windows.Forms.Panel();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.listView6 = new System.Windows.Forms.ListView();
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.panel38 = new System.Windows.Forms.Panel();
+            this.panel39 = new System.Windows.Forms.Panel();
+            this.button24 = new System.Windows.Forms.Button();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.button25 = new System.Windows.Forms.Button();
+            this.panel41 = new System.Windows.Forms.Panel();
+            this.button26 = new System.Windows.Forms.Button();
+            this.panel35 = new System.Windows.Forms.Panel();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.button21 = new System.Windows.Forms.Button();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.panel47 = new System.Windows.Forms.Panel();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.listView7 = new System.Windows.Forms.ListView();
+            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.panel42 = new System.Windows.Forms.Panel();
+            this.panel43 = new System.Windows.Forms.Panel();
+            this.button27 = new System.Windows.Forms.Button();
+            this.panel44 = new System.Windows.Forms.Panel();
+            this.button28 = new System.Windows.Forms.Button();
+            this.panel45 = new System.Windows.Forms.Panel();
+            this.button29 = new System.Windows.Forms.Button();
+            this.panel36 = new System.Windows.Forms.Panel();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.button22 = new System.Windows.Forms.Button();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.panel48 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel37 = new System.Windows.Forms.Panel();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.button23 = new System.Windows.Forms.Button();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.sssssssssToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -162,49 +204,7 @@
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hướngDẫnSửDụngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel35 = new System.Windows.Forms.Panel();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.button21 = new System.Windows.Forms.Button();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.panel36 = new System.Windows.Forms.Panel();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.button22 = new System.Windows.Forms.Button();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.panel37 = new System.Windows.Forms.Panel();
-            this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.button23 = new System.Windows.Forms.Button();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.panel38 = new System.Windows.Forms.Panel();
-            this.panel39 = new System.Windows.Forms.Panel();
-            this.button24 = new System.Windows.Forms.Button();
-            this.panel40 = new System.Windows.Forms.Panel();
-            this.button25 = new System.Windows.Forms.Button();
-            this.panel41 = new System.Windows.Forms.Panel();
-            this.button26 = new System.Windows.Forms.Button();
-            this.panel42 = new System.Windows.Forms.Panel();
-            this.panel43 = new System.Windows.Forms.Panel();
-            this.button27 = new System.Windows.Forms.Button();
-            this.panel44 = new System.Windows.Forms.Panel();
-            this.button28 = new System.Windows.Forms.Button();
-            this.panel45 = new System.Windows.Forms.Panel();
-            this.button29 = new System.Windows.Forms.Button();
-            this.panel46 = new System.Windows.Forms.Panel();
-            this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.listView6 = new System.Windows.Forms.ListView();
-            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.panel47 = new System.Windows.Forms.Panel();
-            this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.listView7 = new System.Windows.Forms.ListView();
-            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.panel48 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.dgvDocGia = new System.Windows.Forms.DataGridView();
             this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
@@ -264,28 +264,29 @@
             this.panel1.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.tabPage7.SuspendLayout();
-            this.tabPage8.SuspendLayout();
-            this.tabPage9.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
-            this.panel35.SuspendLayout();
-            this.groupBox13.SuspendLayout();
-            this.panel36.SuspendLayout();
-            this.groupBox14.SuspendLayout();
-            this.panel37.SuspendLayout();
-            this.groupBox15.SuspendLayout();
+            this.panel46.SuspendLayout();
+            this.groupBox16.SuspendLayout();
             this.panel38.SuspendLayout();
             this.panel39.SuspendLayout();
             this.panel40.SuspendLayout();
             this.panel41.SuspendLayout();
+            this.panel35.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.tabPage8.SuspendLayout();
+            this.panel47.SuspendLayout();
+            this.groupBox17.SuspendLayout();
             this.panel42.SuspendLayout();
             this.panel43.SuspendLayout();
             this.panel44.SuspendLayout();
             this.panel45.SuspendLayout();
-            this.panel46.SuspendLayout();
-            this.groupBox16.SuspendLayout();
-            this.panel47.SuspendLayout();
-            this.groupBox17.SuspendLayout();
+            this.panel36.SuspendLayout();
+            this.groupBox14.SuspendLayout();
+            this.tabPage9.SuspendLayout();
             this.panel48.SuspendLayout();
+            this.panel37.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDocGia)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStripContainer1
@@ -615,16 +616,10 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.listView2);
+            this.groupBox4.Controls.Add(this.dgvDocGia);
             resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
-            // 
-            // listView2
-            // 
-            resources.ApplyResources(this.listView2, "listView2");
-            this.listView2.Name = "listView2";
-            this.listView2.UseCompatibleStateImageBehavior = false;
             // 
             // panel5
             // 
@@ -684,16 +679,17 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Transparent;
-            this.panel8.Controls.Add(this.button4);
+            this.panel8.Controls.Add(this.btnXoaDocGia);
             resources.ApplyResources(this.panel8, "panel8");
             this.panel8.Name = "panel8";
             // 
-            // button4
+            // btnXoaDocGia
             // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnXoaDocGia, "btnXoaDocGia");
+            this.btnXoaDocGia.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
+            this.btnXoaDocGia.Name = "btnXoaDocGia";
+            this.btnXoaDocGia.UseVisualStyleBackColor = true;
+            this.btnXoaDocGia.Click += new System.EventHandler(this.btnXoaDocGia_Click);
             // 
             // panel7
             // 
@@ -1085,6 +1081,125 @@
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
+            // panel46
+            // 
+            this.panel46.Controls.Add(this.groupBox16);
+            resources.ApplyResources(this.panel46, "panel46");
+            this.panel46.Name = "panel46";
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Controls.Add(this.listView6);
+            resources.ApplyResources(this.groupBox16, "groupBox16");
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.TabStop = false;
+            // 
+            // listView6
+            // 
+            this.listView6.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader13,
+            this.columnHeader14,
+            this.columnHeader15});
+            resources.ApplyResources(this.listView6, "listView6");
+            this.listView6.Name = "listView6";
+            this.listView6.UseCompatibleStateImageBehavior = false;
+            this.listView6.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader13
+            // 
+            resources.ApplyResources(this.columnHeader13, "columnHeader13");
+            // 
+            // columnHeader14
+            // 
+            resources.ApplyResources(this.columnHeader14, "columnHeader14");
+            // 
+            // columnHeader15
+            // 
+            resources.ApplyResources(this.columnHeader15, "columnHeader15");
+            // 
+            // panel38
+            // 
+            this.panel38.Controls.Add(this.panel39);
+            this.panel38.Controls.Add(this.panel40);
+            this.panel38.Controls.Add(this.panel41);
+            resources.ApplyResources(this.panel38, "panel38");
+            this.panel38.Name = "panel38";
+            // 
+            // panel39
+            // 
+            resources.ApplyResources(this.panel39, "panel39");
+            this.panel39.BackColor = System.Drawing.Color.Transparent;
+            this.panel39.Controls.Add(this.button24);
+            this.panel39.Name = "panel39";
+            // 
+            // button24
+            // 
+            resources.ApplyResources(this.button24, "button24");
+            this.button24.Image = global::QuanLyThuVien.Properties.Resources.edit;
+            this.button24.Name = "button24";
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // panel40
+            // 
+            this.panel40.BackColor = System.Drawing.Color.Transparent;
+            this.panel40.Controls.Add(this.button25);
+            resources.ApplyResources(this.panel40, "panel40");
+            this.panel40.Name = "panel40";
+            // 
+            // button25
+            // 
+            resources.ApplyResources(this.button25, "button25");
+            this.button25.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
+            this.button25.Name = "button25";
+            this.button25.UseVisualStyleBackColor = true;
+            // 
+            // panel41
+            // 
+            this.panel41.BackColor = System.Drawing.Color.Transparent;
+            this.panel41.Controls.Add(this.button26);
+            resources.ApplyResources(this.panel41, "panel41");
+            this.panel41.Name = "panel41";
+            // 
+            // button26
+            // 
+            resources.ApplyResources(this.button26, "button26");
+            this.button26.Image = global::QuanLyThuVien.Properties.Resources.add;
+            this.button26.Name = "button26";
+            this.button26.UseVisualStyleBackColor = true;
+            // 
+            // panel35
+            // 
+            this.panel35.Controls.Add(this.groupBox13);
+            resources.ApplyResources(this.panel35, "panel35");
+            this.panel35.Name = "panel35";
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.button21);
+            this.groupBox13.Controls.Add(this.comboBox5);
+            this.groupBox13.Controls.Add(this.textBox5);
+            resources.ApplyResources(this.groupBox13, "groupBox13");
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.TabStop = false;
+            // 
+            // button21
+            // 
+            resources.ApplyResources(this.button21, "button21");
+            this.button21.Image = global::QuanLyThuVien.Properties.Resources.search;
+            this.button21.Name = "button21";
+            this.button21.UseVisualStyleBackColor = true;
+            // 
+            // comboBox5
+            // 
+            resources.ApplyResources(this.comboBox5, "comboBox5");
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Name = "comboBox5";
+            // 
+            // textBox5
+            // 
+            resources.ApplyResources(this.textBox5, "textBox5");
+            this.textBox5.Name = "textBox5";
+            // 
             // tabPage8
             // 
             this.tabPage8.Controls.Add(this.panel47);
@@ -1094,6 +1209,125 @@
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
+            // panel47
+            // 
+            this.panel47.Controls.Add(this.groupBox17);
+            resources.ApplyResources(this.panel47, "panel47");
+            this.panel47.Name = "panel47";
+            // 
+            // groupBox17
+            // 
+            this.groupBox17.Controls.Add(this.listView7);
+            resources.ApplyResources(this.groupBox17, "groupBox17");
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.TabStop = false;
+            // 
+            // listView7
+            // 
+            this.listView7.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader16,
+            this.columnHeader17,
+            this.columnHeader18});
+            resources.ApplyResources(this.listView7, "listView7");
+            this.listView7.Name = "listView7";
+            this.listView7.UseCompatibleStateImageBehavior = false;
+            this.listView7.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader16
+            // 
+            resources.ApplyResources(this.columnHeader16, "columnHeader16");
+            // 
+            // columnHeader17
+            // 
+            resources.ApplyResources(this.columnHeader17, "columnHeader17");
+            // 
+            // columnHeader18
+            // 
+            resources.ApplyResources(this.columnHeader18, "columnHeader18");
+            // 
+            // panel42
+            // 
+            this.panel42.Controls.Add(this.panel43);
+            this.panel42.Controls.Add(this.panel44);
+            this.panel42.Controls.Add(this.panel45);
+            resources.ApplyResources(this.panel42, "panel42");
+            this.panel42.Name = "panel42";
+            // 
+            // panel43
+            // 
+            resources.ApplyResources(this.panel43, "panel43");
+            this.panel43.BackColor = System.Drawing.Color.Transparent;
+            this.panel43.Controls.Add(this.button27);
+            this.panel43.Name = "panel43";
+            // 
+            // button27
+            // 
+            resources.ApplyResources(this.button27, "button27");
+            this.button27.Image = global::QuanLyThuVien.Properties.Resources.edit;
+            this.button27.Name = "button27";
+            this.button27.UseVisualStyleBackColor = true;
+            // 
+            // panel44
+            // 
+            this.panel44.BackColor = System.Drawing.Color.Transparent;
+            this.panel44.Controls.Add(this.button28);
+            resources.ApplyResources(this.panel44, "panel44");
+            this.panel44.Name = "panel44";
+            // 
+            // button28
+            // 
+            resources.ApplyResources(this.button28, "button28");
+            this.button28.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
+            this.button28.Name = "button28";
+            this.button28.UseVisualStyleBackColor = true;
+            // 
+            // panel45
+            // 
+            this.panel45.BackColor = System.Drawing.Color.Transparent;
+            this.panel45.Controls.Add(this.button29);
+            resources.ApplyResources(this.panel45, "panel45");
+            this.panel45.Name = "panel45";
+            // 
+            // button29
+            // 
+            resources.ApplyResources(this.button29, "button29");
+            this.button29.Image = global::QuanLyThuVien.Properties.Resources.add;
+            this.button29.Name = "button29";
+            this.button29.UseVisualStyleBackColor = true;
+            // 
+            // panel36
+            // 
+            this.panel36.Controls.Add(this.groupBox14);
+            resources.ApplyResources(this.panel36, "panel36");
+            this.panel36.Name = "panel36";
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.button22);
+            this.groupBox14.Controls.Add(this.comboBox6);
+            this.groupBox14.Controls.Add(this.textBox6);
+            resources.ApplyResources(this.groupBox14, "groupBox14");
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.TabStop = false;
+            // 
+            // button22
+            // 
+            resources.ApplyResources(this.button22, "button22");
+            this.button22.Image = global::QuanLyThuVien.Properties.Resources.search;
+            this.button22.Name = "button22";
+            this.button22.UseVisualStyleBackColor = true;
+            // 
+            // comboBox6
+            // 
+            resources.ApplyResources(this.comboBox6, "comboBox6");
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Name = "comboBox6";
+            // 
+            // textBox6
+            // 
+            resources.ApplyResources(this.textBox6, "textBox6");
+            this.textBox6.Name = "textBox6";
+            // 
             // tabPage9
             // 
             this.tabPage9.Controls.Add(this.panel48);
@@ -1101,6 +1335,50 @@
             resources.ApplyResources(this.tabPage9, "tabPage9");
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // panel48
+            // 
+            this.panel48.Controls.Add(this.label6);
+            resources.ApplyResources(this.panel48, "panel48");
+            this.panel48.Name = "panel48";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // panel37
+            // 
+            this.panel37.Controls.Add(this.groupBox15);
+            resources.ApplyResources(this.panel37, "panel37");
+            this.panel37.Name = "panel37";
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Controls.Add(this.button23);
+            this.groupBox15.Controls.Add(this.comboBox7);
+            this.groupBox15.Controls.Add(this.textBox7);
+            resources.ApplyResources(this.groupBox15, "groupBox15");
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.TabStop = false;
+            // 
+            // button23
+            // 
+            resources.ApplyResources(this.button23, "button23");
+            this.button23.Image = global::QuanLyThuVien.Properties.Resources.search;
+            this.button23.Name = "button23";
+            this.button23.UseVisualStyleBackColor = true;
+            // 
+            // comboBox7
+            // 
+            resources.ApplyResources(this.comboBox7, "comboBox7");
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Name = "comboBox7";
+            // 
+            // textBox7
+            // 
+            resources.ApplyResources(this.textBox7, "textBox7");
+            this.textBox7.Name = "textBox7";
             // 
             // menuStrip1
             // 
@@ -1223,287 +1501,16 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             // 
-            // panel35
-            // 
-            this.panel35.Controls.Add(this.groupBox13);
-            resources.ApplyResources(this.panel35, "panel35");
-            this.panel35.Name = "panel35";
-            // 
-            // groupBox13
-            // 
-            this.groupBox13.Controls.Add(this.button21);
-            this.groupBox13.Controls.Add(this.comboBox5);
-            this.groupBox13.Controls.Add(this.textBox5);
-            resources.ApplyResources(this.groupBox13, "groupBox13");
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.TabStop = false;
-            // 
-            // button21
-            // 
-            resources.ApplyResources(this.button21, "button21");
-            this.button21.Image = global::QuanLyThuVien.Properties.Resources.search;
-            this.button21.Name = "button21";
-            this.button21.UseVisualStyleBackColor = true;
-            // 
-            // comboBox5
-            // 
-            resources.ApplyResources(this.comboBox5, "comboBox5");
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Name = "comboBox5";
-            // 
-            // textBox5
-            // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
-            // 
-            // panel36
-            // 
-            this.panel36.Controls.Add(this.groupBox14);
-            resources.ApplyResources(this.panel36, "panel36");
-            this.panel36.Name = "panel36";
-            // 
-            // groupBox14
-            // 
-            this.groupBox14.Controls.Add(this.button22);
-            this.groupBox14.Controls.Add(this.comboBox6);
-            this.groupBox14.Controls.Add(this.textBox6);
-            resources.ApplyResources(this.groupBox14, "groupBox14");
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.TabStop = false;
-            // 
-            // button22
-            // 
-            resources.ApplyResources(this.button22, "button22");
-            this.button22.Image = global::QuanLyThuVien.Properties.Resources.search;
-            this.button22.Name = "button22";
-            this.button22.UseVisualStyleBackColor = true;
-            // 
-            // comboBox6
-            // 
-            resources.ApplyResources(this.comboBox6, "comboBox6");
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Name = "comboBox6";
-            // 
-            // textBox6
-            // 
-            resources.ApplyResources(this.textBox6, "textBox6");
-            this.textBox6.Name = "textBox6";
-            // 
-            // panel37
-            // 
-            this.panel37.Controls.Add(this.groupBox15);
-            resources.ApplyResources(this.panel37, "panel37");
-            this.panel37.Name = "panel37";
-            // 
-            // groupBox15
-            // 
-            this.groupBox15.Controls.Add(this.button23);
-            this.groupBox15.Controls.Add(this.comboBox7);
-            this.groupBox15.Controls.Add(this.textBox7);
-            resources.ApplyResources(this.groupBox15, "groupBox15");
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.TabStop = false;
-            // 
-            // button23
-            // 
-            resources.ApplyResources(this.button23, "button23");
-            this.button23.Image = global::QuanLyThuVien.Properties.Resources.search;
-            this.button23.Name = "button23";
-            this.button23.UseVisualStyleBackColor = true;
-            // 
-            // comboBox7
-            // 
-            resources.ApplyResources(this.comboBox7, "comboBox7");
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Name = "comboBox7";
-            // 
-            // textBox7
-            // 
-            resources.ApplyResources(this.textBox7, "textBox7");
-            this.textBox7.Name = "textBox7";
-            // 
-            // panel38
-            // 
-            this.panel38.Controls.Add(this.panel39);
-            this.panel38.Controls.Add(this.panel40);
-            this.panel38.Controls.Add(this.panel41);
-            resources.ApplyResources(this.panel38, "panel38");
-            this.panel38.Name = "panel38";
-            // 
-            // panel39
-            // 
-            resources.ApplyResources(this.panel39, "panel39");
-            this.panel39.BackColor = System.Drawing.Color.Transparent;
-            this.panel39.Controls.Add(this.button24);
-            this.panel39.Name = "panel39";
-            // 
-            // button24
-            // 
-            resources.ApplyResources(this.button24, "button24");
-            this.button24.Image = global::QuanLyThuVien.Properties.Resources.edit;
-            this.button24.Name = "button24";
-            this.button24.UseVisualStyleBackColor = true;
-            // 
-            // panel40
-            // 
-            this.panel40.BackColor = System.Drawing.Color.Transparent;
-            this.panel40.Controls.Add(this.button25);
-            resources.ApplyResources(this.panel40, "panel40");
-            this.panel40.Name = "panel40";
-            // 
-            // button25
-            // 
-            resources.ApplyResources(this.button25, "button25");
-            this.button25.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
-            this.button25.Name = "button25";
-            this.button25.UseVisualStyleBackColor = true;
-            // 
-            // panel41
-            // 
-            this.panel41.BackColor = System.Drawing.Color.Transparent;
-            this.panel41.Controls.Add(this.button26);
-            resources.ApplyResources(this.panel41, "panel41");
-            this.panel41.Name = "panel41";
-            // 
-            // button26
-            // 
-            resources.ApplyResources(this.button26, "button26");
-            this.button26.Image = global::QuanLyThuVien.Properties.Resources.add;
-            this.button26.Name = "button26";
-            this.button26.UseVisualStyleBackColor = true;
-            // 
-            // panel42
-            // 
-            this.panel42.Controls.Add(this.panel43);
-            this.panel42.Controls.Add(this.panel44);
-            this.panel42.Controls.Add(this.panel45);
-            resources.ApplyResources(this.panel42, "panel42");
-            this.panel42.Name = "panel42";
-            // 
-            // panel43
-            // 
-            resources.ApplyResources(this.panel43, "panel43");
-            this.panel43.BackColor = System.Drawing.Color.Transparent;
-            this.panel43.Controls.Add(this.button27);
-            this.panel43.Name = "panel43";
-            // 
-            // button27
-            // 
-            resources.ApplyResources(this.button27, "button27");
-            this.button27.Image = global::QuanLyThuVien.Properties.Resources.edit;
-            this.button27.Name = "button27";
-            this.button27.UseVisualStyleBackColor = true;
-            // 
-            // panel44
-            // 
-            this.panel44.BackColor = System.Drawing.Color.Transparent;
-            this.panel44.Controls.Add(this.button28);
-            resources.ApplyResources(this.panel44, "panel44");
-            this.panel44.Name = "panel44";
-            // 
-            // button28
-            // 
-            resources.ApplyResources(this.button28, "button28");
-            this.button28.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
-            this.button28.Name = "button28";
-            this.button28.UseVisualStyleBackColor = true;
-            // 
-            // panel45
-            // 
-            this.panel45.BackColor = System.Drawing.Color.Transparent;
-            this.panel45.Controls.Add(this.button29);
-            resources.ApplyResources(this.panel45, "panel45");
-            this.panel45.Name = "panel45";
-            // 
-            // button29
-            // 
-            resources.ApplyResources(this.button29, "button29");
-            this.button29.Image = global::QuanLyThuVien.Properties.Resources.add;
-            this.button29.Name = "button29";
-            this.button29.UseVisualStyleBackColor = true;
-            // 
-            // panel46
-            // 
-            this.panel46.Controls.Add(this.groupBox16);
-            resources.ApplyResources(this.panel46, "panel46");
-            this.panel46.Name = "panel46";
-            // 
-            // groupBox16
-            // 
-            this.groupBox16.Controls.Add(this.listView6);
-            resources.ApplyResources(this.groupBox16, "groupBox16");
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.TabStop = false;
-            // 
-            // listView6
-            // 
-            this.listView6.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader13,
-            this.columnHeader14,
-            this.columnHeader15});
-            resources.ApplyResources(this.listView6, "listView6");
-            this.listView6.Name = "listView6";
-            this.listView6.UseCompatibleStateImageBehavior = false;
-            this.listView6.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader13
-            // 
-            resources.ApplyResources(this.columnHeader13, "columnHeader13");
-            // 
-            // columnHeader14
-            // 
-            resources.ApplyResources(this.columnHeader14, "columnHeader14");
-            // 
-            // columnHeader15
-            // 
-            resources.ApplyResources(this.columnHeader15, "columnHeader15");
-            // 
-            // panel47
-            // 
-            this.panel47.Controls.Add(this.groupBox17);
-            resources.ApplyResources(this.panel47, "panel47");
-            this.panel47.Name = "panel47";
-            // 
-            // groupBox17
-            // 
-            this.groupBox17.Controls.Add(this.listView7);
-            resources.ApplyResources(this.groupBox17, "groupBox17");
-            this.groupBox17.Name = "groupBox17";
-            this.groupBox17.TabStop = false;
-            // 
-            // listView7
-            // 
-            this.listView7.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader16,
-            this.columnHeader17,
-            this.columnHeader18});
-            resources.ApplyResources(this.listView7, "listView7");
-            this.listView7.Name = "listView7";
-            this.listView7.UseCompatibleStateImageBehavior = false;
-            this.listView7.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader16
-            // 
-            resources.ApplyResources(this.columnHeader16, "columnHeader16");
-            // 
-            // columnHeader17
-            // 
-            resources.ApplyResources(this.columnHeader17, "columnHeader17");
-            // 
-            // columnHeader18
-            // 
-            resources.ApplyResources(this.columnHeader18, "columnHeader18");
-            // 
-            // panel48
-            // 
-            this.panel48.Controls.Add(this.label6);
-            resources.ApplyResources(this.panel48, "panel48");
-            this.panel48.Name = "panel48";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
+            // dgvDocGia
+            // 
+            this.dgvDocGia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDocGia.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.dgvDocGia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dgvDocGia, "dgvDocGia");
+            this.dgvDocGia.Name = "dgvDocGia";
+            this.dgvDocGia.ReadOnly = true;
+            this.dgvDocGia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDocGia.ShowEditingIcon = false;
             // 
             // frmChinh
             // 
@@ -1582,32 +1589,33 @@
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.tabPage7.ResumeLayout(false);
-            this.tabPage8.ResumeLayout(false);
-            this.tabPage9.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.panel35.ResumeLayout(false);
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
-            this.panel36.ResumeLayout(false);
-            this.groupBox14.ResumeLayout(false);
-            this.groupBox14.PerformLayout();
-            this.panel37.ResumeLayout(false);
-            this.groupBox15.ResumeLayout(false);
-            this.groupBox15.PerformLayout();
+            this.panel46.ResumeLayout(false);
+            this.groupBox16.ResumeLayout(false);
             this.panel38.ResumeLayout(false);
             this.panel39.ResumeLayout(false);
             this.panel40.ResumeLayout(false);
             this.panel41.ResumeLayout(false);
+            this.panel35.ResumeLayout(false);
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
+            this.tabPage8.ResumeLayout(false);
+            this.panel47.ResumeLayout(false);
+            this.groupBox17.ResumeLayout(false);
             this.panel42.ResumeLayout(false);
             this.panel43.ResumeLayout(false);
             this.panel44.ResumeLayout(false);
             this.panel45.ResumeLayout(false);
-            this.panel46.ResumeLayout(false);
-            this.groupBox16.ResumeLayout(false);
-            this.panel47.ResumeLayout(false);
-            this.groupBox17.ResumeLayout(false);
+            this.panel36.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
+            this.tabPage9.ResumeLayout(false);
             this.panel48.ResumeLayout(false);
+            this.panel37.ResumeLayout(false);
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox15.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDocGia)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1651,7 +1659,7 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnXoaDocGia;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TabPage tabPage2;
@@ -1672,7 +1680,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Button button9;
@@ -1790,5 +1797,6 @@
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.DataGridView dgvDocGia;
     }
 }

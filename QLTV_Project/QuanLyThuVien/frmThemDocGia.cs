@@ -13,10 +13,12 @@ namespace QuanLyThuVien
 {
     public partial class frmThemDocGia : Form
     {
+        DocGia_BUS docgia_bus = new DocGia_BUS();
         public frmThemDocGia()
         {
             InitializeComponent();
-
+            int mangdung = docgia_bus.MaMax();
+            txtMaDG.Text = mangdung+1+"";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,23 +42,35 @@ namespace QuanLyThuVien
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
+            
             Close();
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            // check radiobutton
             bool GioiTinh;
             if (rdoGioiTinh.Checked)
                 GioiTinh = true;
             else
                 GioiTinh =  false;
-            DocGia_BUS docgia_bus = new DocGia_BUS();
+            //check combobox
+            var item = this.cboLoaiDG.GetItemText(this.cboLoaiDG.SelectedItem);
+            string loaidg = item.ToString();
+                
+            
+            int maloaidg = int.Parse(docgia_bus.TraVeGiaTriMaLoaiDG(loaidg));
+             
             if(txtHoTen.Text != "" || txtEmail.Text != "")
             { 
                 NguoiDung ng = new NguoiDung(0, txtHoTen.Text, GioiTinh, txtEmail.Text, dtmNgayTao.Value);
                 if(docgia_bus.ThemNguoiDung(ng))
                 {
-                    MessageBox.Show("Đã thêm vào thành công");
+                    int mangdung = docgia_bus.MaMax();
+                    DocGia dg = new DocGia(mangdung, maloaidg);
+                    if(docgia_bus.ThemDocGia(dg))
+                        MessageBox.Show("Đã thêm đôc giả vào thành công");
+                    btnThoat.Focus();
                 }
                 else
                 {

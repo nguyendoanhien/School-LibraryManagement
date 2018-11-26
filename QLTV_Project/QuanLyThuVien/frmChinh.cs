@@ -10,7 +10,8 @@ using System.Windows.Forms;
 
 using System.Data.SqlClient;
 using System.Data.Sql;
-
+using DTO;
+using BUS;
 namespace QuanLyThuVien
 {
     public partial class frmChinh : Form
@@ -19,6 +20,7 @@ namespace QuanLyThuVien
         {
             InitializeComponent();
             this.sttTime.Text = Get_Day();
+            LoadBangDocGia();
         }
         
 
@@ -33,7 +35,11 @@ namespace QuanLyThuVien
             return ngay + "/" + thang + "/" + nam + " " + gio + ":" + phut + ":" + giay;
 
         }
-
+        public void LoadBangDocGia()
+        {
+            DocGia_BUS docgia_bus = new DocGia_BUS();
+            dgvDocGia.DataSource = docgia_bus.LoadBangDocGia();
+        }
         
 
         private void frmChinh_Load(object sender, EventArgs e)
@@ -73,7 +79,10 @@ namespace QuanLyThuVien
         private void tKĐộcGiảToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmThemDocGia frmThemDG = new frmThemDocGia();
-            frmThemDG.Show();
+            if(frmThemDG.ShowDialog() == DialogResult.OK)
+            {
+                LoadBangDocGia();
+            }
         }
 
         private void tTĐộcGiảToolStripMenuItem_Click(object sender, EventArgs e)
@@ -81,7 +90,19 @@ namespace QuanLyThuVien
 
         }
 
-        
-        
+        private void btnXoaDocGia_Click(object sender, EventArgs e)
+        {
+            int a = dgvDocGia.CurrentCell.RowIndex;
+            string hihi = dgvDocGia.Rows[a].Cells[0].Value.ToString().Trim();
+            MessageBox.Show(hihi);
+
+            DocGia_BUS docgia_bus = new DocGia_BUS();
+            if (docgia_bus.XoaDocGia(int.Parse(hihi)))
+            {
+                MessageBox.Show("Đã xoá thành công");
+                LoadBangDocGia();
+            }
+            else MessageBox.Show("Không thành công!!");
+        }
     }
 }

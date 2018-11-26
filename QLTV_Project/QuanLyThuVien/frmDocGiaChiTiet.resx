@@ -120,10 +120,10 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnThoat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABiSURBVDhPYxh+IBmIBSBMrIAXiNMgTOwApHkalEYHIM0g
-        OWEwDw/AZgjRmmEA2RCSNcMAzBCyNIMAzObpQIzsHaIAsrORvUMUwOZnog3BF2BEGZIKxPgCDKQ5A8Ic
-        JoCBAQA8Qwz4PuLuswAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAGJJREFUOE9jGH4gGYgFIEysgBeI0yBM7ACkeRqURgcgzSA5YTAPD8BmCNGaYQDZ
+        EJI1wwDMELI0gwDM5ulAjOwdogCys5G9QxTA5meiDcEXYEQZkgrE+AIMpDkDwhwmgIEBADxDDPg+4u6z
+        AAAAAElFTkSuQmCC
 </value>
   </data>
 </root>

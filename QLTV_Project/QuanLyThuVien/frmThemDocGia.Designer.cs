@@ -42,6 +42,8 @@
             this.picBoxAvatar = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdoGioiTinh1 = new System.Windows.Forms.RadioButton();
+            this.rdoGioiTinh = new System.Windows.Forms.RadioButton();
             this.dtmNgayTao = new System.Windows.Forms.DateTimePicker();
             this.cboLoaiDG = new System.Windows.Forms.ComboBox();
             this.btnChonAnh = new System.Windows.Forms.Button();
@@ -49,8 +51,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.rdoGioiTinh = new System.Windows.Forms.RadioButton();
-            this.rdoGioiTinh1 = new System.Windows.Forms.RadioButton();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxAvatar)).BeginInit();
             this.panel2.SuspendLayout();
@@ -71,13 +71,14 @@
             // btnThoat
             // 
             this.btnThoat.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Image = global::QuanLyThuVien.Properties.Resources.EXIT;
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThoat.Location = new System.Drawing.Point(428, 18);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(81, 41);
-            this.btnThoat.TabIndex = 7;
+            this.btnThoat.TabIndex = 1;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -92,7 +93,7 @@
             this.btnLuu.Location = new System.Drawing.Point(329, 18);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(81, 41);
-            this.btnLuu.TabIndex = 6;
+            this.btnLuu.TabIndex = 0;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -103,21 +104,22 @@
             this.txtEmail.Location = new System.Drawing.Point(294, 127);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(190, 23);
-            this.txtEmail.TabIndex = 27;
+            this.txtEmail.TabIndex = 10;
             // 
             // txtHoTen
             // 
             this.txtHoTen.Location = new System.Drawing.Point(294, 73);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(190, 23);
-            this.txtHoTen.TabIndex = 25;
+            this.txtHoTen.TabIndex = 5;
             // 
             // txtMaDG
             // 
             this.txtMaDG.Location = new System.Drawing.Point(294, 43);
             this.txtMaDG.Name = "txtMaDG";
+            this.txtMaDG.ReadOnly = true;
             this.txtMaDG.Size = new System.Drawing.Size(190, 23);
-            this.txtMaDG.TabIndex = 24;
+            this.txtMaDG.TabIndex = 3;
             // 
             // label8
             // 
@@ -126,7 +128,7 @@
             this.label8.Location = new System.Drawing.Point(181, 158);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(72, 20);
-            this.label8.TabIndex = 22;
+            this.label8.TabIndex = 11;
             this.label8.Text = "Ngày tạo";
             // 
             // label6
@@ -136,7 +138,7 @@
             this.label6.Location = new System.Drawing.Point(181, 129);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 20);
-            this.label6.TabIndex = 20;
+            this.label6.TabIndex = 9;
             this.label6.Text = "Email";
             // 
             // label5
@@ -146,7 +148,7 @@
             this.label5.Location = new System.Drawing.Point(181, 17);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 20);
-            this.label5.TabIndex = 19;
+            this.label5.TabIndex = 0;
             this.label5.Text = "Loại độc giả";
             // 
             // label4
@@ -156,7 +158,7 @@
             this.label4.Location = new System.Drawing.Point(181, 45);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 20);
-            this.label4.TabIndex = 13;
+            this.label4.TabIndex = 2;
             this.label4.Text = "Mã độc giả";
             // 
             // label2
@@ -166,7 +168,7 @@
             this.label2.Location = new System.Drawing.Point(181, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 20);
-            this.label2.TabIndex = 11;
+            this.label2.TabIndex = 4;
             this.label2.Text = "Họ và tên";
             // 
             // picBoxAvatar
@@ -215,6 +217,28 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin độc giả";
             // 
+            // rdoGioiTinh1
+            // 
+            this.rdoGioiTinh1.AutoSize = true;
+            this.rdoGioiTinh1.Checked = true;
+            this.rdoGioiTinh1.Location = new System.Drawing.Point(364, 100);
+            this.rdoGioiTinh1.Name = "rdoGioiTinh1";
+            this.rdoGioiTinh1.Size = new System.Drawing.Size(44, 21);
+            this.rdoGioiTinh1.TabIndex = 8;
+            this.rdoGioiTinh1.TabStop = true;
+            this.rdoGioiTinh1.Text = "Nữ";
+            this.rdoGioiTinh1.UseVisualStyleBackColor = true;
+            // 
+            // rdoGioiTinh
+            // 
+            this.rdoGioiTinh.AutoSize = true;
+            this.rdoGioiTinh.Location = new System.Drawing.Point(294, 100);
+            this.rdoGioiTinh.Name = "rdoGioiTinh";
+            this.rdoGioiTinh.Size = new System.Drawing.Size(55, 21);
+            this.rdoGioiTinh.TabIndex = 7;
+            this.rdoGioiTinh.Text = "Nam";
+            this.rdoGioiTinh.UseVisualStyleBackColor = true;
+            // 
             // dtmNgayTao
             // 
             this.dtmNgayTao.CustomFormat = "dd/MM/yyyy";
@@ -222,7 +246,7 @@
             this.dtmNgayTao.Location = new System.Drawing.Point(294, 156);
             this.dtmNgayTao.Name = "dtmNgayTao";
             this.dtmNgayTao.Size = new System.Drawing.Size(190, 23);
-            this.dtmNgayTao.TabIndex = 32;
+            this.dtmNgayTao.TabIndex = 12;
             // 
             // cboLoaiDG
             // 
@@ -231,14 +255,14 @@
             this.cboLoaiDG.Location = new System.Drawing.Point(294, 13);
             this.cboLoaiDG.Name = "cboLoaiDG";
             this.cboLoaiDG.Size = new System.Drawing.Size(190, 24);
-            this.cboLoaiDG.TabIndex = 31;
+            this.cboLoaiDG.TabIndex = 1;
             // 
             // btnChonAnh
             // 
             this.btnChonAnh.Location = new System.Drawing.Point(41, 175);
             this.btnChonAnh.Name = "btnChonAnh";
             this.btnChonAnh.Size = new System.Drawing.Size(93, 30);
-            this.btnChonAnh.TabIndex = 30;
+            this.btnChonAnh.TabIndex = 0;
             this.btnChonAnh.Text = "Chọn ảnh";
             this.btnChonAnh.UseVisualStyleBackColor = true;
             this.btnChonAnh.Click += new System.EventHandler(this.button1_Click);
@@ -250,7 +274,7 @@
             this.label3.Location = new System.Drawing.Point(181, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 20);
-            this.label3.TabIndex = 12;
+            this.label3.TabIndex = 6;
             this.label3.Text = "Giới tính";
             // 
             // label1
@@ -278,28 +302,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // rdoGioiTinh
-            // 
-            this.rdoGioiTinh.AutoSize = true;
-            this.rdoGioiTinh.Location = new System.Drawing.Point(294, 100);
-            this.rdoGioiTinh.Name = "rdoGioiTinh";
-            this.rdoGioiTinh.Size = new System.Drawing.Size(55, 21);
-            this.rdoGioiTinh.TabIndex = 33;
-            this.rdoGioiTinh.Text = "Nam";
-            this.rdoGioiTinh.UseVisualStyleBackColor = true;
-            // 
-            // rdoGioiTinh1
-            // 
-            this.rdoGioiTinh1.AutoSize = true;
-            this.rdoGioiTinh1.Checked = true;
-            this.rdoGioiTinh1.Location = new System.Drawing.Point(364, 100);
-            this.rdoGioiTinh1.Name = "rdoGioiTinh1";
-            this.rdoGioiTinh1.Size = new System.Drawing.Size(44, 21);
-            this.rdoGioiTinh1.TabIndex = 34;
-            this.rdoGioiTinh1.TabStop = true;
-            this.rdoGioiTinh1.Text = "Nữ";
-            this.rdoGioiTinh1.UseVisualStyleBackColor = true;
-            // 
             // frmThemDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,6 +311,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "frmThemDocGia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm độc giả";
             this.Load += new System.EventHandler(this.frmThemDocGia_Load);
             this.panel4.ResumeLayout(false);
