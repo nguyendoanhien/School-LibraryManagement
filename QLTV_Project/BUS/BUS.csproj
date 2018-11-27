@@ -45,6 +45,7 @@
     <Compile Include="DocGia_BUS.cs" />
     <Compile Include="LoaiDocGia_BUS.cs" />
     <Compile Include="NCC_BUS.cs" />
+    <Compile Include="PhieuNhap_BUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

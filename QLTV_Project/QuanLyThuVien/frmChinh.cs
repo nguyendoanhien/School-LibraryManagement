@@ -21,6 +21,7 @@ namespace QuanLyThuVien
             InitializeComponent();
             this.sttTime.Text = Get_Day();
             LoadBangDocGia();
+            
         }
         
 

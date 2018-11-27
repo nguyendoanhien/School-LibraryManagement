@@ -28,5 +28,21 @@ namespace QuanLyThuVien
                 this.Close();
         }
 
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            if (txtTenDangNhap.Text == 7 + "" && txtMatKhau.Text == "hienmup")
+            {
+                MessageBox.Show("Đăng nhập thành công");
+                this.Hide();
+                frmChinh frm = new frmChinh();
+                if (frm.ShowDialog() == DialogResult.OK)
+                {
+                    
+                }
+                this.Close();
+            }
+            else
+                MessageBox.Show("Sai tài khoản hoặc mật khẩu");
+        }
     }
 }
