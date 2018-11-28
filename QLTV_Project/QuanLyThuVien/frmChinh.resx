@@ -705,64 +705,28 @@
   <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value>Mã đầu sách</value>
-  </data>
-  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
-    <value>105</value>
-  </data>
-  <data name="columnHeader2.Text" xml:space="preserve">
-    <value>Thể loại</value>
-  </data>
-  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
-    <value>99</value>
-  </data>
-  <data name="columnHeader3.Text" xml:space="preserve">
-    <value>Tên Đầu Sách</value>
-  </data>
-  <data name="columnHeader3.Width" type="System.Int32, mscorlib">
-    <value>179</value>
-  </data>
-  <data name="columnHeader4.Text" xml:space="preserve">
-    <value>Số lượng quy định</value>
-  </data>
-  <data name="columnHeader4.Width" type="System.Int32, mscorlib">
-    <value>159</value>
-  </data>
-  <data name="columnHeader5.Text" xml:space="preserve">
-    <value>Giá tiền</value>
-  </data>
-  <data name="columnHeader5.Width" type="System.Int32, mscorlib">
-    <value>141</value>
-  </data>
-  <data name="columnHeader6.Text" xml:space="preserve">
-    <value>Số lượng còn lại</value>
-  </data>
-  <data name="columnHeader6.Width" type="System.Int32, mscorlib">
-    <value>154</value>
-  </data>
-  <data name="listView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="dgvDSSach.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="dgvDSSach.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 22</value>
   </data>
-  <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="dgvDSSach.Size" type="System.Drawing.Size, System.Drawing">
     <value>856, 333</value>
   </data>
-  <data name="listView1.TabIndex" type="System.Int32, mscorlib">
+  <data name="dgvDSSach.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;listView1.Name" xml:space="preserve">
-    <value>listView1</value>
+  <data name="&gt;&gt;dgvDSSach.Name" xml:space="preserve">
+    <value>dgvDSSach</value>
   </data>
-  <data name="&gt;&gt;listView1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;dgvDSSach.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;listView1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;dgvDSSach.Parent" xml:space="preserve">
     <value>groupBox6</value>
   </data>
-  <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;dgvDSSach.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="groupBox6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -1647,462 +1611,6 @@
   <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="tabPage4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="listView5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="listView5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 19</value>
-  </data>
-  <data name="listView5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>864, 346</value>
-  </data>
-  <data name="listView5.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;listView5.Name" xml:space="preserve">
-    <value>listView5</value>
-  </data>
-  <data name="&gt;&gt;listView5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listView5.Parent" xml:space="preserve">
-    <value>groupBox12</value>
-  </data>
-  <data name="&gt;&gt;listView5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBox12.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBox12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="groupBox12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="groupBox12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>870, 368</value>
-  </data>
-  <data name="groupBox12.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="groupBox12.Text" xml:space="preserve">
-    <value>Danh sách độc giả</value>
-  </data>
-  <data name="&gt;&gt;groupBox12.Name" xml:space="preserve">
-    <value>groupBox12</value>
-  </data>
-  <data name="&gt;&gt;groupBox12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox12.Parent" xml:space="preserve">
-    <value>panel31</value>
-  </data>
-  <data name="&gt;&gt;groupBox12.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel31.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panel31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 50</value>
-  </data>
-  <data name="panel31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>870, 368</value>
-  </data>
-  <data name="panel31.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;panel31.Name" xml:space="preserve">
-    <value>panel31</value>
-  </data>
-  <data name="&gt;&gt;panel31.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel31.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;panel31.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel28.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="button18.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="button18.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button18.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="button18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 8</value>
-  </data>
-  <data name="button18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 42</value>
-  </data>
-  <data name="button18.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="button18.Text" xml:space="preserve">
-    <value>Sửa</value>
-  </data>
-  <data name="button18.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;button18.Name" xml:space="preserve">
-    <value>button18</value>
-  </data>
-  <data name="&gt;&gt;button18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button18.Parent" xml:space="preserve">
-    <value>panel28</value>
-  </data>
-  <data name="&gt;&gt;button18.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>265, 0</value>
-  </data>
-  <data name="panel28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 67</value>
-  </data>
-  <data name="panel28.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panel28.Name" xml:space="preserve">
-    <value>panel28</value>
-  </data>
-  <data name="&gt;&gt;panel28.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel28.Parent" xml:space="preserve">
-    <value>panel27</value>
-  </data>
-  <data name="&gt;&gt;panel28.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="button19.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="button19.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button19.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="button19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 8</value>
-  </data>
-  <data name="button19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 42</value>
-  </data>
-  <data name="button19.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="button19.Text" xml:space="preserve">
-    <value>Xoá</value>
-  </data>
-  <data name="button19.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;button19.Name" xml:space="preserve">
-    <value>button19</value>
-  </data>
-  <data name="&gt;&gt;button19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button19.Parent" xml:space="preserve">
-    <value>panel29</value>
-  </data>
-  <data name="&gt;&gt;button19.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel29.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="panel29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>605, 0</value>
-  </data>
-  <data name="panel29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 67</value>
-  </data>
-  <data name="panel29.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel29.Name" xml:space="preserve">
-    <value>panel29</value>
-  </data>
-  <data name="&gt;&gt;panel29.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel29.Parent" xml:space="preserve">
-    <value>panel27</value>
-  </data>
-  <data name="&gt;&gt;panel29.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="button20.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="button20.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button20.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="button20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 8</value>
-  </data>
-  <data name="button20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 42</value>
-  </data>
-  <data name="button20.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="button20.Text" xml:space="preserve">
-    <value>Thêm</value>
-  </data>
-  <data name="button20.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;button20.Name" xml:space="preserve">
-    <value>button20</value>
-  </data>
-  <data name="&gt;&gt;button20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button20.Parent" xml:space="preserve">
-    <value>panel30</value>
-  </data>
-  <data name="&gt;&gt;button20.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel30.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="panel30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 67</value>
-  </data>
-  <data name="panel30.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel30.Name" xml:space="preserve">
-    <value>panel30</value>
-  </data>
-  <data name="&gt;&gt;panel30.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel30.Parent" xml:space="preserve">
-    <value>panel27</value>
-  </data>
-  <data name="&gt;&gt;panel30.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel27.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panel27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 418</value>
-  </data>
-  <data name="panel27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>870, 67</value>
-  </data>
-  <data name="panel27.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;panel27.Name" xml:space="preserve">
-    <value>panel27</value>
-  </data>
-  <data name="&gt;&gt;panel27.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel27.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;panel27.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="button17.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="button17.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="button17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>732, 16</value>
-  </data>
-  <data name="button17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 28</value>
-  </data>
-  <data name="button17.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="button17.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;button17.Name" xml:space="preserve">
-    <value>button17</value>
-  </data>
-  <data name="&gt;&gt;button17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button17.Parent" xml:space="preserve">
-    <value>groupBox11</value>
-  </data>
-  <data name="&gt;&gt;button17.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="comboBox4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="comboBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 16</value>
-  </data>
-  <data name="comboBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 28</value>
-  </data>
-  <data name="comboBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="comboBox4.Text" xml:space="preserve">
-    <value>-- Chọn loại độc giả --</value>
-  </data>
-  <data name="&gt;&gt;comboBox4.Name" xml:space="preserve">
-    <value>comboBox4</value>
-  </data>
-  <data name="&gt;&gt;comboBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox4.Parent" xml:space="preserve">
-    <value>groupBox11</value>
-  </data>
-  <data name="&gt;&gt;comboBox4.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="textBox4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>412, 18</value>
-  </data>
-  <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>299, 26</value>
-  </data>
-  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
-    <value>textBox4</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Parent" xml:space="preserve">
-    <value>groupBox11</value>
-  </data>
-  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="groupBox11.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBox11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="groupBox11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>870, 50</value>
-  </data>
-  <data name="groupBox11.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="groupBox11.Text" xml:space="preserve">
-    <value>Tìm kiếm</value>
-  </data>
-  <data name="&gt;&gt;groupBox11.Name" xml:space="preserve">
-    <value>groupBox11</value>
-  </data>
-  <data name="&gt;&gt;groupBox11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox11.Parent" xml:space="preserve">
-    <value>panel26</value>
-  </data>
-  <data name="&gt;&gt;groupBox11.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel26.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>870, 50</value>
-  </data>
-  <data name="panel26.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;panel26.Name" xml:space="preserve">
-    <value>panel26</value>
-  </data>
-  <data name="&gt;&gt;panel26.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel26.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;panel26.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
-  </data>
-  <data name="tabPage4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>870, 485</value>
-  </data>
-  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tabPage4.Text" xml:space="preserve">
-    <value>Quản lý user</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="columnHeader10.Text" xml:space="preserve">
     <value>Mã phiếu trả</value>
   </data>
@@ -2572,7 +2080,7 @@
     <value>tabControl1</value>
   </data>
   <data name="&gt;&gt;tabPage5.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="columnHeader7.Text" xml:space="preserve">
     <value>Mã phiếu mượn</value>
@@ -3043,7 +2551,7 @@
     <value>tabControl1</value>
   </data>
   <data name="&gt;&gt;tabPage6.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="columnHeader13.Text" xml:space="preserve">
     <value>Mã phiếu mượn</value>
@@ -3511,7 +3019,7 @@
     <value>tabControl1</value>
   </data>
   <data name="&gt;&gt;tabPage7.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="columnHeader16.Text" xml:space="preserve">
     <value>Mã phiếu mượn</value>
@@ -3979,13 +3487,16 @@
     <value>tabControl1</value>
   </data>
   <data name="&gt;&gt;tabPage8.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="label6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20pt</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -4195,7 +3706,7 @@
     <value>tabControl1</value>
   </data>
   <data name="&gt;&gt;tabPage9.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="tabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -4290,20 +3801,26 @@
   <data name="menuStrip1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="sssssssssToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 20</value>
+  <data name="đăngXuấtToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
-  <data name="sssssssssToolStripMenuItem.Text" xml:space="preserve">
+  <data name="đăngXuấtToolStripMenuItem.Text" xml:space="preserve">
     <value>Đăng xuất</value>
   </data>
+  <data name="txtTenNguoiDN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="txtTenNguoiDN.Text" xml:space="preserve">
+    <value>Xin chào! </value>
+  </data>
   <data name="tTNgườiDùngToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="tTNgườiDùngToolStripMenuItem.Text" xml:space="preserve">
     <value>TT Người dùng</value>
   </data>
   <data name="tTĐộcGiảToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="tTĐộcGiảToolStripMenuItem.Text" xml:space="preserve">
     <value>TT Độc giả</value>
@@ -7613,42 +7130,6 @@
   <data name="&gt;&gt;sttTime.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;columnHeader1.Name" xml:space="preserve">
-    <value>columnHeader1</value>
-  </data>
-  <data name="&gt;&gt;columnHeader1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;columnHeader2.Name" xml:space="preserve">
-    <value>columnHeader2</value>
-  </data>
-  <data name="&gt;&gt;columnHeader2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;columnHeader3.Name" xml:space="preserve">
-    <value>columnHeader3</value>
-  </data>
-  <data name="&gt;&gt;columnHeader3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;columnHeader4.Name" xml:space="preserve">
-    <value>columnHeader4</value>
-  </data>
-  <data name="&gt;&gt;columnHeader4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;columnHeader5.Name" xml:space="preserve">
-    <value>columnHeader5</value>
-  </data>
-  <data name="&gt;&gt;columnHeader5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;columnHeader6.Name" xml:space="preserve">
-    <value>columnHeader6</value>
-  </data>
-  <data name="&gt;&gt;columnHeader6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;columnHeader10.Name" xml:space="preserve">
     <value>columnHeader10</value>
   </data>
@@ -7721,10 +7202,10 @@
   <data name="&gt;&gt;columnHeader18.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;sssssssssToolStripMenuItem.Name" xml:space="preserve">
-    <value>sssssssssToolStripMenuItem</value>
+  <data name="&gt;&gt;txtTenNguoiDN.Name" xml:space="preserve">
+    <value>txtTenNguoiDN</value>
   </data>
-  <data name="&gt;&gt;sssssssssToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtTenNguoiDN.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;thôngTinToolStripMenuItem.Name" xml:space="preserve">
@@ -7809,6 +7290,12 @@
     <value>aboutToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;đăngXuấtToolStripMenuItem.Name" xml:space="preserve">
+    <value>đăngXuấtToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;đăngXuấtToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

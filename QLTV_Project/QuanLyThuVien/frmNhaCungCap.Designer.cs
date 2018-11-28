@@ -205,7 +205,6 @@
             this.dgvNCC.AllowUserToAddRows = false;
             this.dgvNCC.AllowUserToDeleteRows = false;
             this.dgvNCC.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvNCC.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvNCC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNCC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvNCC.Location = new System.Drawing.Point(3, 19);

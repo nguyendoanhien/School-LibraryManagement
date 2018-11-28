@@ -32,12 +32,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblDonGia = new System.Windows.Forms.Label();
+            this.nudSoLuong = new System.Windows.Forms.NumericUpDown();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnDSDauSach = new System.Windows.Forms.Button();
             this.dtmNgayDuKienGiao = new System.Windows.Forms.DateTimePicker();
             this.btnDSNCC = new System.Windows.Forms.Button();
-            this.txtDonGia = new System.Windows.Forms.TextBox();
             this.txtNCC = new System.Windows.Forms.TextBox();
             this.lblMaPhieuNhap = new System.Windows.Forms.Label();
             this.txtMaDauSach = new System.Windows.Forms.TextBox();
@@ -57,15 +58,14 @@
             this.label11 = new System.Windows.Forms.Label();
             this.lblTong = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.nudSoLuong = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).BeginInit();
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.pnLuuThoat.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -100,13 +100,13 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblDonGia);
             this.groupBox1.Controls.Add(this.nudSoLuong);
             this.groupBox1.Controls.Add(this.btnXoa);
             this.groupBox1.Controls.Add(this.btnThem);
             this.groupBox1.Controls.Add(this.btnDSDauSach);
             this.groupBox1.Controls.Add(this.dtmNgayDuKienGiao);
             this.groupBox1.Controls.Add(this.btnDSNCC);
-            this.groupBox1.Controls.Add(this.txtDonGia);
             this.groupBox1.Controls.Add(this.txtNCC);
             this.groupBox1.Controls.Add(this.lblMaPhieuNhap);
             this.groupBox1.Controls.Add(this.txtMaDauSach);
@@ -124,6 +124,23 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin phiếu nhập";
+            // 
+            // lblDonGia
+            // 
+            this.lblDonGia.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblDonGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDonGia.Location = new System.Drawing.Point(217, 147);
+            this.lblDonGia.Name = "lblDonGia";
+            this.lblDonGia.Size = new System.Drawing.Size(213, 29);
+            this.lblDonGia.TabIndex = 24;
+            this.lblDonGia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // nudSoLuong
+            // 
+            this.nudSoLuong.Location = new System.Drawing.Point(364, 121);
+            this.nudSoLuong.Name = "nudSoLuong";
+            this.nudSoLuong.Size = new System.Drawing.Size(66, 23);
+            this.nudSoLuong.TabIndex = 23;
             // 
             // btnXoa
             // 
@@ -165,6 +182,7 @@
             this.btnDSDauSach.TabIndex = 14;
             this.btnDSDauSach.Text = "...";
             this.btnDSDauSach.UseVisualStyleBackColor = true;
+            this.btnDSDauSach.Click += new System.EventHandler(this.btnDSDauSach_Click);
             // 
             // dtmNgayDuKienGiao
             // 
@@ -185,17 +203,6 @@
             this.btnDSNCC.Text = "...";
             this.btnDSNCC.UseVisualStyleBackColor = true;
             this.btnDSNCC.Click += new System.EventHandler(this.btnDSNCC_Click);
-            // 
-            // txtDonGia
-            // 
-            this.txtDonGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDonGia.Location = new System.Drawing.Point(217, 152);
-            this.txtDonGia.Name = "txtDonGia";
-            this.txtDonGia.ReadOnly = true;
-            this.txtDonGia.Size = new System.Drawing.Size(213, 26);
-            this.txtDonGia.TabIndex = 10;
-            this.txtDonGia.Text = "2333000";
-            this.txtDonGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtNCC
             // 
@@ -393,13 +400,6 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "Tổng:";
             // 
-            // nudSoLuong
-            // 
-            this.nudSoLuong.Location = new System.Drawing.Point(364, 121);
-            this.nudSoLuong.Name = "nudSoLuong";
-            this.nudSoLuong.Size = new System.Drawing.Size(66, 23);
-            this.nudSoLuong.TabIndex = 23;
-            // 
             // frmPhieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -419,12 +419,12 @@
             this.panel2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).EndInit();
             this.panel3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.pnLuuThoat.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -441,7 +441,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtDonGia;
         private System.Windows.Forms.TextBox txtNCC;
         private System.Windows.Forms.Label lblMaPhieuNhap;
         private System.Windows.Forms.TextBox txtMaDauSach;
@@ -461,5 +460,6 @@
         private System.Windows.Forms.Label lblTong;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.NumericUpDown nudSoLuong;
+        private System.Windows.Forms.Label lblDonGia;
     }
 }

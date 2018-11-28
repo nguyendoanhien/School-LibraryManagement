@@ -21,7 +21,8 @@ namespace QuanLyThuVien
             InitializeComponent();
             this.sttTime.Text = Get_Day();
             LoadBangDocGia();
-            
+            LoadBangDauSach();
+            LoadComBoBoxLoaiDocGia();
         }
         
 
@@ -104,6 +105,29 @@ namespace QuanLyThuVien
                 LoadBangDocGia();
             }
             else MessageBox.Show("Không thành công!!");
+        }
+
+        public void LoadBangDauSach()
+        {
+            DauSach_BUS dausach_bus = new DauSach_BUS();
+            dgvDSSach.DataSource = dausach_bus.LoadDauSach();
+        }
+
+        private void txtTenNguoiDN_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbxLoaiDG_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        public void LoadComBoBoxLoaiDocGia()
+        {
+            DocGia_BUS docGia_BUS = new DocGia_BUS();
+            cbxLoaiDG.DataSource = docGia_BUS.LoadComBoBoxLoaiDocGia();
+            
         }
     }
 }

@@ -54,13 +54,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel14 = new System.Windows.Forms.Panel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dgvDSSach = new System.Windows.Forms.DataGridView();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
@@ -76,6 +70,7 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.dgvDocGia = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button7 = new System.Windows.Forms.Button();
@@ -88,22 +83,6 @@
             this.btnXoaDocGia = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.listView5 = new System.Windows.Forms.ListView();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.button18 = new System.Windows.Forms.Button();
-            this.panel29 = new System.Windows.Forms.Panel();
-            this.button19 = new System.Windows.Forms.Button();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.button20 = new System.Windows.Forms.Button();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.button17 = new System.Windows.Forms.Button();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.panel25 = new System.Windows.Forms.Panel();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
@@ -189,7 +168,7 @@
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.sssssssssToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtTenNguoiDN = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tTNgườiDùngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tTĐộcGiảToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -204,7 +183,7 @@
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hướngDẫnSửDụngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dgvDocGia = new System.Windows.Forms.DataGridView();
+            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
@@ -221,6 +200,7 @@
             this.tabPage2.SuspendLayout();
             this.panel14.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSSach)).BeginInit();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -230,21 +210,13 @@
             this.tabPage3.SuspendLayout();
             this.panel6.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDocGia)).BeginInit();
             this.panel5.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.panel31.SuspendLayout();
-            this.groupBox12.SuspendLayout();
-            this.panel27.SuspendLayout();
-            this.panel28.SuspendLayout();
-            this.panel29.SuspendLayout();
-            this.panel30.SuspendLayout();
-            this.panel26.SuspendLayout();
-            this.groupBox11.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.panel25.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -286,7 +258,6 @@
             this.panel37.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDocGia)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStripContainer1
@@ -330,7 +301,6 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage7);
@@ -473,48 +443,19 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.listView1);
+            this.groupBox6.Controls.Add(this.dgvDSSach);
             resources.ApplyResources(this.groupBox6, "groupBox6");
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.TabStop = false;
             // 
-            // listView1
+            // dgvDSSach
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6});
-            resources.ApplyResources(this.listView1, "listView1");
-            this.listView1.Name = "listView1";
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            resources.ApplyResources(this.columnHeader1, "columnHeader1");
-            // 
-            // columnHeader2
-            // 
-            resources.ApplyResources(this.columnHeader2, "columnHeader2");
-            // 
-            // columnHeader3
-            // 
-            resources.ApplyResources(this.columnHeader3, "columnHeader3");
-            // 
-            // columnHeader4
-            // 
-            resources.ApplyResources(this.columnHeader4, "columnHeader4");
-            // 
-            // columnHeader5
-            // 
-            resources.ApplyResources(this.columnHeader5, "columnHeader5");
-            // 
-            // columnHeader6
-            // 
-            resources.ApplyResources(this.columnHeader6, "columnHeader6");
+            this.dgvDSSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dgvDSSach, "dgvDSSach");
+            this.dgvDSSach.MultiSelect = false;
+            this.dgvDSSach.Name = "dgvDSSach";
+            this.dgvDSSach.ReadOnly = true;
+            this.dgvDSSach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
             // panel10
             // 
@@ -621,6 +562,17 @@
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
+            // dgvDocGia
+            // 
+            this.dgvDocGia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDocGia.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.dgvDocGia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dgvDocGia, "dgvDocGia");
+            this.dgvDocGia.Name = "dgvDocGia";
+            this.dgvDocGia.ReadOnly = true;
+            this.dgvDocGia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDocGia.ShowEditingIcon = false;
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.groupBox5);
@@ -648,6 +600,7 @@
             resources.ApplyResources(this.cbxLoaiDG, "cbxLoaiDG");
             this.cbxLoaiDG.FormattingEnabled = true;
             this.cbxLoaiDG.Name = "cbxLoaiDG";
+            this.cbxLoaiDG.SelectedIndexChanged += new System.EventHandler(this.cbxLoaiDG_SelectedIndexChanged);
             // 
             // txNhap
             // 
@@ -704,117 +657,6 @@
             this.button6.Image = global::QuanLyThuVien.Properties.Resources.add;
             this.button6.Name = "button6";
             this.button6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.panel31);
-            this.tabPage4.Controls.Add(this.panel27);
-            this.tabPage4.Controls.Add(this.panel26);
-            resources.ApplyResources(this.tabPage4, "tabPage4");
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // panel31
-            // 
-            this.panel31.Controls.Add(this.groupBox12);
-            resources.ApplyResources(this.panel31, "panel31");
-            this.panel31.Name = "panel31";
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.Controls.Add(this.listView5);
-            resources.ApplyResources(this.groupBox12, "groupBox12");
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.TabStop = false;
-            // 
-            // listView5
-            // 
-            resources.ApplyResources(this.listView5, "listView5");
-            this.listView5.Name = "listView5";
-            this.listView5.UseCompatibleStateImageBehavior = false;
-            // 
-            // panel27
-            // 
-            this.panel27.Controls.Add(this.panel28);
-            this.panel27.Controls.Add(this.panel29);
-            this.panel27.Controls.Add(this.panel30);
-            resources.ApplyResources(this.panel27, "panel27");
-            this.panel27.Name = "panel27";
-            // 
-            // panel28
-            // 
-            resources.ApplyResources(this.panel28, "panel28");
-            this.panel28.BackColor = System.Drawing.Color.Transparent;
-            this.panel28.Controls.Add(this.button18);
-            this.panel28.Name = "panel28";
-            // 
-            // button18
-            // 
-            resources.ApplyResources(this.button18, "button18");
-            this.button18.Image = global::QuanLyThuVien.Properties.Resources.edit;
-            this.button18.Name = "button18";
-            this.button18.UseVisualStyleBackColor = true;
-            // 
-            // panel29
-            // 
-            this.panel29.BackColor = System.Drawing.Color.Transparent;
-            this.panel29.Controls.Add(this.button19);
-            resources.ApplyResources(this.panel29, "panel29");
-            this.panel29.Name = "panel29";
-            // 
-            // button19
-            // 
-            resources.ApplyResources(this.button19, "button19");
-            this.button19.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
-            this.button19.Name = "button19";
-            this.button19.UseVisualStyleBackColor = true;
-            // 
-            // panel30
-            // 
-            this.panel30.BackColor = System.Drawing.Color.Transparent;
-            this.panel30.Controls.Add(this.button20);
-            resources.ApplyResources(this.panel30, "panel30");
-            this.panel30.Name = "panel30";
-            // 
-            // button20
-            // 
-            resources.ApplyResources(this.button20, "button20");
-            this.button20.Image = global::QuanLyThuVien.Properties.Resources.add;
-            this.button20.Name = "button20";
-            this.button20.UseVisualStyleBackColor = true;
-            // 
-            // panel26
-            // 
-            this.panel26.Controls.Add(this.groupBox11);
-            resources.ApplyResources(this.panel26, "panel26");
-            this.panel26.Name = "panel26";
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.button17);
-            this.groupBox11.Controls.Add(this.comboBox4);
-            this.groupBox11.Controls.Add(this.textBox4);
-            resources.ApplyResources(this.groupBox11, "groupBox11");
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.TabStop = false;
-            // 
-            // button17
-            // 
-            resources.ApplyResources(this.button17, "button17");
-            this.button17.Image = global::QuanLyThuVien.Properties.Resources.search;
-            this.button17.Name = "button17";
-            this.button17.UseVisualStyleBackColor = true;
-            // 
-            // comboBox4
-            // 
-            resources.ApplyResources(this.comboBox4, "comboBox4");
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Name = "comboBox4";
-            // 
-            // textBox4
-            // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
             // 
             // tabPage5
             // 
@@ -1384,18 +1226,21 @@
             // 
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sssssssssToolStripMenuItem,
+            this.txtTenNguoiDN,
             this.thôngTinToolStripMenuItem,
             this.tạoPhiếuToolStripMenuItem,
             this.tạoTàiKhoảnToolStripMenuItem,
             this.trợGiúpToolStripMenuItem});
             this.menuStrip1.Name = "menuStrip1";
             // 
-            // sssssssssToolStripMenuItem
+            // txtTenNguoiDN
             // 
-            this.sssssssssToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.sssssssssToolStripMenuItem.Name = "sssssssssToolStripMenuItem";
-            resources.ApplyResources(this.sssssssssToolStripMenuItem, "sssssssssToolStripMenuItem");
+            this.txtTenNguoiDN.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.txtTenNguoiDN.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.đăngXuấtToolStripMenuItem});
+            this.txtTenNguoiDN.Name = "txtTenNguoiDN";
+            resources.ApplyResources(this.txtTenNguoiDN, "txtTenNguoiDN");
+            this.txtTenNguoiDN.Click += new System.EventHandler(this.txtTenNguoiDN_Click);
             // 
             // thôngTinToolStripMenuItem
             // 
@@ -1501,16 +1346,10 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             // 
-            // dgvDocGia
+            // đăngXuấtToolStripMenuItem
             // 
-            this.dgvDocGia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvDocGia.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.dgvDocGia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgvDocGia, "dgvDocGia");
-            this.dgvDocGia.Name = "dgvDocGia";
-            this.dgvDocGia.ReadOnly = true;
-            this.dgvDocGia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDocGia.ShowEditingIcon = false;
+            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
+            resources.ApplyResources(this.đăngXuấtToolStripMenuItem, "đăngXuấtToolStripMenuItem");
             // 
             // frmChinh
             // 
@@ -1541,6 +1380,7 @@
             this.tabPage2.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSSach)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
@@ -1551,6 +1391,7 @@
             this.tabPage3.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDocGia)).EndInit();
             this.panel5.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
@@ -1558,16 +1399,6 @@
             this.panel9.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.panel31.ResumeLayout(false);
-            this.groupBox12.ResumeLayout(false);
-            this.panel27.ResumeLayout(false);
-            this.panel28.ResumeLayout(false);
-            this.panel29.ResumeLayout(false);
-            this.panel30.ResumeLayout(false);
-            this.panel26.ResumeLayout(false);
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
@@ -1615,7 +1446,6 @@
             this.groupBox15.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDocGia)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1624,14 +1454,9 @@
 
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem sssssssssToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem txtTenNguoiDN;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel sttTime;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.ToolStripMenuItem thôngTinToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tTNgườiDùngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tTĐộcGiảToolStripMenuItem;
@@ -1646,88 +1471,9 @@
         private System.Windows.Forms.ToolStripMenuItem trợGiúpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hướngDẫnSửDụngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.TabPage tabPage8;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.ComboBox cbxLoaiDG;
-        private System.Windows.Forms.TextBox txNhap;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button btnXoaDocGia;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.ListView listView4;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.ListView listView3;
-        private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Panel panel31;
-        private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.ListView listView5;
-        private System.Windows.Forms.Panel panel27;
-        private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Panel panel30;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Panel panel32;
-        private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.Panel panel34;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ListView lsDSTra;
@@ -1742,18 +1488,79 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.ColumnHeader columnHeader8;
-        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.DataGridView dgvDSSach;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.DataGridView dgvDocGia;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.ComboBox cbxLoaiDG;
+        private System.Windows.Forms.TextBox txNhap;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button btnXoaDocGia;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.ListView listView3;
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.ColumnHeader columnHeader11;
         private System.Windows.Forms.ColumnHeader columnHeader12;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.ListView listView4;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Panel panel19;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Panel panel46;
         private System.Windows.Forms.GroupBox groupBox16;
         private System.Windows.Forms.ListView listView6;
@@ -1772,6 +1579,7 @@
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.Panel panel47;
         private System.Windows.Forms.GroupBox groupBox17;
         private System.Windows.Forms.ListView listView7;
@@ -1790,6 +1598,7 @@
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.Panel panel48;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel37;
@@ -1797,6 +1606,6 @@
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.DataGridView dgvDocGia;
+        private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
     }
 }

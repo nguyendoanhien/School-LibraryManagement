@@ -22,5 +22,7 @@ namespace QuanLyThuVien
         {
             dgvNCC.DataSource = NCC_bus.getNCC();
         }
+
+        
     }
 }

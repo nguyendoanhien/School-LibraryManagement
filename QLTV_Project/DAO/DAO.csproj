@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DauSach_DAO.cs" />
     <Compile Include="DocGia_DAO.cs" />
     <Compile Include="LoaiDocGia_DAO.cs" />
     <Compile Include="NCC_DAO.cs" />

@@ -33,10 +33,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtNgayTao = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtGioiTinh = new System.Windows.Forms.TextBox();
             this.txtHoTen = new System.Windows.Forms.TextBox();
-            this.MaDocGia = new System.Windows.Forms.TextBox();
+            this.lblMaDocGia = new System.Windows.Forms.TextBox();
             this.txtLoaiDocGia = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.listView2 = new System.Windows.Forms.ListView();
-            this.txtNgayTao = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -101,7 +101,7 @@
             this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.txtGioiTinh);
             this.groupBox1.Controls.Add(this.txtHoTen);
-            this.groupBox1.Controls.Add(this.MaDocGia);
+            this.groupBox1.Controls.Add(this.lblMaDocGia);
             this.groupBox1.Controls.Add(this.txtLoaiDocGia);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label6);
@@ -118,15 +118,25 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin độc giả";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // txtNgayTao
+            // 
+            this.txtNgayTao.Location = new System.Drawing.Point(294, 154);
+            this.txtNgayTao.Name = "txtNgayTao";
+            this.txtNgayTao.ReadOnly = true;
+            this.txtNgayTao.Size = new System.Drawing.Size(190, 23);
+            this.txtNgayTao.TabIndex = 29;
+            this.txtNgayTao.Tag = "";
             // 
             // txtEmail
             // 
+            this.txtEmail.Enabled = false;
             this.txtEmail.Location = new System.Drawing.Point(294, 126);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.ReadOnly = true;
             this.txtEmail.Size = new System.Drawing.Size(190, 23);
             this.txtEmail.TabIndex = 27;
+            this.txtEmail.Text = "hi";
             // 
             // txtGioiTinh
             // 
@@ -144,13 +154,13 @@
             this.txtHoTen.Size = new System.Drawing.Size(190, 23);
             this.txtHoTen.TabIndex = 25;
             // 
-            // MaDocGia
+            // lblMaDocGia
             // 
-            this.MaDocGia.Location = new System.Drawing.Point(294, 42);
-            this.MaDocGia.Name = "MaDocGia";
-            this.MaDocGia.ReadOnly = true;
-            this.MaDocGia.Size = new System.Drawing.Size(190, 23);
-            this.MaDocGia.TabIndex = 24;
+            this.lblMaDocGia.Location = new System.Drawing.Point(294, 41);
+            this.lblMaDocGia.Name = "lblMaDocGia";
+            this.lblMaDocGia.ReadOnly = true;
+            this.lblMaDocGia.Size = new System.Drawing.Size(190, 23);
+            this.lblMaDocGia.TabIndex = 24;
             // 
             // txtLoaiDocGia
             // 
@@ -314,15 +324,6 @@
             this.listView2.TabIndex = 0;
             this.listView2.UseCompatibleStateImageBehavior = false;
             // 
-            // txtNgayTao
-            // 
-            this.txtNgayTao.Location = new System.Drawing.Point(294, 154);
-            this.txtNgayTao.Name = "txtNgayTao";
-            this.txtNgayTao.ReadOnly = true;
-            this.txtNgayTao.Size = new System.Drawing.Size(190, 23);
-            this.txtNgayTao.TabIndex = 29;
-            this.txtNgayTao.Tag = "";
-            // 
             // frmDocGiaChiTiet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,7 +338,6 @@
             this.MaximizeBox = false;
             this.Name = "frmDocGiaChiTiet";
             this.Text = "Chi tiết độc giả";
-            this.Load += new System.EventHandler(this.frmDocGiaChiTiet_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -368,7 +368,7 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtGioiTinh;
         private System.Windows.Forms.TextBox txtHoTen;
-        private System.Windows.Forms.TextBox MaDocGia;
+        private System.Windows.Forms.TextBox lblMaDocGia;
         private System.Windows.Forms.TextBox txtLoaiDocGia;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox groupBox2;

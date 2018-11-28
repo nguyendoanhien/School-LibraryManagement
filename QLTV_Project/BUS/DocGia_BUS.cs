@@ -46,5 +46,11 @@ namespace BUS
             DocGia_DAO docgia_dao = new DocGia_DAO();
             return docgia_dao.XoaDocGia(maCanXoa);
         }
+
+        public DataTable LoadComBoBoxLoaiDocGia()
+        {
+            DocGia_DAO docgia_dao = new DocGia_DAO();
+            return docgia_dao.LoadComBoBoxLoaiDocGia();
+        }
     }
 }
