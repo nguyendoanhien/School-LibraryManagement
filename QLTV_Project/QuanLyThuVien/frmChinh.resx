@@ -1026,31 +1026,31 @@
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="comboBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="cbxDauSachLoai.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cbxDauSachLoai.Location" type="System.Drawing.Point, System.Drawing">
     <value>227, 16</value>
   </data>
-  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="cbxDauSachLoai.Size" type="System.Drawing.Size, System.Drawing">
     <value>166, 28</value>
   </data>
-  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="cbxDauSachLoai.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="comboBox1.Text" xml:space="preserve">
+  <data name="cbxDauSachLoai.Text" xml:space="preserve">
     <value>-- Chọn thể loại --</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
-    <value>comboBox1</value>
+  <data name="&gt;&gt;cbxDauSachLoai.Name" xml:space="preserve">
+    <value>cbxDauSachLoai</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;cbxDauSachLoai.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cbxDauSachLoai.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cbxDauSachLoai.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="textBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -3814,13 +3814,13 @@
     <value>Xin chào! </value>
   </data>
   <data name="tTNgườiDùngToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>155, 22</value>
   </data>
   <data name="tTNgườiDùngToolStripMenuItem.Text" xml:space="preserve">
     <value>TT Người dùng</value>
   </data>
   <data name="tTĐộcGiảToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>155, 22</value>
   </data>
   <data name="tTĐộcGiảToolStripMenuItem.Text" xml:space="preserve">
     <value>TT Độc giả</value>
@@ -7208,6 +7208,12 @@
   <data name="&gt;&gt;txtTenNguoiDN.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;đăngXuấtToolStripMenuItem.Name" xml:space="preserve">
+    <value>đăngXuấtToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;đăngXuấtToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;thôngTinToolStripMenuItem.Name" xml:space="preserve">
     <value>thôngTinToolStripMenuItem</value>
   </data>
@@ -7290,12 +7296,6 @@
     <value>aboutToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;đăngXuấtToolStripMenuItem.Name" xml:space="preserve">
-    <value>đăngXuấtToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;đăngXuấtToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

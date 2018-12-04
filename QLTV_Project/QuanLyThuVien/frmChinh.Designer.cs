@@ -65,7 +65,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbxDauSachLoai = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -169,6 +169,7 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.txtTenNguoiDN = new System.Windows.Forms.ToolStripMenuItem();
+            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tTNgườiDùngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tTĐộcGiảToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -183,7 +184,6 @@
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hướngDẫnSửDụngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
@@ -516,7 +516,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.cbxDauSachLoai);
             this.groupBox3.Controls.Add(this.textBox1);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
@@ -529,11 +529,11 @@
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cbxDauSachLoai
             // 
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Name = "comboBox1";
+            resources.ApplyResources(this.cbxDauSachLoai, "cbxDauSachLoai");
+            this.cbxDauSachLoai.FormattingEnabled = true;
+            this.cbxDauSachLoai.Name = "cbxDauSachLoai";
             // 
             // textBox1
             // 
@@ -600,7 +600,6 @@
             resources.ApplyResources(this.cbxLoaiDG, "cbxLoaiDG");
             this.cbxLoaiDG.FormattingEnabled = true;
             this.cbxLoaiDG.Name = "cbxLoaiDG";
-            this.cbxLoaiDG.SelectedIndexChanged += new System.EventHandler(this.cbxLoaiDG_SelectedIndexChanged);
             // 
             // txNhap
             // 
@@ -1242,6 +1241,12 @@
             resources.ApplyResources(this.txtTenNguoiDN, "txtTenNguoiDN");
             this.txtTenNguoiDN.Click += new System.EventHandler(this.txtTenNguoiDN_Click);
             // 
+            // đăngXuấtToolStripMenuItem
+            // 
+            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
+            resources.ApplyResources(this.đăngXuấtToolStripMenuItem, "đăngXuấtToolStripMenuItem");
+            this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
+            // 
             // thôngTinToolStripMenuItem
             // 
             this.thôngTinToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1345,11 +1350,6 @@
             this.aboutToolStripMenuItem.Image = global::QuanLyThuVien.Properties.Resources.aboutusicon;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
-            // 
-            // đăngXuấtToolStripMenuItem
-            // 
-            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            resources.ApplyResources(this.đăngXuấtToolStripMenuItem, "đăngXuấtToolStripMenuItem");
             // 
             // frmChinh
             // 
@@ -1504,7 +1504,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxDauSachLoai;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Panel panel6;

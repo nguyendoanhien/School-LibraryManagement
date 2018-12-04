@@ -23,6 +23,7 @@ namespace QuanLyThuVien
             LoadBangDocGia();
             LoadBangDauSach();
             LoadComBoBoxLoaiDocGia();
+            LoadComBoBoxLoaiDauSach();
         }
         
 
@@ -107,9 +108,9 @@ namespace QuanLyThuVien
             else MessageBox.Show("Không thành công!!");
         }
 
+        DauSach_BUS dausach_bus = new DauSach_BUS();
         public void LoadBangDauSach()
         {
-            DauSach_BUS dausach_bus = new DauSach_BUS();
             dgvDSSach.DataSource = dausach_bus.LoadDauSach();
         }
 
@@ -118,16 +119,31 @@ namespace QuanLyThuVien
 
         }
 
-        private void cbxLoaiDG_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         public void LoadComBoBoxLoaiDocGia()
         {
             DocGia_BUS docGia_BUS = new DocGia_BUS();
-            cbxLoaiDG.DataSource = docGia_BUS.LoadComBoBoxLoaiDocGia();
-            
+            cbxLoaiDG.DisplayMember = "TenLoaiDocGia";
+            cbxLoaiDG.ValueMember = "MaLoaiDocGia";
+            cbxLoaiDG.DataSource = docGia_BUS.LoadComBoBoxLoaiDocGia("DocGiaLoai").Tables[0];
+        }
+
+        public void LoadComBoBoxLoaiDauSach()
+        {
+            DauSachLoai_BUS dauSachLoai_BUS = new DauSachLoai_BUS();
+            cbxDauSachLoai.DataSource = dauSachLoai_BUS.LoadComBoBoxDauSachLoai("DauSachLoai").Tables[0];
+            cbxDauSachLoai.DisplayMember = "TenLoaiDauSach";
+            cbxDauSachLoai.ValueMember = "MaLoaiDauSach";
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult ret = MessageBox.Show("Hỏi thoát", "Bạn có muốn thoát?", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if(ret == DialogResult.OK)
+            {
+                this.Close();
+            }
         }
     }
 }
