@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 using System.Data;
 namespace DAO
 {
-    public class DauSach_DAO
+    public class DauSach_DAO: ConnectDatabase
     {
         public DataTable LoadDauSach()
         {
@@ -37,5 +37,30 @@ namespace DAO
             }
             return null;
         }
+
+        public DataSet LoadComBoDauSach(string tenbang)
+        {
+            try
+            {
+                // Ket noi
+                string conn = ConnectDatabase.GetConnString();
+
+                // Query string - vì mình để TV_ID là identity (giá trị tự tăng dần) nên ko cần fải insert ID
+                string sql = "SELECT * from DauSachLoai";
+                return getdataset(sql, tenbang);
+
+                // Query và kiểm tra
+
+
+            }
+            catch (Exception e)
+            {
+
+            }
+            return null;
+        }
     }
 }
+
+
+

@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DauSach.cs" />
+    <Compile Include="DauSachLoai.cs" />
     <Compile Include="DocGia.cs" />
     <Compile Include="DocGiaLoai.cs" />
     <Compile Include="NCC.cs" />

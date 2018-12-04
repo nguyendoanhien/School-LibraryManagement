@@ -16,5 +16,7 @@ namespace BUS
         {
             return dausach_dao.LoadDauSach();
         }
+
+       
     }
 }

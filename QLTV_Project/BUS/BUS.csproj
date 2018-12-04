@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DauSachLoai_BUS.cs" />
     <Compile Include="DauSach_BUS.cs" />
     <Compile Include="DocGia_BUS.cs" />
     <Compile Include="LoaiDocGia_BUS.cs" />
