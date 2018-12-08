@@ -38,7 +38,7 @@
             this.dateMuon = new System.Windows.Forms.DateTimePicker();
             this.txtMaDocGia = new System.Windows.Forms.TextBox();
             this.MaThuThu = new System.Windows.Forms.Label();
-            this.lblMaPhieuMuon = new System.Windows.Forms.Label();
+            this.lblMaPhieuTra = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -59,23 +59,15 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnXoaSach = new System.Windows.Forms.Button();
-            this.btnThemSach = new System.Windows.Forms.Button();
-            this.btnChiTietSach = new System.Windows.Forms.Button();
-            this.txtTenSach = new System.Windows.Forms.TextBox();
-            this.txtMaDauSach = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.grpbx = new System.Windows.Forms.GroupBox();
+            this.dtgvDsSachMuon = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.listView2 = new System.Windows.Forms.ListView();
+            this.dtgvDsPhat = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.dtgvDsSachTra = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.pnTTPhieuTra.SuspendLayout();
@@ -84,12 +76,15 @@
             this.panel4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.grpbx.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDsSachMuon)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDsPhat)).BeginInit();
             this.panel2.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDsSachTra)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -122,7 +117,7 @@
             this.groupBox1.Controls.Add(this.dateMuon);
             this.groupBox1.Controls.Add(this.txtMaDocGia);
             this.groupBox1.Controls.Add(this.MaThuThu);
-            this.groupBox1.Controls.Add(this.lblMaPhieuMuon);
+            this.groupBox1.Controls.Add(this.lblMaPhieuTra);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label3);
@@ -208,15 +203,15 @@
             this.MaThuThu.Size = new System.Drawing.Size(203, 26);
             this.MaThuThu.TabIndex = 3;
             // 
-            // lblMaPhieuMuon
+            // lblMaPhieuTra
             // 
-            this.lblMaPhieuMuon.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblMaPhieuMuon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblMaPhieuMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaPhieuMuon.Location = new System.Drawing.Point(376, 29);
-            this.lblMaPhieuMuon.Name = "lblMaPhieuMuon";
-            this.lblMaPhieuMuon.Size = new System.Drawing.Size(203, 26);
-            this.lblMaPhieuMuon.TabIndex = 1;
+            this.lblMaPhieuTra.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblMaPhieuTra.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblMaPhieuTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaPhieuTra.Location = new System.Drawing.Point(376, 29);
+            this.lblMaPhieuTra.Name = "lblMaPhieuTra";
+            this.lblMaPhieuTra.Size = new System.Drawing.Size(203, 26);
+            this.lblMaPhieuTra.TabIndex = 1;
             // 
             // label2
             // 
@@ -441,132 +436,32 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.groupBox2);
+            this.panel3.Controls.Add(this.grpbx);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(550, 147);
             this.panel3.TabIndex = 0;
             // 
-            // groupBox2
+            // grpbx
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.btnXoaSach);
-            this.groupBox2.Controls.Add(this.btnThemSach);
-            this.groupBox2.Controls.Add(this.btnChiTietSach);
-            this.groupBox2.Controls.Add(this.txtTenSach);
-            this.groupBox2.Controls.Add(this.txtMaDauSach);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(0, 0);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(550, 147);
-            this.groupBox2.TabIndex = 19;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Tìm sách trả";
+            this.grpbx.Controls.Add(this.dtgvDsSachMuon);
+            this.grpbx.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grpbx.Location = new System.Drawing.Point(0, 0);
+            this.grpbx.Name = "grpbx";
+            this.grpbx.Size = new System.Drawing.Size(550, 147);
+            this.grpbx.TabIndex = 0;
+            this.grpbx.TabStop = false;
+            this.grpbx.Text = "Danh sách sách mượn";
             // 
-            // textBox1
+            // dtgvDsSachMuon
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(157, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 26);
-            this.textBox1.TabIndex = 19;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(38, 66);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 20);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Mã sách";
-            // 
-            // btnXoaSach
-            // 
-            this.btnXoaSach.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnXoaSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoaSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaSach.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
-            this.btnXoaSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaSach.Location = new System.Drawing.Point(435, 86);
-            this.btnXoaSach.Name = "btnXoaSach";
-            this.btnXoaSach.Size = new System.Drawing.Size(81, 41);
-            this.btnXoaSach.TabIndex = 17;
-            this.btnXoaSach.Text = "Xoá";
-            this.btnXoaSach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnXoaSach.UseVisualStyleBackColor = true;
-            // 
-            // btnThemSach
-            // 
-            this.btnThemSach.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnThemSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemSach.Image = global::QuanLyThuVien.Properties.Resources.add;
-            this.btnThemSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemSach.Location = new System.Drawing.Point(435, 13);
-            this.btnThemSach.Name = "btnThemSach";
-            this.btnThemSach.Size = new System.Drawing.Size(81, 41);
-            this.btnThemSach.TabIndex = 12;
-            this.btnThemSach.Text = "Thêm";
-            this.btnThemSach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThemSach.UseVisualStyleBackColor = true;
-            // 
-            // btnChiTietSach
-            // 
-            this.btnChiTietSach.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnChiTietSach.Location = new System.Drawing.Point(372, 23);
-            this.btnChiTietSach.Name = "btnChiTietSach";
-            this.btnChiTietSach.Size = new System.Drawing.Size(49, 23);
-            this.btnChiTietSach.TabIndex = 9;
-            this.btnChiTietSach.Text = "...";
-            this.btnChiTietSach.UseVisualStyleBackColor = true;
-            // 
-            // txtTenSach
-            // 
-            this.txtTenSach.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTenSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenSach.Location = new System.Drawing.Point(157, 105);
-            this.txtTenSach.Name = "txtTenSach";
-            this.txtTenSach.Size = new System.Drawing.Size(203, 26);
-            this.txtTenSach.TabIndex = 11;
-            // 
-            // txtMaDauSach
-            // 
-            this.txtMaDauSach.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMaDauSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaDauSach.Location = new System.Drawing.Point(157, 22);
-            this.txtMaDauSach.Name = "txtMaDauSach";
-            this.txtMaDauSach.Size = new System.Drawing.Size(203, 26);
-            this.txtMaDauSach.TabIndex = 8;
-            // 
-            // label13
-            // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(38, 107);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(74, 20);
-            this.label13.TabIndex = 10;
-            this.label13.Text = "Tên sách";
-            // 
-            // label14
-            // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(38, 25);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(100, 20);
-            this.label14.TabIndex = 7;
-            this.label14.Text = "Mã đầu sách";
+            this.dtgvDsSachMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvDsSachMuon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvDsSachMuon.Location = new System.Drawing.Point(3, 16);
+            this.dtgvDsSachMuon.Name = "dtgvDsSachMuon";
+            this.dtgvDsSachMuon.Size = new System.Drawing.Size(544, 128);
+            this.dtgvDsSachMuon.TabIndex = 0;
             // 
             // panel5
             // 
@@ -589,7 +484,7 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.listView2);
+            this.groupBox5.Controls.Add(this.dtgvDsPhat);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox5.Location = new System.Drawing.Point(0, 0);
             this.groupBox5.Name = "groupBox5";
@@ -598,14 +493,14 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Danh sách phạt";
             // 
-            // listView2
+            // dtgvDsPhat
             // 
-            this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView2.Location = new System.Drawing.Point(3, 16);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(328, 206);
-            this.listView2.TabIndex = 0;
-            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.dtgvDsPhat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvDsPhat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvDsPhat.Location = new System.Drawing.Point(3, 16);
+            this.dtgvDsPhat.Name = "dtgvDsPhat";
+            this.dtgvDsPhat.Size = new System.Drawing.Size(328, 206);
+            this.dtgvDsPhat.TabIndex = 0;
             // 
             // panel2
             // 
@@ -618,7 +513,7 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.listView1);
+            this.groupBox4.Controls.Add(this.dtgvDsSachTra);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Location = new System.Drawing.Point(0, 0);
             this.groupBox4.Name = "groupBox4";
@@ -627,14 +522,14 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Danh sách sách trả";
             // 
-            // listView1
+            // dtgvDsSachTra
             // 
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.Location = new System.Drawing.Point(3, 16);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(744, 206);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.dtgvDsSachTra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvDsSachTra.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvDsSachTra.Location = new System.Drawing.Point(3, 16);
+            this.dtgvDsSachTra.Name = "dtgvDsSachTra";
+            this.dtgvDsSachTra.Size = new System.Drawing.Size(744, 206);
+            this.dtgvDsSachTra.TabIndex = 0;
             // 
             // frmPhieuTra
             // 
@@ -661,13 +556,15 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.grpbx.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDsSachMuon)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDsPhat)).EndInit();
             this.panel2.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDsSachTra)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -682,7 +579,7 @@
         private System.Windows.Forms.DateTimePicker dateMuon;
         private System.Windows.Forms.TextBox txtMaDocGia;
         private System.Windows.Forms.Label MaThuThu;
-        private System.Windows.Forms.Label lblMaPhieuMuon;
+        private System.Windows.Forms.Label lblMaPhieuTra;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
@@ -697,16 +594,6 @@
         private System.Windows.Forms.Panel pnThongTin;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnXoaSach;
-        private System.Windows.Forms.Button btnThemSach;
-        private System.Windows.Forms.Button btnChiTietSach;
-        private System.Windows.Forms.TextBox txtTenSach;
-        private System.Windows.Forms.TextBox txtMaDauSach;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
@@ -718,9 +605,11 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.GroupBox grpbx;
+        private System.Windows.Forms.DataGridView dtgvDsSachMuon;
+        private System.Windows.Forms.DataGridView dtgvDsPhat;
+        private System.Windows.Forms.DataGridView dtgvDsSachTra;
     }
 }

@@ -46,6 +46,7 @@
     <Compile Include="LoaiDocGia_DAO.cs" />
     <Compile Include="NCC_DAO.cs" />
     <Compile Include="PhieuNhap_DAO.cs" />
+    <Compile Include="PhieuTra_DAO.cs" />
     <Compile Include="SqlHelper.cs" />
     <Compile Include="ConnectDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
