@@ -20,7 +20,8 @@ namespace BUS
 
         public bool ThemDauSach(int gtthem)
         {
-            return phieunhap_dao.XoaDauSach(gtxoa);
+            
+            return phieunhap_dao.XoaDauSach(gtthem);
         }
 
 
