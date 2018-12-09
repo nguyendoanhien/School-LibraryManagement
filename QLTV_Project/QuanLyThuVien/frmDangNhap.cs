@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using DTO;
+using BUS;
 namespace QuanLyThuVien
 {
     public partial class frmDangNhap : Form
@@ -15,6 +16,11 @@ namespace QuanLyThuVien
         public frmDangNhap()
         {
             InitializeComponent();
+        }
+
+        public frmDangNhap(string maThuThu)
+        {
+            this.maThuThu = txtTenDangNhap.Text ;
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -28,6 +34,10 @@ namespace QuanLyThuVien
                 this.Close();
         }
 
+        private string maThuThu;
+
+        public string MaThuThu { get => maThuThu; set => maThuThu = value; }
+
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             if (txtTenDangNhap.Text == 7 + "" && txtMatKhau.Text == "hienmup")
@@ -37,7 +47,6 @@ namespace QuanLyThuVien
                 frmChinh frm = new frmChinh();
                 if (frm.ShowDialog() == DialogResult.OK)
                 {
-                     
                 }
                 this.Close();
             }

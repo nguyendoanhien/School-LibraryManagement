@@ -37,7 +37,8 @@ namespace QuanLyThuVien
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-
+            int gtThem = 1;
+            phieunhap_bus.ThemDauSach(gtThem);
         }
 
         private void btnDSDauSach_Click(object sender, EventArgs e)
@@ -49,6 +50,12 @@ namespace QuanLyThuVien
                 String dgvselected = frm.dgvDSDauSach.Rows[index].Cells[0].Value.ToString().Trim();
                 MessageBox.Show(dgvselected);
             }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            int gtxoa = 1;
+            phieunhap_bus.XoaDauSach(gtxoa);
         }
     }
 }

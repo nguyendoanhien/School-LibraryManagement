@@ -64,5 +64,12 @@ namespace DAO
             return false;
         }
 
+        public bool XoaDauSach(int gtxoa)
+        {
+            bool s = true;
+            return s;
+        }
+
+
     }
 }

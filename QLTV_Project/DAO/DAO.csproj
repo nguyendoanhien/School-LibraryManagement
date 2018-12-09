@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -45,6 +46,7 @@
     <Compile Include="DocGia_DAO.cs" />
     <Compile Include="LoaiDocGia_DAO.cs" />
     <Compile Include="NCC_DAO.cs" />
+    <Compile Include="PhieuMuon_DAO.cs" />
     <Compile Include="PhieuNhap_DAO.cs" />
     <Compile Include="PhieuTra_DAO.cs" />
     <Compile Include="SqlHelper.cs" />

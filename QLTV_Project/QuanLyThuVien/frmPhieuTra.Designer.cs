@@ -31,7 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnTimPhieuMuon = new System.Windows.Forms.Button();
+            this.txtMaPhieuMuon = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnChiTietDG = new System.Windows.Forms.Button();
             this.dateTra = new System.Windows.Forms.DateTimePicker();
@@ -60,7 +61,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.grpbx = new System.Windows.Forms.GroupBox();
-            this.dtgvDsSachMuon = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -68,6 +68,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dtgvDsSachTra = new System.Windows.Forms.DataGridView();
+            this.dtgvDsSachMuon = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.pnTTPhieuTra.SuspendLayout();
@@ -77,7 +79,6 @@
             this.groupBox3.SuspendLayout();
             this.panel3.SuspendLayout();
             this.grpbx.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvDsSachMuon)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -85,6 +86,7 @@
             this.panel2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDsSachTra)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDsSachMuon)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -110,7 +112,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.btnTimPhieuMuon);
+            this.groupBox1.Controls.Add(this.txtMaPhieuMuon);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.btnChiTietDG);
             this.groupBox1.Controls.Add(this.dateTra);
@@ -132,14 +135,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin phiếu trả";
             // 
-            // textBox2
+            // btnTimPhieuMuon
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(376, 95);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(203, 26);
-            this.textBox2.TabIndex = 17;
+            this.btnTimPhieuMuon.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnTimPhieuMuon.Image = global::QuanLyThuVien.Properties.Resources.search;
+            this.btnTimPhieuMuon.Location = new System.Drawing.Point(591, 91);
+            this.btnTimPhieuMuon.Name = "btnTimPhieuMuon";
+            this.btnTimPhieuMuon.Size = new System.Drawing.Size(55, 30);
+            this.btnTimPhieuMuon.TabIndex = 18;
+            this.btnTimPhieuMuon.UseVisualStyleBackColor = true;
+            this.btnTimPhieuMuon.Click += new System.EventHandler(this.btnTimPhieuMuon_Click);
+            // 
+            // txtMaPhieuMuon
+            // 
+            this.txtMaPhieuMuon.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtMaPhieuMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaPhieuMuon.Location = new System.Drawing.Point(376, 95);
+            this.txtMaPhieuMuon.Name = "txtMaPhieuMuon";
+            this.txtMaPhieuMuon.Size = new System.Drawing.Size(203, 26);
+            this.txtMaPhieuMuon.TabIndex = 17;
             // 
             // label6
             // 
@@ -155,9 +169,9 @@
             // btnChiTietDG
             // 
             this.btnChiTietDG.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnChiTietDG.Location = new System.Drawing.Point(591, 131);
+            this.btnChiTietDG.Location = new System.Drawing.Point(591, 122);
             this.btnChiTietDG.Name = "btnChiTietDG";
-            this.btnChiTietDG.Size = new System.Drawing.Size(49, 23);
+            this.btnChiTietDG.Size = new System.Drawing.Size(55, 32);
             this.btnChiTietDG.TabIndex = 6;
             this.btnChiTietDG.Text = "...";
             this.btnChiTietDG.UseVisualStyleBackColor = true;
@@ -454,15 +468,6 @@
             this.grpbx.TabStop = false;
             this.grpbx.Text = "Danh sách sách mượn";
             // 
-            // dtgvDsSachMuon
-            // 
-            this.dtgvDsSachMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvDsSachMuon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgvDsSachMuon.Location = new System.Drawing.Point(3, 16);
-            this.dtgvDsSachMuon.Name = "dtgvDsSachMuon";
-            this.dtgvDsSachMuon.Size = new System.Drawing.Size(544, 128);
-            this.dtgvDsSachMuon.TabIndex = 0;
-            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.panel6);
@@ -531,6 +536,25 @@
             this.dtgvDsSachTra.Size = new System.Drawing.Size(744, 206);
             this.dtgvDsSachTra.TabIndex = 0;
             // 
+            // dtgvDsSachMuon
+            // 
+            this.dtgvDsSachMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvDsSachMuon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1});
+            this.dtgvDsSachMuon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvDsSachMuon.Location = new System.Drawing.Point(3, 16);
+            this.dtgvDsSachMuon.MultiSelect = false;
+            this.dtgvDsSachMuon.Name = "dtgvDsSachMuon";
+            this.dtgvDsSachMuon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvDsSachMuon.Size = new System.Drawing.Size(544, 128);
+            this.dtgvDsSachMuon.TabIndex = 0;
+            this.dtgvDsSachMuon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvDsSachMuon_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Chọn";
+            this.Column1.Name = "Column1";
+            // 
             // frmPhieuTra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -557,7 +581,6 @@
             this.groupBox3.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.grpbx.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvDsSachMuon)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
@@ -565,6 +588,7 @@
             this.panel2.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDsSachTra)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDsSachMuon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -589,7 +613,7 @@
         private System.Windows.Forms.Panel pnLuuThoat;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtMaPhieuMuon;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel pnThongTin;
         private System.Windows.Forms.Panel panel4;
@@ -608,8 +632,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox grpbx;
-        private System.Windows.Forms.DataGridView dtgvDsSachMuon;
         private System.Windows.Forms.DataGridView dtgvDsPhat;
         private System.Windows.Forms.DataGridView dtgvDsSachTra;
+        private System.Windows.Forms.Button btnTimPhieuMuon;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
+        public System.Windows.Forms.DataGridView dtgvDsSachMuon;
     }
 }

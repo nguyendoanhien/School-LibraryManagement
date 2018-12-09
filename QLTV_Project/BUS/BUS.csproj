@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -47,6 +48,7 @@
     <Compile Include="DocGia_BUS.cs" />
     <Compile Include="LoaiDocGia_BUS.cs" />
     <Compile Include="NCC_BUS.cs" />
+    <Compile Include="PhieuMuon_BUS.cs" />
     <Compile Include="PhieuNhap_BUS.cs" />
     <Compile Include="PhieuTra_BUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
