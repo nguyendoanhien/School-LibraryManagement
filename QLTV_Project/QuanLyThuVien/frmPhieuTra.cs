@@ -15,6 +15,8 @@ namespace QuanLyThuVien
         public frmPhieuTra()
         {
             InitializeComponent();
+            
+            dtgvDsSachTra_KhoiTao();
             HienThi();
         }
 
@@ -30,12 +32,15 @@ namespace QuanLyThuVien
 
         public void HienThiSachDangMuon()
         {
+          
             dtgvDsSachMuon.DataSource = phieuTra_BUS.LoadSachMuon(int.Parse(txtMaPhieuMuon.Text));
+           
         }
 
         private void btnTimPhieuMuon_Click(object sender, EventArgs e)
         {
             HienThiSachDangMuon();
+            dtgvDsSachMuon_KhoiTao();
         }
 
         private void dtgvDsSachMuon_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -45,12 +50,34 @@ namespace QuanLyThuVien
             string maDauSach = dtgvDsSachMuon.Rows[e.RowIndex].Cells[3].Value.ToString();
             string ngayHenTra = dtgvDsSachMuon.Rows[e.RowIndex].Cells[4].Value.ToString();
             //int index = dtgvDsSachTra.RowCount - 1;
+            
             DataGridViewRow row = (DataGridViewRow)dtgvDsSachTra.Rows[0].Clone();
-            row.Cells[0].Value = maPhieuTra;
-            row.Cells[1].Value = maPhieuMuon;
-            row.Cells[2].Value = maDauSach;
-            row.Cells[3].Value = ngayHenTra;
+            row.Cells[1].Value = maPhieuTra;
+            row.Cells[2].Value = maPhieuMuon;
+            row.Cells[3].Value = maDauSach;
+            row.Cells[4].Value = ngayHenTra;
             dtgvDsSachTra.Rows.Add(row);
         }
+
+        private void dtgvDsSachMuon_KhoiTao()
+        {
+          if(dtgvDsSachMuon!=null)
+            { 
+            dtgvDsSachMuon.Columns[1].HeaderText = "Mã phiếu trả";
+            dtgvDsSachMuon.Columns[2].HeaderText = "Mã phiếu mượn";
+            dtgvDsSachMuon.Columns[3].HeaderText = "Mã đầu sách";
+            dtgvDsSachMuon.Columns[4].HeaderText = "Ngày hẹn trả";
+            }
+        }
+        private void dtgvDsSachTra_KhoiTao()
+        {
+            dtgvDsSachTra.ColumnCount += 4;
+            dtgvDsSachTra.Columns[1].Name = "Mã phiếu trả";
+            dtgvDsSachTra.Columns[2].Name = "Mã phiếu mượn";
+            dtgvDsSachTra.Columns[3].Name = "Mã đầu sách";
+            dtgvDsSachTra.Columns[4].Name = "Ngày hẹn trả";
+        }
+
+
     }
 }
