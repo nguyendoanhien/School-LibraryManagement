@@ -46,16 +46,18 @@ namespace QuanLyThuVien
         private string maDauSach;
         private string maSach;
         private string tenDauSach;
-
+        private int NgayTra;
         public string MaDauSach { get => maDauSach; set => maDauSach = value; }
         public string MaSach { get => maSach; set => maSach = value; }
         public string TenDauSach { get => tenDauSach; set => tenDauSach = value; }
+        public int NgayTra1 { get => NgayTra; set => NgayTra = value; }
 
         public void dgvDSSach_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             this.maDauSach = dgvDSSach.Rows[e.RowIndex].Cells[0].Value.ToString();
             this.maSach = dgvDSSach.Rows[e.RowIndex].Cells[1].Value.ToString();
             this.tenDauSach = dgvDSSach.Rows[e.RowIndex].Cells[3].Value.ToString();
+            this.NgayTra = int.Parse(dgvDSSach.Rows[e.RowIndex].Cells[5].Value.ToString());
             this.DialogResult = System.Windows.Forms.DialogResult.OK;
         }
 

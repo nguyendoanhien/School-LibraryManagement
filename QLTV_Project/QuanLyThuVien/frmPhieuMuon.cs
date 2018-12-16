@@ -19,6 +19,7 @@ namespace QuanLyThuVien
             InitializeComponent();
             HienThiMaPhieuMuon();
         }
+        
 
         public void HienThiMaPhieuMuon()
         {
@@ -90,6 +91,7 @@ namespace QuanLyThuVien
 
         private void txtMaDocGia_TextChanged(object sender, EventArgs e)
         {
+
         }
     }
 }
