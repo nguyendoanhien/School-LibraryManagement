@@ -39,15 +39,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-<<<<<<< .mine
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-=======
             this.lblTenSach = new System.Windows.Forms.Label();
             this.lblMaSach = new System.Windows.Forms.Label();
             this.lblMaDauSach = new System.Windows.Forms.Label();
->>>>>>> .theirs
             this.btnXoaSach = new System.Windows.Forms.Button();
             this.btnThemSach = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -80,7 +74,7 @@
             // 
             this.lsDSsachMuon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lsDSsachMuon.Location = new System.Drawing.Point(6, 33);
-            this.lsDSsachMuon.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lsDSsachMuon.Margin = new System.Windows.Forms.Padding(6);
             this.lsDSsachMuon.Name = "lsDSsachMuon";
             this.lsDSsachMuon.Size = new System.Drawing.Size(1218, 253);
             this.lsDSsachMuon.TabIndex = 0;
@@ -91,7 +85,7 @@
             this.panel5.Controls.Add(this.groupBox3);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 643);
-            this.panel5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel5.Margin = new System.Windows.Forms.Padding(6);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1230, 292);
             this.panel5.TabIndex = 11;
@@ -102,9 +96,9 @@
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox3.Size = new System.Drawing.Size(1230, 292);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
@@ -116,7 +110,7 @@
             this.panel4.Controls.Add(this.btnLuu);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 935);
-            this.panel4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel4.Margin = new System.Windows.Forms.Padding(6);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1230, 109);
             this.panel4.TabIndex = 10;
@@ -128,7 +122,7 @@
             this.btnThoat.Image = global::QuanLyThuVien.Properties.Resources.EXIT;
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThoat.Location = new System.Drawing.Point(1007, 11);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(6);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(149, 76);
             this.btnThoat.TabIndex = 5;
@@ -144,7 +138,7 @@
             this.btnLuu.Image = global::QuanLyThuVien.Properties.Resources.savee;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLuu.Location = new System.Drawing.Point(825, 11);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(6);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(149, 76);
             this.btnLuu.TabIndex = 4;
@@ -158,7 +152,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(55, 150);
+            this.label5.Location = new System.Drawing.Point(57, 113);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(121, 32);
@@ -168,10 +162,10 @@
             // btnChiTietSach
             // 
             this.btnChiTietSach.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnChiTietSach.Location = new System.Drawing.Point(704, 68);
-            this.btnChiTietSach.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnChiTietSach.Location = new System.Drawing.Point(693, 27);
+            this.btnChiTietSach.Margin = new System.Windows.Forms.Padding(6);
             this.btnChiTietSach.Name = "btnChiTietSach";
-            this.btnChiTietSach.Size = new System.Drawing.Size(90, 42);
+            this.btnChiTietSach.Size = new System.Drawing.Size(101, 54);
             this.btnChiTietSach.TabIndex = 9;
             this.btnChiTietSach.Text = "...";
             this.btnChiTietSach.UseVisualStyleBackColor = true;
@@ -182,7 +176,7 @@
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(55, 225);
+            this.label13.Location = new System.Drawing.Point(57, 177);
             this.label13.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(131, 32);
@@ -194,7 +188,7 @@
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(55, 74);
+            this.label14.Location = new System.Drawing.Point(55, 49);
             this.label14.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(176, 32);
@@ -215,79 +209,46 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox2.Size = new System.Drawing.Size(1230, 303);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tìm sách mượn";
             // 
-<<<<<<< .mine
-            // label10
-            // 
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label10.Location = new System.Drawing.Point(266, 223);
-            this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(416, 42);
-            this.label10.TabIndex = 21;
-            // 
-            // label9
-            // 
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label9.Location = new System.Drawing.Point(266, 146);
-            this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(416, 42);
-            this.label9.TabIndex = 20;
-            // 
-            // label6
-            // 
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Location = new System.Drawing.Point(266, 68);
-            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(416, 42);
-            this.label6.TabIndex = 19;
-            // 
-=======
             // lblTenSach
             // 
             this.lblTenSach.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblTenSach.Location = new System.Drawing.Point(145, 121);
+            this.lblTenSach.Location = new System.Drawing.Point(307, 161);
             this.lblTenSach.Name = "lblTenSach";
-            this.lblTenSach.Size = new System.Drawing.Size(227, 23);
+            this.lblTenSach.Size = new System.Drawing.Size(372, 48);
             this.lblTenSach.TabIndex = 21;
             // 
             // lblMaSach
             // 
             this.lblMaSach.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblMaSach.Location = new System.Drawing.Point(145, 79);
+            this.lblMaSach.Location = new System.Drawing.Point(310, 97);
             this.lblMaSach.Name = "lblMaSach";
-            this.lblMaSach.Size = new System.Drawing.Size(227, 23);
+            this.lblMaSach.Size = new System.Drawing.Size(372, 48);
             this.lblMaSach.TabIndex = 20;
             // 
             // lblMaDauSach
             // 
             this.lblMaDauSach.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblMaDauSach.Location = new System.Drawing.Point(145, 37);
+            this.lblMaDauSach.Location = new System.Drawing.Point(310, 33);
             this.lblMaDauSach.Name = "lblMaDauSach";
-            this.lblMaDauSach.Size = new System.Drawing.Size(227, 23);
+            this.lblMaDauSach.Size = new System.Drawing.Size(369, 48);
             this.lblMaDauSach.TabIndex = 19;
             // 
-
-
-
->>>>>>> .theirs
             // btnXoaSach
             // 
             this.btnXoaSach.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnXoaSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaSach.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
             this.btnXoaSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaSach.Location = new System.Drawing.Point(887, 186);
-            this.btnXoaSach.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnXoaSach.Location = new System.Drawing.Point(881, 138);
+            this.btnXoaSach.Margin = new System.Windows.Forms.Padding(6);
             this.btnXoaSach.Name = "btnXoaSach";
             this.btnXoaSach.Size = new System.Drawing.Size(149, 76);
             this.btnXoaSach.TabIndex = 17;
@@ -302,10 +263,10 @@
             this.btnThemSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemSach.Image = global::QuanLyThuVien.Properties.Resources.add;
             this.btnThemSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemSach.Location = new System.Drawing.Point(887, 52);
-            this.btnThemSach.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnThemSach.Location = new System.Drawing.Point(881, 27);
+            this.btnThemSach.Margin = new System.Windows.Forms.Padding(6);
             this.btnThemSach.Name = "btnThemSach";
-            this.btnThemSach.Size = new System.Drawing.Size(149, 76);
+            this.btnThemSach.Size = new System.Drawing.Size(149, 69);
             this.btnThemSach.TabIndex = 12;
             this.btnThemSach.Text = "Thêm";
             this.btnThemSach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -317,7 +278,7 @@
             this.panel3.Controls.Add(this.groupBox2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 340);
-            this.panel3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel3.Margin = new System.Windows.Forms.Padding(6);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1230, 303);
             this.panel3.TabIndex = 9;
@@ -327,7 +288,7 @@
             this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 85);
-            this.panel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel2.Margin = new System.Windows.Forms.Padding(6);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1230, 255);
             this.panel2.TabIndex = 8;
@@ -348,9 +309,9 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox1.Size = new System.Drawing.Size(1230, 255);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -361,7 +322,7 @@
             this.btnChiTietDG.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnChiTietDG.Image = global::QuanLyThuVien.Properties.Resources.search;
             this.btnChiTietDG.Location = new System.Drawing.Point(693, 172);
-            this.btnChiTietDG.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnChiTietDG.Margin = new System.Windows.Forms.Padding(6);
             this.btnChiTietDG.Name = "btnChiTietDG";
             this.btnChiTietDG.Size = new System.Drawing.Size(101, 46);
             this.btnChiTietDG.TabIndex = 6;
@@ -376,7 +337,7 @@
             this.dateTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTra.Location = new System.Drawing.Point(944, 107);
-            this.dateTra.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dateTra.Margin = new System.Windows.Forms.Padding(6);
             this.dateTra.Name = "dateTra";
             this.dateTra.Size = new System.Drawing.Size(189, 39);
             this.dateTra.TabIndex = 15;
@@ -388,7 +349,7 @@
             this.dateMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateMuon.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateMuon.Location = new System.Drawing.Point(944, 54);
-            this.dateMuon.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dateMuon.Margin = new System.Windows.Forms.Padding(6);
             this.dateMuon.Name = "dateMuon";
             this.dateMuon.Size = new System.Drawing.Size(189, 39);
             this.dateMuon.TabIndex = 13;
@@ -398,7 +359,7 @@
             this.txtMaDocGia.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMaDocGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaDocGia.Location = new System.Drawing.Point(310, 172);
-            this.txtMaDocGia.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtMaDocGia.Margin = new System.Windows.Forms.Padding(6);
             this.txtMaDocGia.Name = "txtMaDocGia";
             this.txtMaDocGia.Size = new System.Drawing.Size(369, 39);
             this.txtMaDocGia.TabIndex = 5;
@@ -504,7 +465,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1230, 85);
             this.panel1.TabIndex = 7;
@@ -521,7 +482,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.Name = "frmPhieuMuon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
