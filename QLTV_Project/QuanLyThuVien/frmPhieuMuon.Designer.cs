@@ -1,4 +1,4 @@
-namespace QuanLyThuVien
+﻿namespace QuanLyThuVien
 {
     partial class frmPhieuMuon
     {
@@ -73,13 +73,7 @@ namespace QuanLyThuVien
             // 
             // lsDSsachMuon
             // 
-            this.lsDSsachMuon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lsDSsachMuon.Location = new System.Drawing.Point(6, 33);
-            this.lsDSsachMuon.Margin = new System.Windows.Forms.Padding(6);
-            this.lsDSsachMuon.Name = "lsDSsachMuon";
-            this.lsDSsachMuon.Size = new System.Drawing.Size(1218, 253);
-            this.lsDSsachMuon.TabIndex = 0;
-            this.lsDSsachMuon.UseCompatibleStateImageBehavior = false;
+
             // 
             // panel5
             // 
@@ -103,7 +97,7 @@ namespace QuanLyThuVien
             this.groupBox3.Size = new System.Drawing.Size(1230, 292);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Danh s�ch m??n";
+            this.groupBox3.Text = "Danh sách mượn";
             // 
             // panel4
             // 
@@ -127,7 +121,7 @@ namespace QuanLyThuVien
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(149, 76);
             this.btnThoat.TabIndex = 5;
-            this.btnThoat.Text = "Tho�t";
+            this.btnThoat.Text = "Thoát";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
@@ -143,7 +137,7 @@ namespace QuanLyThuVien
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(149, 76);
             this.btnLuu.TabIndex = 4;
-            this.btnLuu.Text = "L?u";
+            this.btnLuu.Text = "Lưu";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
@@ -158,7 +152,7 @@ namespace QuanLyThuVien
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(121, 32);
             this.label5.TabIndex = 18;
-            this.label5.Text = "M� s�ch";
+            this.label5.Text = "Mã sách";
             // 
             // btnChiTietSach
             // 
@@ -182,7 +176,7 @@ namespace QuanLyThuVien
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(131, 32);
             this.label13.TabIndex = 10;
-            this.label13.Text = "T�n s�ch";
+            this.label13.Text = "Tên sách";
             // 
             // label14
             // 
@@ -194,7 +188,7 @@ namespace QuanLyThuVien
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(176, 32);
             this.label14.TabIndex = 7;
-            this.label14.Text = "M� ??u s�ch";
+            this.label14.Text = "Mã ??u sách";
             // 
             // groupBox2
             // 
@@ -216,7 +210,7 @@ namespace QuanLyThuVien
             this.groupBox2.Size = new System.Drawing.Size(1230, 303);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "T�m s�ch m??n";
+            this.groupBox2.Text = "Tìm sách mượn";
             // 
             // lblTenSach
             // 
@@ -253,7 +247,7 @@ namespace QuanLyThuVien
             this.btnXoaSach.Name = "btnXoaSach";
             this.btnXoaSach.Size = new System.Drawing.Size(149, 76);
             this.btnXoaSach.TabIndex = 17;
-            this.btnXoaSach.Text = "Xo�";
+            this.btnXoaSach.Text = "Xoá";
             this.btnXoaSach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoaSach.UseVisualStyleBackColor = true;
             this.btnXoaSach.Click += new System.EventHandler(this.btnXoaSach_Click);
@@ -269,7 +263,7 @@ namespace QuanLyThuVien
             this.btnThemSach.Name = "btnThemSach";
             this.btnThemSach.Size = new System.Drawing.Size(149, 69);
             this.btnThemSach.TabIndex = 12;
-            this.btnThemSach.Text = "Th�m";
+            this.btnThemSach.Text = "Thêm";
             this.btnThemSach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemSach.UseVisualStyleBackColor = true;
             this.btnThemSach.Click += new System.EventHandler(this.btnThemSach_Click);
@@ -316,7 +310,7 @@ namespace QuanLyThuVien
             this.groupBox1.Size = new System.Drawing.Size(1230, 255);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Th�ng tin phi?u m??n";
+            this.groupBox1.Text = "Thông tin phiếu mượn";
             // 
             // btnChiTietDG
             // 
@@ -398,7 +392,7 @@ namespace QuanLyThuVien
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(210, 32);
             this.label2.TabIndex = 0;
-            this.label2.Text = "M� phi?u m??n";
+            this.label2.Text = "Mã phiếu mượn";
             // 
             // label8
             // 
@@ -410,7 +404,7 @@ namespace QuanLyThuVien
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(159, 32);
             this.label8.TabIndex = 12;
-            this.label8.Text = "Ng�y m??n";
+            this.label8.Text = "Ngày mượn";
             // 
             // label3
             // 
@@ -422,7 +416,7 @@ namespace QuanLyThuVien
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(153, 32);
             this.label3.TabIndex = 4;
-            this.label3.Text = "M� ??c gi?";
+            this.label3.Text = "Mã độc giả";
             // 
             // label7
             // 
@@ -434,7 +428,7 @@ namespace QuanLyThuVien
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(121, 32);
             this.label7.TabIndex = 14;
-            this.label7.Text = "Ng�y tr?";
+            this.label7.Text = "Ngày tr?";
             // 
             // label4
             // 
@@ -446,7 +440,7 @@ namespace QuanLyThuVien
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(185, 32);
             this.label4.TabIndex = 2;
-            this.label4.Text = "M� nh�n vi�n";
+            this.label4.Text = "Mã nhân viên";
             // 
             // label1
             // 
@@ -458,7 +452,7 @@ namespace QuanLyThuVien
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1230, 85);
             this.label1.TabIndex = 0;
-            this.label1.Text = "T?O PHI?U M??N";
+            this.label1.Text = "TẠO PHIẾU MƯỢN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -496,7 +490,7 @@ namespace QuanLyThuVien
             this.MaximizeBox = false;
             this.Name = "frmPhieuMuon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Phi?u m??n";
+            this.Text = "Phiếu mượn";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel5.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
