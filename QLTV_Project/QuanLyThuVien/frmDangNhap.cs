@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BUS;
+using ExtensionMethods;
 namespace QuanLyThuVien
 {
     public partial class frmDangNhap : Form
     {
+        private NhanVien nv=new NhanVien();
         public frmDangNhap()
         {
             InitializeComponent();
@@ -38,10 +40,37 @@ namespace QuanLyThuVien
 
         public string MaThuThu { get => maThuThu; set => maThuThu = value; }
 
+        private void XuLyNhoTaiKhoan()
+        {
+            if (chkRemember.Checked)
+            {
+                Properties.Settings.Default.user = txtTenDangNhap.Text;
+                Properties.Settings.Default.pass = txtMatKhau.Text;
+                
+            }
+            else
+            {
+                Properties.Settings.Default.user ="";
+                Properties.Settings.Default.pass = "";
+
+            }
+            Properties.Settings.Default.Save();
+        }
+
+        private void LuuSessionDangNhap()
+        {
+            MySessions.Sessions.Add("user",this.nv);
+        }
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            if (txtTenDangNhap.Text == 7 + "" && txtMatKhau.Text == "hienmup")
+            nv.MaNhanVien = txtTenDangNhap.Text.ToInt32();
+            nv.MatKhau = txtMatKhau.Text;
+
+            
+            if (NhanVien_BUS.KiemTraNhanVien(nv))
             {
+                LuuSessionDangNhap();
+                XuLyNhoTaiKhoan();
                 MessageBox.Show("Đăng nhập thành công");
                 this.Hide();
                 frmChinh frm = new frmChinh();
@@ -52,6 +81,14 @@ namespace QuanLyThuVien
             }
             else
                 MessageBox.Show("Sai tài khoản hoặc mật khẩu");
+
+            
+        }
+
+        private void frmDangNhap_Load(object sender, EventArgs e)
+        {
+            txtTenDangNhap.Text = Properties.Settings.Default.user;
+            txtMatKhau.Text = Properties.Settings.Default.pass;
         }
     }
 }

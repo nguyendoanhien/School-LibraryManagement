@@ -38,6 +38,7 @@
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.btnTraSach = new System.Windows.Forms.Button();
+            this.chkRemember = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             this.lblTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenDangNhap.Location = new System.Drawing.Point(56, 53);
             this.lblTenDangNhap.Name = "lblTenDangNhap";
-            this.lblTenDangNhap.Size = new System.Drawing.Size(105, 17);
+            this.lblTenDangNhap.Size = new System.Drawing.Size(175, 29);
             this.lblTenDangNhap.TabIndex = 0;
             this.lblTenDangNhap.Text = "Tên đăng nhập";
             // 
@@ -57,24 +58,24 @@
             this.lblMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMatKhau.Location = new System.Drawing.Point(56, 99);
             this.lblMatKhau.Name = "lblMatKhau";
-            this.lblMatKhau.Size = new System.Drawing.Size(66, 17);
+            this.lblMatKhau.Size = new System.Drawing.Size(109, 29);
             this.lblMatKhau.TabIndex = 2;
             this.lblMatKhau.Text = "Mật khẩu";
             // 
             // txtTenDangNhap
             // 
             this.txtTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDangNhap.Location = new System.Drawing.Point(176, 50);
+            this.txtTenDangNhap.Location = new System.Drawing.Point(263, 53);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(204, 23);
+            this.txtTenDangNhap.Size = new System.Drawing.Size(204, 34);
             this.txtTenDangNhap.TabIndex = 1;
             // 
             // txtMatKhau
             // 
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Location = new System.Drawing.Point(176, 98);
+            this.txtMatKhau.Location = new System.Drawing.Point(263, 93);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(204, 23);
+            this.txtMatKhau.Size = new System.Drawing.Size(204, 34);
             this.txtMatKhau.TabIndex = 3;
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
@@ -84,7 +85,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(451, 31);
+            this.panel1.Size = new System.Drawing.Size(626, 31);
             this.panel1.TabIndex = 4;
             // 
             // label3
@@ -94,7 +95,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(451, 31);
+            this.label3.Size = new System.Drawing.Size(626, 31);
             this.label3.TabIndex = 0;
             this.label3.Text = "ĐĂNG NHẬP";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -105,9 +106,9 @@
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(300, 145);
+            this.btnThoat.Location = new System.Drawing.Point(435, 195);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(117, 41);
+            this.btnThoat.Size = new System.Drawing.Size(169, 41);
             this.btnThoat.TabIndex = 6;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -119,9 +120,9 @@
             this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.Image = ((System.Drawing.Image)(resources.GetObject("btnDangNhap.Image")));
             this.btnDangNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangNhap.Location = new System.Drawing.Point(164, 145);
+            this.btnDangNhap.Location = new System.Drawing.Point(222, 195);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(117, 41);
+            this.btnDangNhap.Size = new System.Drawing.Size(173, 41);
             this.btnDangNhap.TabIndex = 5;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -134,18 +135,31 @@
             this.btnTraSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTraSach.Image = ((System.Drawing.Image)(resources.GetObject("btnTraSach.Image")));
             this.btnTraSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTraSach.Location = new System.Drawing.Point(28, 145);
+            this.btnTraSach.Location = new System.Drawing.Point(22, 195);
             this.btnTraSach.Name = "btnTraSach";
-            this.btnTraSach.Size = new System.Drawing.Size(117, 41);
+            this.btnTraSach.Size = new System.Drawing.Size(160, 41);
             this.btnTraSach.TabIndex = 4;
             this.btnTraSach.Text = " Tra sách";
             this.btnTraSach.UseVisualStyleBackColor = true;
             // 
+            // chkRemember
+            // 
+            this.chkRemember.AutoSize = true;
+            this.chkRemember.Checked = true;
+            this.chkRemember.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkRemember.Location = new System.Drawing.Point(263, 133);
+            this.chkRemember.Name = "chkRemember";
+            this.chkRemember.Size = new System.Drawing.Size(167, 28);
+            this.chkRemember.TabIndex = 7;
+            this.chkRemember.Text = "Nhớ tài khoản ?";
+            this.chkRemember.UseVisualStyleBackColor = true;
+            // 
             // frmDangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(451, 216);
+            this.ClientSize = new System.Drawing.Size(626, 287);
+            this.Controls.Add(this.chkRemember);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.btnTraSach);
@@ -160,6 +174,7 @@
             this.Name = "frmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
+            this.Load += new System.EventHandler(this.frmDangNhap_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDangNhap_KeyDown);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -178,6 +193,7 @@
         private System.Windows.Forms.Button btnTraSach;
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.CheckBox chkRemember;
     }
 }
 

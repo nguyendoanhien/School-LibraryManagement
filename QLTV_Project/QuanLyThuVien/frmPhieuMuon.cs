@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,7 +18,7 @@ namespace QuanLyThuVien
         {
             InitializeComponent();
             HienThiMaPhieuMuon();
-            
+            HienThiMaNhanVien();
         }
         
 
@@ -27,8 +27,15 @@ namespace QuanLyThuVien
             lblMaPhieuMuon.Text = phieumuon_bus.LayMaPhieuMuon() + "";
         }
 
+      
+
         public void HienThiMaNhanVien()
         {
+            //Load "m� nh�n vi�n" ??ng nh?p
+            //NhanVien nv = (NhanVien)MySessions.Sessions["user"];
+            //txtMaNhanVien.Text = nv.MaNhanVien+"";
+
+            
         }
 
         private void KT_DocGia_Click(object sender, EventArgs e)
@@ -36,20 +43,20 @@ namespace QuanLyThuVien
             DocGia_BUS docGia_BUS = new DocGia_BUS();
             if (txtMaDocGia.Text == "")
             {
-                MessageBox.Show("Nhập mã độc giả!!!");
+                MessageBox.Show("Nh?p m� ??c gi?!!!");
                 txtMaDocGia.Focus();
             }
             else if (docGia_BUS.Kt_DocGia(int.Parse(txtMaDocGia.Text)) == 1)
             {
-                MessageBox.Show("Có thể mượn sách");
+                MessageBox.Show("C� th? m??n s�ch");
             }
             else if (docGia_BUS.Kt_DocGia(int.Parse(txtMaDocGia.Text)) == 0)
             {
-                MessageBox.Show("Đây không phải là độc giả");
+                MessageBox.Show("?�y kh�ng ph?i l� ??c gi?");
             }
             else
             { 
-                MessageBox.Show("Không được mượn sách nha","Cảnh báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("Kh�ng ???c m??n s�ch nha","C?nh b�o",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 txtMaDocGia.Text = "";
                 txtMaDocGia.Focus();
             }
@@ -80,22 +87,22 @@ namespace QuanLyThuVien
         //{
         //    if (dgvSachMuon != null)
         //    {
-        //        dgvSachMuon.Columns[0].HeaderText = "Mã sách";
-        //        dgvSachMuon.Columns[1].HeaderText = "Mã đầu sách";
-        //        dgvSachMuon.Columns[2].HeaderText = "Tên đầu sách";
-        //        dgvSachMuon.Columns[3].HeaderText = "Ngày hẹn trả";
+        //        dgvSachMuon.Columns[0].HeaderText = "M� s�ch";
+        //        dgvSachMuon.Columns[1].HeaderText = "M� ??u s�ch";
+        //        dgvSachMuon.Columns[2].HeaderText = "T�n ??u s�ch";
+        //        dgvSachMuon.Columns[3].HeaderText = "Ng�y h?n tr?";
         //    }
         //}
 
         private void btnThemSach_Click(object sender, EventArgs e)
         {
-            dgvSachMuon.Columns[0].HeaderText = "Mã sách";
-            dgvSachMuon.Columns[1].HeaderText = "Mã đầu sách";
-            dgvSachMuon.Columns[2].HeaderText = "Tên đầu sách";
-            dgvSachMuon.Columns[3].HeaderText = "Ngày hẹn trả";
+            dgvSachMuon.Columns[0].HeaderText = "M� s�ch";
+            dgvSachMuon.Columns[1].HeaderText = "M� ??u s�ch";
+            dgvSachMuon.Columns[2].HeaderText = "T�n ??u s�ch";
+            dgvSachMuon.Columns[3].HeaderText = "Ng�y h?n tr?";
             var index = dgvSachMuon.Rows.Add();
-            dgvSachMuon.Rows[index].Cells["Mã sách"].Value = lblMaSach.Text;
-            dgvSachMuon.Rows[index].Cells["Mã đầu sách"].Value = lblMaDauSach.Text;
+            dgvSachMuon.Rows[index].Cells["M� s�ch"].Value = lblMaSach.Text;
+            dgvSachMuon.Rows[index].Cells["M� ??u s�ch"].Value = lblMaDauSach.Text;
         }
 
         private void btnXoaSach_Click(object sender, EventArgs e)

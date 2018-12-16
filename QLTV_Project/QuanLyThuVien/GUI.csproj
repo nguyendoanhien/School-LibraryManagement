@@ -125,6 +125,7 @@
     <Compile Include="frmThemDocGia.Designer.cs">
       <DependentUpon>frmThemDocGia.cs</DependentUpon>
     </Compile>
+    <Compile Include="MySessions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -250,6 +251,10 @@
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{d78d123a-27a4-4caa-b217-81ddfab53cb2}</Project>
       <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExtensionMethods\ExtensionMethods.csproj">
+      <Project>{d52c36a9-6b78-4a2b-a18c-628ed446a0c8}</Project>
+      <Name>ExtensionMethods</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
