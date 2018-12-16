@@ -18,6 +18,7 @@ namespace QuanLyThuVien
         {
             InitializeComponent();
             HienThiMaPhieuMuon();
+            HienThiMaNhanVien();
         }
 
         public void HienThiMaPhieuMuon()
@@ -25,8 +26,15 @@ namespace QuanLyThuVien
             lblMaPhieuMuon.Text = phieumuon_bus.LayMaPhieuMuon() + "";
         }
 
+      
+
         public void HienThiMaNhanVien()
         {
+            //Load "mã nhân viên" đăng nhập
+            //NhanVien nv = (NhanVien)MySessions.Sessions["user"];
+            //txtMaNhanVien.Text = nv.MaNhanVien+"";
+
+            
         }
 
 

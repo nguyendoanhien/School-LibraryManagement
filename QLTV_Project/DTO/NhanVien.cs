@@ -8,7 +8,10 @@ namespace DTO
 {
     public class NhanVien
     {
-        int Ma { get; set; }
-        string Ten { get; set; }
+        public int MaNhanVien { get; set; }
+
+        public string MatKhau { get; set; }
+
     }
+
 }
