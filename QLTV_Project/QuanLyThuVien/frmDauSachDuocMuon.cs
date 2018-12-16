@@ -22,10 +22,10 @@ namespace QuanLyThuVien
 
         public void LoadComBoBoxLoaiDauSach()
         {
-            DauSachLoai_BUS dauSachLoai_BUS = new DauSachLoai_BUS();
-            cbxDauSachLoai.DataSource = dauSachLoai_BUS.LoadComBoBoxDauSachLoai("DauSachLoai").Tables[0];
-            cbxDauSachLoai.DisplayMember = "TenLoaiDauSach";
-            cbxDauSachLoai.ValueMember = "MaLoaiDauSach";
+            //DauSachLoai_BUS dauSachLoai_BUS = new DauSachLoai_BUS();
+            //cbxMucTim.DataSource = dauSachLoai_BUS.LoadComBoBoxDauSachLoai("DauSachLoai").Tables[0];
+            //cbxMucTim.DisplayMember = "TenLoaiDauSach";
+            //cbxMucTim.ValueMember = "MaLoaiDauSach";
         }
 
         public void LoadBangDauSach()
@@ -34,7 +34,13 @@ namespace QuanLyThuVien
             dgvDSSach.DataSource = DauSach_BUS.LoadDauSach();
         }
 
-
+        private void txtTimSachMuon_TextChanged(object sender, EventArgs e)
+        {
+            //BindingSource bs = new BindingSource();
+            //bs.DataSource = dgvDSSach.DataSource;
+            //bs.Filter = columnNameToSearch + " like '%" + textBox1.Text + "%'";
+            //dataGridView1.DataSource = bs;
+        }
     }
 
 

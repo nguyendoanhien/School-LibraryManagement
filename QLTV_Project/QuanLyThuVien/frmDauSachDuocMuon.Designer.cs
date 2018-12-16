@@ -30,12 +30,11 @@
         {
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.cbxDauSachLoai = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTimSachMuon = new System.Windows.Forms.TextBox();
             this.panel14 = new System.Windows.Forms.Panel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.dgvDSSach = new System.Windows.Forms.DataGridView();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel14.SuspendLayout();
@@ -54,9 +53,8 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.cbxDauSachLoai);
-            this.groupBox3.Controls.Add(this.textBox1);
+            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.txtTimSachMuon);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
             this.groupBox3.Name = "groupBox3";
@@ -65,36 +63,14 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tìm kiếm";
             // 
-            // button1
+            // txtTimSachMuon
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Image = global::QuanLyThuVien.Properties.Resources.search;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(652, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 28);
-            this.button1.TabIndex = 2;
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // cbxDauSachLoai
-            // 
-            this.cbxDauSachLoai.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbxDauSachLoai.FormattingEnabled = true;
-            this.cbxDauSachLoai.Location = new System.Drawing.Point(151, 16);
-            this.cbxDauSachLoai.Name = "cbxDauSachLoai";
-            this.cbxDauSachLoai.Size = new System.Drawing.Size(166, 21);
-            this.cbxDauSachLoai.TabIndex = 1;
-            this.cbxDauSachLoai.Text = "-- Chọn thể loại --";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(332, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(299, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtTimSachMuon.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTimSachMuon.Location = new System.Drawing.Point(281, 21);
+            this.txtTimSachMuon.Name = "txtTimSachMuon";
+            this.txtTimSachMuon.Size = new System.Drawing.Size(299, 20);
+            this.txtTimSachMuon.TabIndex = 0;
+            this.txtTimSachMuon.TextChanged += new System.EventHandler(this.txtTimSachMuon_TextChanged);
             // 
             // panel14
             // 
@@ -128,6 +104,18 @@
             this.dgvDSSach.Size = new System.Drawing.Size(704, 268);
             this.dgvDSSach.TabIndex = 0;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Mã đầu sách",
+            "Tên đầu sách",
+            "Đầu sách loại"});
+            this.comboBox1.Location = new System.Drawing.Point(145, 20);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(130, 21);
+            this.comboBox1.TabIndex = 1;
+            // 
             // frmDauSachDuocMuon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -151,11 +139,10 @@
 
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox cbxDauSachLoai;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTimSachMuon;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.DataGridView dgvDSSach;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
