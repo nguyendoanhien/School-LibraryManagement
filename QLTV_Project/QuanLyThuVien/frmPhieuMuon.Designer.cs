@@ -39,6 +39,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblTenSach = new System.Windows.Forms.Label();
+            this.lblMaSach = new System.Windows.Forms.Label();
+            this.lblMaDauSach = new System.Windows.Forms.Label();
             this.btnXoaSach = new System.Windows.Forms.Button();
             this.btnThemSach = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -57,9 +60,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -186,9 +186,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.lblTenSach);
+            this.groupBox2.Controls.Add(this.lblMaSach);
+            this.groupBox2.Controls.Add(this.lblMaDauSach);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.btnXoaSach);
             this.groupBox2.Controls.Add(this.btnThemSach);
@@ -203,6 +203,30 @@
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tìm sách mượn";
+            // 
+            // lblTenSach
+            // 
+            this.lblTenSach.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTenSach.Location = new System.Drawing.Point(145, 121);
+            this.lblTenSach.Name = "lblTenSach";
+            this.lblTenSach.Size = new System.Drawing.Size(227, 23);
+            this.lblTenSach.TabIndex = 21;
+            // 
+            // lblMaSach
+            // 
+            this.lblMaSach.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblMaSach.Location = new System.Drawing.Point(145, 79);
+            this.lblMaSach.Name = "lblMaSach";
+            this.lblMaSach.Size = new System.Drawing.Size(227, 23);
+            this.lblMaSach.TabIndex = 20;
+            // 
+            // lblMaDauSach
+            // 
+            this.lblMaDauSach.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblMaDauSach.Location = new System.Drawing.Point(145, 37);
+            this.lblMaDauSach.Name = "lblMaDauSach";
+            this.lblMaDauSach.Size = new System.Drawing.Size(227, 23);
+            this.lblMaDauSach.TabIndex = 19;
             // 
             // btnXoaSach
             // 
@@ -284,7 +308,7 @@
             this.btnChiTietDG.TabIndex = 6;
             this.btnChiTietDG.Text = "...";
             this.btnChiTietDG.UseVisualStyleBackColor = true;
-            this.btnChiTietDG.Click += new System.EventHandler(this.btnChiTietDG_Click);
+            this.btnChiTietDG.Click += new System.EventHandler(this.KT_DocGia_Click);
             // 
             // dateTra
             // 
@@ -316,6 +340,7 @@
             this.txtMaDocGia.Name = "txtMaDocGia";
             this.txtMaDocGia.Size = new System.Drawing.Size(203, 26);
             this.txtMaDocGia.TabIndex = 5;
+            this.txtMaDocGia.TextChanged += new System.EventHandler(this.txtMaDocGia_TextChanged);
             // 
             // MaThuThu
             // 
@@ -413,30 +438,6 @@
             this.panel1.Size = new System.Drawing.Size(671, 46);
             this.panel1.TabIndex = 7;
             // 
-            // label6
-            // 
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Location = new System.Drawing.Point(145, 37);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(227, 23);
-            this.label6.TabIndex = 19;
-            // 
-            // label9
-            // 
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label9.Location = new System.Drawing.Point(145, 79);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(227, 23);
-            this.label9.TabIndex = 20;
-            // 
-            // label10
-            // 
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label10.Location = new System.Drawing.Point(145, 121);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(227, 23);
-            this.label10.TabIndex = 21;
-            // 
             // frmPhieuMuon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -498,8 +499,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblTenSach;
+        private System.Windows.Forms.Label lblMaSach;
+        private System.Windows.Forms.Label lblMaDauSach;
     }
 }

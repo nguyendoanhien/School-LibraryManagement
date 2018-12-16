@@ -50,7 +50,7 @@ namespace QuanLyThuVien
             Close();
         }
 
-        private void btnChiTietDG_Click(object sender, EventArgs e)
+        private void KT_DocGia_Click(object sender, EventArgs e)
         {
             DocGia_BUS docGia_BUS = new DocGia_BUS();
             if (txtMaDocGia.Text == "")
@@ -79,8 +79,17 @@ namespace QuanLyThuVien
             frmDauSachDuocMuon frm = new frmDauSachDuocMuon();
             if (frm.ShowDialog() == DialogResult.OK)
             {
-                
+                string MaDauSach = frm.MaDauSach;
+                lblMaDauSach.Text = MaDauSach;
+                string MaSach = frm.MaSach;
+                lblMaSach.Text = MaSach;
+                string TenDauSach = frm.TenDauSach;
+                lblTenSach.Text = TenDauSach;
             }
+        }
+
+        private void txtMaDocGia_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }
