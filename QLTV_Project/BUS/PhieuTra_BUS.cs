@@ -14,13 +14,12 @@ namespace BUS
         PhieuTra_DAO phieuTra_DAO = new PhieuTra_DAO();
         public int MaPhieuTra()
         {
-            return phieuTra_DAO.MaPhieuNhap();
+            return phieuTra_DAO.MaPhieuTra();
         }
 
-        public DataTable LoadSachMuon(int maPhieuMuon)
+        public bool LuuPhieuTra()
         {
-            PhieuMuon_BUS phieuMuon_BUS = new PhieuMuon_BUS();
-            return phieuMuon_BUS.LoadSachMuon(maPhieuMuon);
+            return phieuTra_DAO.LuuPhieuTra();
         }
     }
 }

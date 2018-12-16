@@ -21,7 +21,7 @@ namespace QuanLyThuVien
 
         public void LoadDauSach()
         {
-            dgvDSDauSach.DataSource = dausach_bus.LoadDauSach();
+            dgvDSDauSach.DataSource = DauSach_BUS.LoadDauSach();
         }
 
         private void frmDauSach_Load(object sender, EventArgs e)

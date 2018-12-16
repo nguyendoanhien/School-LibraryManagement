@@ -16,5 +16,10 @@ namespace BUS
         {
             return phieuMuon_DAO.LoadSachMuon(maPhieuMuon);
         }
+
+        public int LayMaPhieuMuon()
+        {
+            return PhieuMuon_DAO.MaPhieuMuon();
+        }
     }
 }

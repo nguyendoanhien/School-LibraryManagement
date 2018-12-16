@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChinh));
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.sttTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel32 = new System.Windows.Forms.Panel();
@@ -40,7 +39,6 @@
             this.lsDSTra = new System.Windows.Forms.ListView();
             this.panel33 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnTim = new System.Windows.Forms.Button();
             this.lblSoLuong = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtTenSach = new System.Windows.Forms.TextBox();
@@ -57,14 +55,10 @@
             this.dgvDSSach = new System.Windows.Forms.DataGridView();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.cbxDauSachLoai = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -73,16 +67,12 @@
             this.dgvDocGia = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
             this.cbxLoaiDG = new System.Windows.Forms.ComboBox();
             this.txNhap = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.btnXoaDocGia = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.panel25 = new System.Windows.Forms.Panel();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
@@ -92,14 +82,10 @@
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel21 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.button14 = new System.Windows.Forms.Button();
             this.panel23 = new System.Windows.Forms.Panel();
-            this.button15 = new System.Windows.Forms.Button();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.button16 = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.button13 = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -111,14 +97,10 @@
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.button12 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.button9 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
@@ -130,14 +112,10 @@
             this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel38 = new System.Windows.Forms.Panel();
             this.panel39 = new System.Windows.Forms.Panel();
-            this.button24 = new System.Windows.Forms.Button();
             this.panel40 = new System.Windows.Forms.Panel();
-            this.button25 = new System.Windows.Forms.Button();
             this.panel41 = new System.Windows.Forms.Panel();
-            this.button26 = new System.Windows.Forms.Button();
             this.panel35 = new System.Windows.Forms.Panel();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.button21 = new System.Windows.Forms.Button();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
@@ -149,14 +127,10 @@
             this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel42 = new System.Windows.Forms.Panel();
             this.panel43 = new System.Windows.Forms.Panel();
-            this.button27 = new System.Windows.Forms.Button();
             this.panel44 = new System.Windows.Forms.Panel();
-            this.button28 = new System.Windows.Forms.Button();
             this.panel45 = new System.Windows.Forms.Panel();
-            this.button29 = new System.Windows.Forms.Button();
             this.panel36 = new System.Windows.Forms.Panel();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.button22 = new System.Windows.Forms.Button();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.tabPage9 = new System.Windows.Forms.TabPage();
@@ -164,12 +138,38 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel37 = new System.Windows.Forms.Panel();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.button23 = new System.Windows.Forms.Button();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.txtTenNguoiDN = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sttTime = new System.Windows.Forms.ToolStripStatusLabel();
+            this.btnTim = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.btnXoaDocGia = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
             this.thôngTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tTNgườiDùngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tTĐộcGiảToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -286,16 +286,6 @@
             this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.statusStrip1.Name = "statusStrip1";
             // 
-            // sttTime
-            // 
-            this.sttTime.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
-            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
-            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
-            this.sttTime.Image = global::QuanLyThuVien.Properties.Resources.clock;
-            resources.ApplyResources(this.sttTime, "sttTime");
-            this.sttTime.Name = "sttTime";
-            this.sttTime.Spring = true;
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -364,13 +354,6 @@
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
-            // 
-            // btnTim
-            // 
-            resources.ApplyResources(this.btnTim, "btnTim");
-            this.btnTim.Image = global::QuanLyThuVien.Properties.Resources.search;
-            this.btnTim.Name = "btnTim";
-            this.btnTim.UseVisualStyleBackColor = true;
             // 
             // lblSoLuong
             // 
@@ -472,13 +455,6 @@
             this.panel11.Controls.Add(this.button2);
             this.panel11.Name = "panel11";
             // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Image = global::QuanLyThuVien.Properties.Resources.edit;
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.Transparent;
@@ -486,26 +462,12 @@
             resources.ApplyResources(this.panel12, "panel12");
             this.panel12.Name = "panel12";
             // 
-            // button3
-            // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Transparent;
             this.panel13.Controls.Add(this.button8);
             resources.ApplyResources(this.panel13, "panel13");
             this.panel13.Name = "panel13";
-            // 
-            // button8
-            // 
-            resources.ApplyResources(this.button8, "button8");
-            this.button8.Image = global::QuanLyThuVien.Properties.Resources.add;
-            this.button8.Name = "button8";
-            this.button8.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -521,13 +483,6 @@
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Image = global::QuanLyThuVien.Properties.Resources.search;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // cbxDauSachLoai
             // 
@@ -588,13 +543,6 @@
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
             // 
-            // button7
-            // 
-            resources.ApplyResources(this.button7, "button7");
-            this.button7.Image = global::QuanLyThuVien.Properties.Resources.search;
-            this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
             // cbxLoaiDG
             // 
             resources.ApplyResources(this.cbxLoaiDG, "cbxLoaiDG");
@@ -621,13 +569,6 @@
             this.panel9.Controls.Add(this.button5);
             this.panel9.Name = "panel9";
             // 
-            // button5
-            // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Image = global::QuanLyThuVien.Properties.Resources.edit;
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Transparent;
@@ -635,27 +576,12 @@
             resources.ApplyResources(this.panel8, "panel8");
             this.panel8.Name = "panel8";
             // 
-            // btnXoaDocGia
-            // 
-            resources.ApplyResources(this.btnXoaDocGia, "btnXoaDocGia");
-            this.btnXoaDocGia.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
-            this.btnXoaDocGia.Name = "btnXoaDocGia";
-            this.btnXoaDocGia.UseVisualStyleBackColor = true;
-            this.btnXoaDocGia.Click += new System.EventHandler(this.btnXoaDocGia_Click);
-            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.Controls.Add(this.button6);
             resources.ApplyResources(this.panel7, "panel7");
             this.panel7.Name = "panel7";
-            // 
-            // button6
-            // 
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Image = global::QuanLyThuVien.Properties.Resources.add;
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // tabPage5
             // 
@@ -717,13 +643,6 @@
             this.panel22.Controls.Add(this.button14);
             this.panel22.Name = "panel22";
             // 
-            // button14
-            // 
-            resources.ApplyResources(this.button14, "button14");
-            this.button14.Image = global::QuanLyThuVien.Properties.Resources.edit;
-            this.button14.Name = "button14";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
             // panel23
             // 
             this.panel23.BackColor = System.Drawing.Color.Transparent;
@@ -731,26 +650,12 @@
             resources.ApplyResources(this.panel23, "panel23");
             this.panel23.Name = "panel23";
             // 
-            // button15
-            // 
-            resources.ApplyResources(this.button15, "button15");
-            this.button15.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
-            this.button15.Name = "button15";
-            this.button15.UseVisualStyleBackColor = true;
-            // 
             // panel24
             // 
             this.panel24.BackColor = System.Drawing.Color.Transparent;
             this.panel24.Controls.Add(this.button16);
             resources.ApplyResources(this.panel24, "panel24");
             this.panel24.Name = "panel24";
-            // 
-            // button16
-            // 
-            resources.ApplyResources(this.button16, "button16");
-            this.button16.Image = global::QuanLyThuVien.Properties.Resources.add;
-            this.button16.Name = "button16";
-            this.button16.UseVisualStyleBackColor = true;
             // 
             // panel15
             // 
@@ -766,13 +671,6 @@
             resources.ApplyResources(this.groupBox8, "groupBox8");
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.TabStop = false;
-            // 
-            // button13
-            // 
-            resources.ApplyResources(this.button13, "button13");
-            this.button13.Image = global::QuanLyThuVien.Properties.Resources.search;
-            this.button13.Name = "button13";
-            this.button13.UseVisualStyleBackColor = true;
             // 
             // comboBox3
             // 
@@ -845,13 +743,6 @@
             this.panel17.Controls.Add(this.button10);
             this.panel17.Name = "panel17";
             // 
-            // button10
-            // 
-            resources.ApplyResources(this.button10, "button10");
-            this.button10.Image = global::QuanLyThuVien.Properties.Resources.edit;
-            this.button10.Name = "button10";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.Transparent;
@@ -859,26 +750,12 @@
             resources.ApplyResources(this.panel18, "panel18");
             this.panel18.Name = "panel18";
             // 
-            // button11
-            // 
-            resources.ApplyResources(this.button11, "button11");
-            this.button11.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
-            this.button11.Name = "button11";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.Transparent;
             this.panel19.Controls.Add(this.button12);
             resources.ApplyResources(this.panel19, "panel19");
             this.panel19.Name = "panel19";
-            // 
-            // button12
-            // 
-            resources.ApplyResources(this.button12, "button12");
-            this.button12.Image = global::QuanLyThuVien.Properties.Resources.add;
-            this.button12.Name = "button12";
-            this.button12.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -894,13 +771,6 @@
             resources.ApplyResources(this.groupBox7, "groupBox7");
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.TabStop = false;
-            // 
-            // button9
-            // 
-            resources.ApplyResources(this.button9, "button9");
-            this.button9.Image = global::QuanLyThuVien.Properties.Resources.search;
-            this.button9.Name = "button9";
-            this.button9.UseVisualStyleBackColor = true;
             // 
             // comboBox2
             // 
@@ -973,13 +843,6 @@
             this.panel39.Controls.Add(this.button24);
             this.panel39.Name = "panel39";
             // 
-            // button24
-            // 
-            resources.ApplyResources(this.button24, "button24");
-            this.button24.Image = global::QuanLyThuVien.Properties.Resources.edit;
-            this.button24.Name = "button24";
-            this.button24.UseVisualStyleBackColor = true;
-            // 
             // panel40
             // 
             this.panel40.BackColor = System.Drawing.Color.Transparent;
@@ -987,26 +850,12 @@
             resources.ApplyResources(this.panel40, "panel40");
             this.panel40.Name = "panel40";
             // 
-            // button25
-            // 
-            resources.ApplyResources(this.button25, "button25");
-            this.button25.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
-            this.button25.Name = "button25";
-            this.button25.UseVisualStyleBackColor = true;
-            // 
             // panel41
             // 
             this.panel41.BackColor = System.Drawing.Color.Transparent;
             this.panel41.Controls.Add(this.button26);
             resources.ApplyResources(this.panel41, "panel41");
             this.panel41.Name = "panel41";
-            // 
-            // button26
-            // 
-            resources.ApplyResources(this.button26, "button26");
-            this.button26.Image = global::QuanLyThuVien.Properties.Resources.add;
-            this.button26.Name = "button26";
-            this.button26.UseVisualStyleBackColor = true;
             // 
             // panel35
             // 
@@ -1022,13 +871,6 @@
             resources.ApplyResources(this.groupBox13, "groupBox13");
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.TabStop = false;
-            // 
-            // button21
-            // 
-            resources.ApplyResources(this.button21, "button21");
-            this.button21.Image = global::QuanLyThuVien.Properties.Resources.search;
-            this.button21.Name = "button21";
-            this.button21.UseVisualStyleBackColor = true;
             // 
             // comboBox5
             // 
@@ -1101,13 +943,6 @@
             this.panel43.Controls.Add(this.button27);
             this.panel43.Name = "panel43";
             // 
-            // button27
-            // 
-            resources.ApplyResources(this.button27, "button27");
-            this.button27.Image = global::QuanLyThuVien.Properties.Resources.edit;
-            this.button27.Name = "button27";
-            this.button27.UseVisualStyleBackColor = true;
-            // 
             // panel44
             // 
             this.panel44.BackColor = System.Drawing.Color.Transparent;
@@ -1115,26 +950,12 @@
             resources.ApplyResources(this.panel44, "panel44");
             this.panel44.Name = "panel44";
             // 
-            // button28
-            // 
-            resources.ApplyResources(this.button28, "button28");
-            this.button28.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
-            this.button28.Name = "button28";
-            this.button28.UseVisualStyleBackColor = true;
-            // 
             // panel45
             // 
             this.panel45.BackColor = System.Drawing.Color.Transparent;
             this.panel45.Controls.Add(this.button29);
             resources.ApplyResources(this.panel45, "panel45");
             this.panel45.Name = "panel45";
-            // 
-            // button29
-            // 
-            resources.ApplyResources(this.button29, "button29");
-            this.button29.Image = global::QuanLyThuVien.Properties.Resources.add;
-            this.button29.Name = "button29";
-            this.button29.UseVisualStyleBackColor = true;
             // 
             // panel36
             // 
@@ -1150,13 +971,6 @@
             resources.ApplyResources(this.groupBox14, "groupBox14");
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.TabStop = false;
-            // 
-            // button22
-            // 
-            resources.ApplyResources(this.button22, "button22");
-            this.button22.Image = global::QuanLyThuVien.Properties.Resources.search;
-            this.button22.Name = "button22";
-            this.button22.UseVisualStyleBackColor = true;
             // 
             // comboBox6
             // 
@@ -1203,13 +1017,6 @@
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.TabStop = false;
             // 
-            // button23
-            // 
-            resources.ApplyResources(this.button23, "button23");
-            this.button23.Image = global::QuanLyThuVien.Properties.Resources.search;
-            this.button23.Name = "button23";
-            this.button23.UseVisualStyleBackColor = true;
-            // 
             // comboBox7
             // 
             resources.ApplyResources(this.comboBox7, "comboBox7");
@@ -1246,6 +1053,199 @@
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
             resources.ApplyResources(this.đăngXuấtToolStripMenuItem, "đăngXuấtToolStripMenuItem");
             this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
+            // 
+            // sttTime
+            // 
+            this.sttTime.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+            this.sttTime.Image = global::QuanLyThuVien.Properties.Resources.clock;
+            resources.ApplyResources(this.sttTime, "sttTime");
+            this.sttTime.Name = "sttTime";
+            this.sttTime.Spring = true;
+            // 
+            // btnTim
+            // 
+            resources.ApplyResources(this.btnTim, "btnTim");
+            this.btnTim.Image = global::QuanLyThuVien.Properties.Resources.search;
+            this.btnTim.Name = "btnTim";
+            this.btnTim.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Image = global::QuanLyThuVien.Properties.Resources.edit;
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            resources.ApplyResources(this.button8, "button8");
+            this.button8.Image = global::QuanLyThuVien.Properties.Resources.add;
+            this.button8.Name = "button8";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Image = global::QuanLyThuVien.Properties.Resources.search;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            resources.ApplyResources(this.button7, "button7");
+            this.button7.Image = global::QuanLyThuVien.Properties.Resources.search;
+            this.button7.Name = "button7";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            resources.ApplyResources(this.button5, "button5");
+            this.button5.Image = global::QuanLyThuVien.Properties.Resources.edit;
+            this.button5.Name = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // btnXoaDocGia
+            // 
+            resources.ApplyResources(this.btnXoaDocGia, "btnXoaDocGia");
+            this.btnXoaDocGia.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
+            this.btnXoaDocGia.Name = "btnXoaDocGia";
+            this.btnXoaDocGia.UseVisualStyleBackColor = true;
+            this.btnXoaDocGia.Click += new System.EventHandler(this.btnXoaDocGia_Click);
+            // 
+            // button6
+            // 
+            resources.ApplyResources(this.button6, "button6");
+            this.button6.Image = global::QuanLyThuVien.Properties.Resources.add;
+            this.button6.Name = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            resources.ApplyResources(this.button14, "button14");
+            this.button14.Image = global::QuanLyThuVien.Properties.Resources.edit;
+            this.button14.Name = "button14";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            resources.ApplyResources(this.button15, "button15");
+            this.button15.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
+            this.button15.Name = "button15";
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // button16
+            // 
+            resources.ApplyResources(this.button16, "button16");
+            this.button16.Image = global::QuanLyThuVien.Properties.Resources.add;
+            this.button16.Name = "button16";
+            this.button16.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            resources.ApplyResources(this.button13, "button13");
+            this.button13.Image = global::QuanLyThuVien.Properties.Resources.search;
+            this.button13.Name = "button13";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            resources.ApplyResources(this.button10, "button10");
+            this.button10.Image = global::QuanLyThuVien.Properties.Resources.edit;
+            this.button10.Name = "button10";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            resources.ApplyResources(this.button11, "button11");
+            this.button11.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
+            this.button11.Name = "button11";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            resources.ApplyResources(this.button12, "button12");
+            this.button12.Image = global::QuanLyThuVien.Properties.Resources.add;
+            this.button12.Name = "button12";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            resources.ApplyResources(this.button9, "button9");
+            this.button9.Image = global::QuanLyThuVien.Properties.Resources.search;
+            this.button9.Name = "button9";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button24
+            // 
+            resources.ApplyResources(this.button24, "button24");
+            this.button24.Image = global::QuanLyThuVien.Properties.Resources.edit;
+            this.button24.Name = "button24";
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // button25
+            // 
+            resources.ApplyResources(this.button25, "button25");
+            this.button25.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
+            this.button25.Name = "button25";
+            this.button25.UseVisualStyleBackColor = true;
+            // 
+            // button26
+            // 
+            resources.ApplyResources(this.button26, "button26");
+            this.button26.Image = global::QuanLyThuVien.Properties.Resources.add;
+            this.button26.Name = "button26";
+            this.button26.UseVisualStyleBackColor = true;
+            // 
+            // button21
+            // 
+            resources.ApplyResources(this.button21, "button21");
+            this.button21.Image = global::QuanLyThuVien.Properties.Resources.search;
+            this.button21.Name = "button21";
+            this.button21.UseVisualStyleBackColor = true;
+            // 
+            // button27
+            // 
+            resources.ApplyResources(this.button27, "button27");
+            this.button27.Image = global::QuanLyThuVien.Properties.Resources.edit;
+            this.button27.Name = "button27";
+            this.button27.UseVisualStyleBackColor = true;
+            // 
+            // button28
+            // 
+            resources.ApplyResources(this.button28, "button28");
+            this.button28.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
+            this.button28.Name = "button28";
+            this.button28.UseVisualStyleBackColor = true;
+            // 
+            // button29
+            // 
+            resources.ApplyResources(this.button29, "button29");
+            this.button29.Image = global::QuanLyThuVien.Properties.Resources.add;
+            this.button29.Name = "button29";
+            this.button29.UseVisualStyleBackColor = true;
+            // 
+            // button22
+            // 
+            resources.ApplyResources(this.button22, "button22");
+            this.button22.Image = global::QuanLyThuVien.Properties.Resources.search;
+            this.button22.Name = "button22";
+            this.button22.UseVisualStyleBackColor = true;
+            // 
+            // button23
+            // 
+            resources.ApplyResources(this.button23, "button23");
+            this.button23.Image = global::QuanLyThuVien.Properties.Resources.search;
+            this.button23.Name = "button23";
+            this.button23.UseVisualStyleBackColor = true;
             // 
             // thôngTinToolStripMenuItem
             // 

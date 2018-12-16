@@ -35,10 +35,9 @@ namespace BUS
             return docgia_dao.MaMax();
         }
 
-        public DataTable LoadBangDocGia()
+        public static DataTable LoadBangDocGia()
         {
-            DocGia_DAO docgia_dao = new DocGia_DAO();
-            return docgia_dao.LoadBangDocGia();
+            return DocGia_DAO.LoadBangDocGia();
         }
 
         public bool XoaDocGia(int maCanXoa)
@@ -49,8 +48,12 @@ namespace BUS
 
         public DataSet LoadComBoBoxLoaiDocGia(string tenbang)
         {
-            DocGia_DAO docgia_dao = new DocGia_DAO();
-            return docgia_dao.LoadComBoBoxLoaiDocGia(tenbang);
+            return DocGia_DAO.LoadComBoBoxLoaiDocGia(tenbang);
+        }
+
+        public int Kt_DocGia(int maDocGia)
+        {
+            return DocGia_DAO.TimDocGia(maDocGia);
         }
     }
 }

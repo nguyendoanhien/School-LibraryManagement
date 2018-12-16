@@ -11,7 +11,7 @@ namespace DAO
 {
     public class DauSach_DAO: ConnectDatabase
     {
-        public DataTable LoadDauSach()
+        public static  DataTable LoadDauSach()
         {
             try
             {
@@ -38,7 +38,7 @@ namespace DAO
             return null;
         }
 
-        public DataSet LoadComBoDauSach(string tenbang)
+        public static DataSet LoadComBoDauSach(string tenbang)
         {
             try
             {
@@ -46,8 +46,8 @@ namespace DAO
                 string conn = ConnectDatabase.GetConnString();
 
                 // Query string - vì mình để TV_ID là identity (giá trị tự tăng dần) nên ko cần fải insert ID
-                string sql = "SELECT * from DauSachLoai";
-                return getdataset(sql, tenbang);
+                string sql = "SELECT * from DauSachLoai ";
+                return getdataset(sql, tenbang, _conn);
 
                 // Query và kiểm tra
 

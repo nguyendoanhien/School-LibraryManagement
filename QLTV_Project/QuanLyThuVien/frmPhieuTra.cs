@@ -15,26 +15,20 @@ namespace QuanLyThuVien
         public frmPhieuTra()
         {
             InitializeComponent();
-            
             dtgvDsSachTra_KhoiTao();
-            HienThi();
+            HienThiMaPhieuTra();
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
         PhieuTra_BUS phieuTra_BUS = new PhieuTra_BUS();
-        public void HienThi()
+        public void HienThiMaPhieuTra()
         {
             lblMaPhieuTra.Text = phieuTra_BUS.MaPhieuTra() + "";
         }
 
         public void HienThiSachDangMuon()
         {
-          
-            dtgvDsSachMuon.DataSource = phieuTra_BUS.LoadSachMuon(int.Parse(txtMaPhieuMuon.Text));
-           
+            PhieuMuon_BUS phieuMuon_BUS = new PhieuMuon_BUS();
+            dtgvDsSachMuon.DataSource = phieuMuon_BUS.LoadSachMuon(int.Parse(txtMaPhieuMuon.Text));
         }
 
         private void btnTimPhieuMuon_Click(object sender, EventArgs e)
@@ -79,5 +73,16 @@ namespace QuanLyThuVien
         }
 
 
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            phieuTra_BUS.LuuPhieuTra();
+        }
+
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

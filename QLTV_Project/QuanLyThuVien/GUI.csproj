@@ -65,11 +65,23 @@
     <Compile Include="frmDauSach.Designer.cs">
       <DependentUpon>frmDauSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDauSachDuocMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDauSachDuocMuon.Designer.cs">
+      <DependentUpon>frmDauSachDuocMuon.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDocGiaChiTiet.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDocGiaChiTiet.Designer.cs">
       <DependentUpon>frmDocGiaChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocGiaDuocMuonSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocGiaDuocMuonSach.Designer.cs">
+      <DependentUpon>frmDocGiaDuocMuonSach.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLoaiDocGia.cs">
       <SubType>Form</SubType>
@@ -126,8 +138,14 @@
     <EmbeddedResource Include="frmDauSach.resx">
       <DependentUpon>frmDauSach.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDauSachDuocMuon.resx">
+      <DependentUpon>frmDauSachDuocMuon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDocGiaChiTiet.resx">
       <DependentUpon>frmDocGiaChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDocGiaDuocMuonSach.resx">
+      <DependentUpon>frmDocGiaDuocMuonSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoaiDocGia.resx">
       <DependentUpon>frmLoaiDocGia.cs</DependentUpon>

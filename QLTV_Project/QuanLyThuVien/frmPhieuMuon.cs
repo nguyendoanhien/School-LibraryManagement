@@ -7,14 +7,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BUS;
+using DTO;
 namespace QuanLyThuVien
 {
     public partial class frmPhieuMuon : Form
     {
+        PhieuMuon_BUS phieumuon_bus = new PhieuMuon_BUS();
         public frmPhieuMuon()
         {
             InitializeComponent();
+            HienThiMaPhieuMuon();
+        }
+
+        public void HienThiMaPhieuMuon()
+        {
+            lblMaPhieuMuon.Text = phieumuon_bus.LayMaPhieuMuon() + "";
+        }
+
+        public void HienThiMaNhanVien()
+        {
+        }
+
+
+        private void btnThemSach_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXoaSach_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -22,9 +50,38 @@ namespace QuanLyThuVien
             Close();
         }
 
-        private void btnThoat_Click_1(object sender, EventArgs e)
+        private void btnChiTietDG_Click(object sender, EventArgs e)
         {
-            Close();
+            DocGia_BUS docGia_BUS = new DocGia_BUS();
+            docGia_BUS.Kt_DocGia(int.Parse(txtMaDocGia.Text));
+            if (docGia_BUS.Kt_DocGia(int.Parse(txtMaDocGia.Text)) == 1)
+            {
+                MessageBox.Show("Có thể mượn sách");
+            }
+            else if (docGia_BUS.Kt_DocGia(int.Parse(txtMaDocGia.Text)) == 0)
+            {
+                MessageBox.Show("Đây không phải là độc giả");
+            }
+            else
+            { 
+                MessageBox.Show("Không được mượn sách nha","Cảnh báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                txtMaDocGia.Text = "";
+                txtMaDocGia.Focus();
+            }
+            //frmDocGiaDuocMuonSach frm = new frmDocGiaDuocMuonSach();
+            //if(frm.ShowDialog() == DialogResult.OK)
+            //{
+
+            //}
+        }
+
+        private void btnChiTietSach_Click(object sender, EventArgs e)
+        {
+            frmDauSachDuocMuon frm = new frmDauSachDuocMuon();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                
+            }
         }
     }
 }

@@ -12,9 +12,9 @@ namespace BUS
     public class DauSach_BUS
     {
         DauSach_DAO dausach_dao = new DauSach_DAO();
-        public DataTable LoadDauSach()
+        public static  DataTable LoadDauSach()
         {
-            return dausach_dao.LoadDauSach();
+            return DauSach_DAO.LoadDauSach();
         }
 
        

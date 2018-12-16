@@ -172,7 +172,7 @@ namespace DAO
             return null;
         }
 
-        public DataTable LoadBangDocGia()
+        public static DataTable LoadBangDocGia()
         {
             SqlDataAdapter da = new SqlDataAdapter("select a.MaDocGia, c.TenLoaiDocGia, b.HoVaTen, b.GioiTinh, b.Email, b.NgayTao from DocGia a, NguoiDung b, DocGiaLoai c where a.MaDocGia = b.MaNguoiDung and a.MaLoaiDocGia = c.MaLoaiDocGia", _conn);
             DataTable dtNCC = new DataTable();
@@ -180,16 +180,16 @@ namespace DAO
             return dtNCC;
         }
 
-        public DataSet LoadComBoBoxLoaiDocGia(string tenbang)
+        public static DataSet LoadComBoBoxLoaiDocGia(string tenbang)
         {
             try
             {
                 // Ket noi
                 string conn = ConnectDatabase.GetConnString();
-
+                 
                 // Query string - vì mình để TV_ID là identity (giá trị tự tăng dần) nên ko cần fải insert ID
                 string sql = "SELECT * from DocGiaLoai";
-                return getdataset(sql, tenbang );
+                return getdataset(sql, tenbang, _conn );
 
                 // Query và kiểm tra
 
@@ -232,6 +232,23 @@ namespace DAO
 
             }
             return false;
+        }
+
+
+        public static int TimDocGia(int maDocGia)
+        {
+            string sql = "KT_DocGia";
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = _conn;
+            _conn.Open();
+            cmd.CommandText = sql;
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@maDocGia", maDocGia).Direction = System.Data.ParameterDirection.Input;
+            cmd.Parameters.Add("@kq", System.Data.SqlDbType.Int).Direction = System.Data.ParameterDirection.Output;
+            cmd.ExecuteNonQuery();
+            int outval = (int)cmd.Parameters["@kq"].Value;
+            _conn.Close();
+            return outval;
         }
     }
 }

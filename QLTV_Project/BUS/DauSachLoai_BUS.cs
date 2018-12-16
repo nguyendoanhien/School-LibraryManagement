@@ -11,10 +11,11 @@ namespace BUS
 {
     public class DauSachLoai_BUS
     {
-        DauSach_DAO dausach_dao = new DauSach_DAO();
         public DataSet LoadComBoBoxDauSachLoai(string tenbang)
         {
-            return dausach_dao.LoadComBoDauSach(tenbang);
+            return DauSach_DAO.LoadComBoDauSach(tenbang);
         }
+
+
     }
 }

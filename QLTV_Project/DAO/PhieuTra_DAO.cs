@@ -12,7 +12,7 @@ namespace DAO
 {
     public class PhieuTra_DAO
     {
-        public int MaPhieuNhap()
+        public int MaPhieuTra()
         {
             try
             {
@@ -33,6 +33,12 @@ namespace DAO
             return 0;
         }
 
+
+        public bool LuuPhieuTra()
+        {
+            bool s = true;
+            return s;
+        }
 
     }
 }

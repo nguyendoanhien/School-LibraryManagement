@@ -19,12 +19,7 @@ namespace QuanLyThuVien
             InitializeComponent();
             lblMaPhieuNhap.Text = phieunhap_bus.MaPhieuNhap()+"";
         }
-
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            Close();
-
-        }
+      
         private void btnDSNCC_Click(object sender, EventArgs e)
         {
             frmNhaCungCap frm = new frmNhaCungCap();
@@ -52,10 +47,23 @@ namespace QuanLyThuVien
             }
         }
 
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnXoa_Click(object sender, EventArgs e)
         {
             int gtxoa = 1;
             phieunhap_bus.XoaDauSach(gtxoa);
         }
+
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Close();
+
+        }
+
     }
 }

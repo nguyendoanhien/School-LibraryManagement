@@ -31,19 +31,16 @@
             this.lsDSsachMuon = new System.Windows.Forms.ListView();
             this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnXoaSach = new System.Windows.Forms.Button();
-            this.btnThemSach = new System.Windows.Forms.Button();
             this.btnChiTietSach = new System.Windows.Forms.Button();
-            this.txtTenSach = new System.Windows.Forms.TextBox();
-            this.txtMaDauSach = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnXoaSach = new System.Windows.Forms.Button();
+            this.btnThemSach = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -60,6 +57,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -100,6 +100,16 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Danh sách mượn";
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btnThoat);
+            this.panel4.Controls.Add(this.btnLuu);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 539);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(671, 59);
+            this.panel4.TabIndex = 10;
+            // 
             // btnThoat
             // 
             this.btnThoat.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -113,7 +123,7 @@
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.UseVisualStyleBackColor = true;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click_1);
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnLuu
             // 
@@ -128,25 +138,7 @@
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.UseVisualStyleBackColor = true;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnThoat);
-            this.panel4.Controls.Add(this.btnLuu);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 539);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(671, 59);
-            this.panel4.TabIndex = 10;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(169, 77);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 26);
-            this.textBox1.TabIndex = 19;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // label5
             // 
@@ -159,34 +151,6 @@
             this.label5.TabIndex = 18;
             this.label5.Text = "Mã sách";
             // 
-            // btnXoaSach
-            // 
-            this.btnXoaSach.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnXoaSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaSach.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
-            this.btnXoaSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaSach.Location = new System.Drawing.Point(484, 101);
-            this.btnXoaSach.Name = "btnXoaSach";
-            this.btnXoaSach.Size = new System.Drawing.Size(81, 41);
-            this.btnXoaSach.TabIndex = 17;
-            this.btnXoaSach.Text = "Xoá";
-            this.btnXoaSach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnXoaSach.UseVisualStyleBackColor = true;
-            // 
-            // btnThemSach
-            // 
-            this.btnThemSach.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnThemSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemSach.Image = global::QuanLyThuVien.Properties.Resources.add;
-            this.btnThemSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemSach.Location = new System.Drawing.Point(484, 28);
-            this.btnThemSach.Name = "btnThemSach";
-            this.btnThemSach.Size = new System.Drawing.Size(81, 41);
-            this.btnThemSach.TabIndex = 12;
-            this.btnThemSach.Text = "Thêm";
-            this.btnThemSach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThemSach.UseVisualStyleBackColor = true;
-            // 
             // btnChiTietSach
             // 
             this.btnChiTietSach.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -196,24 +160,7 @@
             this.btnChiTietSach.TabIndex = 9;
             this.btnChiTietSach.Text = "...";
             this.btnChiTietSach.UseVisualStyleBackColor = true;
-            // 
-            // txtTenSach
-            // 
-            this.txtTenSach.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTenSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenSach.Location = new System.Drawing.Point(169, 119);
-            this.txtTenSach.Name = "txtTenSach";
-            this.txtTenSach.Size = new System.Drawing.Size(203, 26);
-            this.txtTenSach.TabIndex = 11;
-            // 
-            // txtMaDauSach
-            // 
-            this.txtMaDauSach.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMaDauSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaDauSach.Location = new System.Drawing.Point(169, 36);
-            this.txtMaDauSach.Name = "txtMaDauSach";
-            this.txtMaDauSach.Size = new System.Drawing.Size(203, 26);
-            this.txtMaDauSach.TabIndex = 8;
+            this.btnChiTietSach.Click += new System.EventHandler(this.btnChiTietSach_Click);
             // 
             // label13
             // 
@@ -239,13 +186,13 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.btnXoaSach);
             this.groupBox2.Controls.Add(this.btnThemSach);
             this.groupBox2.Controls.Add(this.btnChiTietSach);
-            this.groupBox2.Controls.Add(this.txtTenSach);
-            this.groupBox2.Controls.Add(this.txtMaDauSach);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -256,6 +203,36 @@
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tìm sách mượn";
+            // 
+            // btnXoaSach
+            // 
+            this.btnXoaSach.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnXoaSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaSach.Image = global::QuanLyThuVien.Properties.Resources.cancel2;
+            this.btnXoaSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoaSach.Location = new System.Drawing.Point(484, 101);
+            this.btnXoaSach.Name = "btnXoaSach";
+            this.btnXoaSach.Size = new System.Drawing.Size(81, 41);
+            this.btnXoaSach.TabIndex = 17;
+            this.btnXoaSach.Text = "Xoá";
+            this.btnXoaSach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnXoaSach.UseVisualStyleBackColor = true;
+            this.btnXoaSach.Click += new System.EventHandler(this.btnXoaSach_Click);
+            // 
+            // btnThemSach
+            // 
+            this.btnThemSach.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnThemSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemSach.Image = global::QuanLyThuVien.Properties.Resources.add;
+            this.btnThemSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemSach.Location = new System.Drawing.Point(484, 28);
+            this.btnThemSach.Name = "btnThemSach";
+            this.btnThemSach.Size = new System.Drawing.Size(81, 41);
+            this.btnThemSach.TabIndex = 12;
+            this.btnThemSach.Text = "Thêm";
+            this.btnThemSach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThemSach.UseVisualStyleBackColor = true;
+            this.btnThemSach.Click += new System.EventHandler(this.btnThemSach_Click);
             // 
             // panel3
             // 
@@ -300,12 +277,14 @@
             // btnChiTietDG
             // 
             this.btnChiTietDG.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnChiTietDG.Location = new System.Drawing.Point(384, 95);
+            this.btnChiTietDG.Image = global::QuanLyThuVien.Properties.Resources.search;
+            this.btnChiTietDG.Location = new System.Drawing.Point(378, 93);
             this.btnChiTietDG.Name = "btnChiTietDG";
-            this.btnChiTietDG.Size = new System.Drawing.Size(49, 23);
+            this.btnChiTietDG.Size = new System.Drawing.Size(55, 25);
             this.btnChiTietDG.TabIndex = 6;
             this.btnChiTietDG.Text = "...";
             this.btnChiTietDG.UseVisualStyleBackColor = true;
+            this.btnChiTietDG.Click += new System.EventHandler(this.btnChiTietDG_Click);
             // 
             // dateTra
             // 
@@ -409,9 +388,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(31, 61);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 20);
+            this.label4.Size = new System.Drawing.Size(103, 20);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Mã thủ thư";
+            this.label4.Text = "Mã nhân viên";
             // 
             // label1
             // 
@@ -433,6 +412,30 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(671, 46);
             this.panel1.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label6.Location = new System.Drawing.Point(145, 37);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(227, 23);
+            this.label6.TabIndex = 19;
+            // 
+            // label9
+            // 
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label9.Location = new System.Drawing.Point(145, 79);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(227, 23);
+            this.label9.TabIndex = 20;
+            // 
+            // label10
+            // 
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label10.Location = new System.Drawing.Point(145, 121);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(227, 23);
+            this.label10.TabIndex = 21;
             // 
             // frmPhieuMuon
             // 
@@ -472,13 +475,10 @@
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnXoaSach;
         private System.Windows.Forms.Button btnThemSach;
         private System.Windows.Forms.Button btnChiTietSach;
-        private System.Windows.Forms.TextBox txtTenSach;
-        private System.Windows.Forms.TextBox txtMaDauSach;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -498,5 +498,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label6;
     }
 }

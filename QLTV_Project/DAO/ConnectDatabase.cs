@@ -15,14 +15,14 @@ namespace DAO
     {
 
         private static string _connString = "Server=DESKTOP-TEQ1LNV\\SQLEXPRESS;Database=QLTV;Integrated Security=true";
-        protected SqlConnection _conn = new SqlConnection("Server=DESKTOP-TEQ1LNV\\SQLEXPRESS;Database=QLTV;Integrated Security=true");
+        public static SqlConnection _conn = new SqlConnection("Server=DESKTOP-TEQ1LNV\\SQLEXPRESS;Database=QLTV;Integrated Security=true");
 
          public static string GetConnString()
         {
             return _connString;
         }
 
-        public DataSet getdataset(string sql, string tenbang)
+        public static DataSet getdataset(string sql, string tenbang, SqlConnection _conn)
         {
 
             DataSet ds = new DataSet();

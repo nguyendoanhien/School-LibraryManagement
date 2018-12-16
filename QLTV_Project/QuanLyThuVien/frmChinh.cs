@@ -40,8 +40,7 @@ namespace QuanLyThuVien
         }
         public void LoadBangDocGia()
         {
-            DocGia_BUS docgia_bus = new DocGia_BUS();
-            dgvDocGia.DataSource = docgia_bus.LoadBangDocGia();
+            dgvDocGia.DataSource = DocGia_BUS.LoadBangDocGia();
         }
         
 
@@ -111,7 +110,7 @@ namespace QuanLyThuVien
         DauSach_BUS dausach_bus = new DauSach_BUS();
         public void LoadBangDauSach()
         {
-            dgvDSSach.DataSource = dausach_bus.LoadDauSach();
+            dgvDSSach.DataSource = DauSach_BUS.LoadDauSach();
         }
 
         private void txtTenNguoiDN_Click(object sender, EventArgs e)
