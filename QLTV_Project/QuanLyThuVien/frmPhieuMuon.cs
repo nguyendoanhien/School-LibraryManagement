@@ -18,6 +18,7 @@ namespace QuanLyThuVien
         {
             InitializeComponent();
             HienThiMaPhieuMuon();
+            
         }
         
 
@@ -28,27 +29,6 @@ namespace QuanLyThuVien
 
         public void HienThiMaNhanVien()
         {
-        }
-
-
-        private void btnThemSach_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnXoaSach_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnLuu_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            Close();
         }
 
         private void KT_DocGia_Click(object sender, EventArgs e)
@@ -86,6 +66,8 @@ namespace QuanLyThuVien
                 lblMaSach.Text = MaSach;
                 string TenDauSach = frm.TenDauSach;
                 lblTenSach.Text = TenDauSach;
+                int ngayThem = frm.NgayTra1;
+                dateTra.Value = dateMuon.Value.AddDays(ngayThem);
             }
         }
 
@@ -93,5 +75,43 @@ namespace QuanLyThuVien
         {
 
         }
+
+        //private void dtgvDsSachMuon_KhoiTao()
+        //{
+        //    if (dgvSachMuon != null)
+        //    {
+        //        dgvSachMuon.Columns[0].HeaderText = "Mã sách";
+        //        dgvSachMuon.Columns[1].HeaderText = "Mã đầu sách";
+        //        dgvSachMuon.Columns[2].HeaderText = "Tên đầu sách";
+        //        dgvSachMuon.Columns[3].HeaderText = "Ngày hẹn trả";
+        //    }
+        //}
+
+        private void btnThemSach_Click(object sender, EventArgs e)
+        {
+            dgvSachMuon.Columns[0].HeaderText = "Mã sách";
+            dgvSachMuon.Columns[1].HeaderText = "Mã đầu sách";
+            dgvSachMuon.Columns[2].HeaderText = "Tên đầu sách";
+            dgvSachMuon.Columns[3].HeaderText = "Ngày hẹn trả";
+            var index = dgvSachMuon.Rows.Add();
+            dgvSachMuon.Rows[index].Cells["Mã sách"].Value = lblMaSach.Text;
+            dgvSachMuon.Rows[index].Cells["Mã đầu sách"].Value = lblMaDauSach.Text;
+        }
+
+        private void btnXoaSach_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
     }
 }
