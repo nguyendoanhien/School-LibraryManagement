@@ -53,8 +53,12 @@ namespace QuanLyThuVien
         private void btnChiTietDG_Click(object sender, EventArgs e)
         {
             DocGia_BUS docGia_BUS = new DocGia_BUS();
-            docGia_BUS.Kt_DocGia(int.Parse(txtMaDocGia.Text));
-            if (docGia_BUS.Kt_DocGia(int.Parse(txtMaDocGia.Text)) == 1)
+            if (txtMaDocGia.Text == "")
+            {
+                MessageBox.Show("Nhập mã độc giả!!!");
+                txtMaDocGia.Focus();
+            }
+            else if (docGia_BUS.Kt_DocGia(int.Parse(txtMaDocGia.Text)) == 1)
             {
                 MessageBox.Show("Có thể mượn sách");
             }
@@ -68,11 +72,6 @@ namespace QuanLyThuVien
                 txtMaDocGia.Text = "";
                 txtMaDocGia.Focus();
             }
-            //frmDocGiaDuocMuonSach frm = new frmDocGiaDuocMuonSach();
-            //if(frm.ShowDialog() == DialogResult.OK)
-            //{
-
-            //}
         }
 
         private void btnChiTietSach_Click(object sender, EventArgs e)
