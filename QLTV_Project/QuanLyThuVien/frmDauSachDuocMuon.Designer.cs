@@ -34,7 +34,7 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.dgvDSSach = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbxMucTim = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel14.SuspendLayout();
@@ -53,7 +53,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.cbxMucTim);
             this.groupBox3.Controls.Add(this.txtTimSachMuon);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
@@ -103,18 +103,16 @@
             this.dgvDSSach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDSSach.Size = new System.Drawing.Size(704, 268);
             this.dgvDSSach.TabIndex = 0;
+            this.dgvDSSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSSach_CellContentClick);
             // 
-            // comboBox1
+            // cbxMucTim
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Mã đầu sách",
-            "Tên đầu sách",
-            "Đầu sách loại"});
-            this.comboBox1.Location = new System.Drawing.Point(145, 20);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(130, 21);
-            this.comboBox1.TabIndex = 1;
+            this.cbxMucTim.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxMucTim.FormattingEnabled = true;
+            this.cbxMucTim.Location = new System.Drawing.Point(145, 20);
+            this.cbxMucTim.Name = "cbxMucTim";
+            this.cbxMucTim.Size = new System.Drawing.Size(130, 21);
+            this.cbxMucTim.TabIndex = 1;
             // 
             // frmDauSachDuocMuon
             // 
@@ -143,6 +141,6 @@
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.DataGridView dgvDSSach;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxMucTim;
     }
 }

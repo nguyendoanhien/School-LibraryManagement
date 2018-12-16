@@ -22,6 +22,11 @@ namespace QuanLyThuVien
 
         public void LoadComBoBoxLoaiDauSach()
         {
+            cbxMucTim.Items.Add("MaDauSach");
+            cbxMucTim.Items.Add("TenDauSach");
+            cbxMucTim.Items.Add("TenLoaiDauSach");
+            cbxMucTim.SelectedIndex = 0;
+
             //DauSachLoai_BUS dauSachLoai_BUS = new DauSachLoai_BUS();
             //cbxMucTim.DataSource = dauSachLoai_BUS.LoadComBoBoxDauSachLoai("DauSachLoai").Tables[0];
             //cbxMucTim.DisplayMember = "TenLoaiDauSach";
@@ -30,18 +35,32 @@ namespace QuanLyThuVien
 
         public void LoadBangDauSach()
         {
-            DauSachLoai_BUS dauSachLoai_bus = new DauSachLoai_BUS();
             dgvDSSach.DataSource = DauSach_BUS.LoadDauSach();
         }
 
         private void txtTimSachMuon_TextChanged(object sender, EventArgs e)
         {
-            //BindingSource bs = new BindingSource();
-            //bs.DataSource = dgvDSSach.DataSource;
-            //bs.Filter = columnNameToSearch + " like '%" + textBox1.Text + "%'";
-            //dataGridView1.DataSource = bs;
+            string s = cbxMucTim.SelectedItem.ToString();
+            dgvDSSach.DataSource = DauSach_BUS.TimSach(s,txtTimSachMuon.Text);
         }
+        private string maDauSach;
+        private string maSach;
+        private string tenDauSach;
+
+        public string MaDauSach { get => maDauSach; set => maDauSach = value; }
+        public string MaSach { get => maSach; set => maSach = value; }
+        public string TenDauSach { get => tenDauSach; set => tenDauSach = value; }
+
+        public void dgvDSSach_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.maDauSach = dgvDSSach.Rows[e.RowIndex].Cells[0].Value.ToString();
+            this.maSach = dgvDSSach.Rows[e.RowIndex].Cells[1].Value.ToString();
+            this.tenDauSach = dgvDSSach.Rows[e.RowIndex].Cells[3].Value.ToString();
+            this.DialogResult = System.Windows.Forms.DialogResult.OK;
+        }
+
+       
+    }
     }
 
 
-}

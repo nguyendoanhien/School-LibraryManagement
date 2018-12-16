@@ -17,6 +17,9 @@ namespace BUS
             return DauSach_DAO.LoadDauSach();
         }
 
-       
+       public static DataTable TimSach(string mucTim, string tenTim)
+        {
+            return DauSach_DAO.TimSach(mucTim, tenTim);
+        }
     }
 }
