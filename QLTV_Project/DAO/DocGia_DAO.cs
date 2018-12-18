@@ -253,7 +253,7 @@ namespace DAO
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@maDocGia", maDocGia).Direction = System.Data.ParameterDirection.Input;
             cmd.Parameters.AddWithValue("@maDauSach", maDocGia).Direction = System.Data.ParameterDirection.Input;
-            cmd.Parameters.Add("@kq", System.Data.SqlDbType.Int).Direction = System.Data.ParameterDirection.Output;
+            cmd.Parameters.Add("@kq", System.Data.SqlDbType.Int).Direction = System.Data.ParameterDirection.ReturnValue;
             cmd.ExecuteNonQuery();
             int outval = (int)cmd.Parameters["@kq"].Value;
             _conn.Close();
