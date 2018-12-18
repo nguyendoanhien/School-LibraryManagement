@@ -56,7 +56,7 @@ namespace BUS
             return DocGia_DAO.TimDocGia(maDocGia);
         }
 
-        public static int Kt_SachMuon(int maDocGia, int maDauSach)
+        public static bool Kt_SachMuon(int maDocGia, int maDauSach)
         {
             return DocGia_DAO.KT_SachMuon(maDocGia, maDauSach);
         }
