@@ -7,6 +7,8 @@ using DTO;
 
 using System.Data;
 using System.Data.SqlClient;
+using System.Runtime.Remoting.Messaging;
+
 namespace DAO
 {
     public class DocGia_DAO : ConnectDatabase
@@ -243,7 +245,7 @@ namespace DAO
             return outval;
         }
 
-        public static int KT_SachMuon(int maDocGia, int maDauSach)
+        public static bool KT_SachMuon(int maDocGia, int maDauSach)
         {
             string sql = "KT_SachMuon";
             SqlCommand cmd = new SqlCommand();
@@ -252,12 +254,14 @@ namespace DAO
             cmd.CommandText = sql;
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@maDocGia", maDocGia).Direction = System.Data.ParameterDirection.Input;
-            cmd.Parameters.AddWithValue("@maDauSach", maDocGia).Direction = System.Data.ParameterDirection.Input;
-            cmd.Parameters.Add("@kq", System.Data.SqlDbType.Int).Direction = System.Data.ParameterDirection.ReturnValue;
+
+            cmd.Parameters.AddWithValue("@maDauSach", maDauSach).Direction = System.Data.ParameterDirection.Input;
+            cmd.Parameters.Add("@kq", System.Data.SqlDbType.Int).Direction = System.Data.ParameterDirection.Output;
+
             cmd.ExecuteNonQuery();
             int outval = (int)cmd.Parameters["@kq"].Value;
             _conn.Close();
-            return outval;
+            return (outval==1)?true:false;
         }
     }
 }

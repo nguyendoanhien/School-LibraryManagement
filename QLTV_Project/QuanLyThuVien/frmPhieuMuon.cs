@@ -85,7 +85,7 @@ namespace QuanLyThuVien
             {
                 MessageBox.Show("Phải chọn sách !!!");
             }
-            else if(DocGia_BUS.Kt_SachMuon(int.Parse(txtMaDocGia.Text), int.Parse(lblMaDauSach.Text)) == 1 )
+            else if(DocGia_BUS.Kt_SachMuon(int.Parse(txtMaDocGia.Text), int.Parse(lblMaDauSach.Text)))
             {
                 MessageBox.Show("Sách này đã mượn rồi");
             }
