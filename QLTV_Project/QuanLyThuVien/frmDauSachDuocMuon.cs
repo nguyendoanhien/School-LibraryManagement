@@ -54,8 +54,8 @@ namespace QuanLyThuVien
 
         public void dgvDSSach_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            this.maDauSach = dgvDSSach.Rows[e.RowIndex].Cells[0].Value.ToString();
-            this.maSach = dgvDSSach.Rows[e.RowIndex].Cells[1].Value.ToString();
+            this.maDauSach = dgvDSSach.Rows[e.RowIndex].Cells[1].Value.ToString();
+            this.maSach = dgvDSSach.Rows[e.RowIndex].Cells[0].Value.ToString();
             this.tenDauSach = dgvDSSach.Rows[e.RowIndex].Cells[3].Value.ToString();
             this.NgayTra = int.Parse(dgvDSSach.Rows[e.RowIndex].Cells[5].Value.ToString());
             this.DialogResult = System.Windows.Forms.DialogResult.OK;

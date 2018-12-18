@@ -206,11 +206,7 @@ namespace DAO
         {
             try
             {
-                // Ket noi
-                string conn = ConnectDatabase.GetConnString();
-
-                // Query string - vì mình để TV_ID là identity (giá trị tự tăng dần) nên ko cần fải insert ID
-                string sql = "DocGia_Xoa";
+                string conn = ConnectDatabase.GetConnString();string sql = "DocGia_Xoa";
                 SqlParameter[] pars =
                 {
                     new SqlParameter("@maCanXoa", SqlDbType.Int) { Value = maDocGia },
@@ -222,10 +218,6 @@ namespace DAO
                 if (soLuongOK > 0) return true;
 
                 return false;
-
-                // Query và kiểm tra
-
-
             }
             catch (Exception e)
             {
@@ -244,6 +236,23 @@ namespace DAO
             cmd.CommandText = sql;
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@maDocGia", maDocGia).Direction = System.Data.ParameterDirection.Input;
+            cmd.Parameters.Add("@kq", System.Data.SqlDbType.Int).Direction = System.Data.ParameterDirection.Output;
+            cmd.ExecuteNonQuery();
+            int outval = (int)cmd.Parameters["@kq"].Value;
+            _conn.Close();
+            return outval;
+        }
+
+        public static int KT_SachMuon(int maDocGia, int maDauSach)
+        {
+            string sql = "KT_SachMuon";
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = _conn;
+            _conn.Open();
+            cmd.CommandText = sql;
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@maDocGia", maDocGia).Direction = System.Data.ParameterDirection.Input;
+            cmd.Parameters.AddWithValue("@maDauSach", maDocGia).Direction = System.Data.ParameterDirection.Input;
             cmd.Parameters.Add("@kq", System.Data.SqlDbType.Int).Direction = System.Data.ParameterDirection.Output;
             cmd.ExecuteNonQuery();
             int outval = (int)cmd.Parameters["@kq"].Value;
