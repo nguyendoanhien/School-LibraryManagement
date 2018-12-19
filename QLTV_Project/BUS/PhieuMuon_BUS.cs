@@ -21,5 +21,33 @@ namespace BUS
         {
             return PhieuMuon_DAO.MaPhieuMuon();
         }
+
+        public bool Insert_Phieu(int maNguoiLap, DateTime ngayLap)
+        {
+            bool kq = false;
+            if(PhieuMuon_DAO.Insert_Phieu(maNguoiLap, ngayLap))
+            {
+                kq = true;
+            }
+            return kq;
+        }
+        public bool Insert_PhieuMuon(int maPhieuMuon, int maDocGia)
+        {
+            bool kq = false;
+            if (PhieuMuon_DAO.Insert_PhieuMuon(maPhieuMuon, maDocGia))
+            {
+                kq = true;
+            }
+            return kq;
+        }
+        public bool Insert_PhieuMuonChiTiet(int maSach,int maPhieuMuon, int maDauSach, DateTime ngayHenTra)
+        {
+            bool kq = false;
+            if (PhieuMuon_DAO.Insert_PhieuMuonChiTiet(maSach, maPhieuMuon, maDauSach, ngayHenTra))
+            {
+                kq = true;
+            }
+            return kq;
+        }
     }
 }

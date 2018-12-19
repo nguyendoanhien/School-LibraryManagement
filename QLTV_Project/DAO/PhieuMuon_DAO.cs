@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 using DAO;
 using System.Data.SqlClient;
 using System.Data;
+using DTO;
 namespace DAO
 {
-    public class PhieuMuon_DAO
+    public class PhieuMuon_DAO: ConnectDatabase
     {
         public DataTable LoadSachMuon(int maPhieuMuon)
         {
@@ -58,5 +59,95 @@ namespace DAO
             return 0;
         }
 
+        public static bool Insert_Phieu( int maNguoiLap, DateTime ngayLap)
+        {
+            try
+            {
+                string conn = ConnectDatabase.GetConnString();
+                string sql = "dbo.Insert_Phieu";
+                SqlParameter[] pars =
+                {
+                    new SqlParameter("@maNguoiLap", SqlDbType.Int) { Value = maNguoiLap },
+                    new SqlParameter("@ngayLap", SqlDbType.DateTime) { Value = ngayLap },
+
+                };
+                int soLuongOK = SqlHelper.ExecuteNonQuery(conn, sql, CommandType.StoredProcedure, pars);
+
+                if (soLuongOK > 0) return true;
+
+                return false;
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                _conn.Close();
+            }
+            return false;
+        }
+
+        public static bool Insert_PhieuMuon(int maPhieuMuon, int maDocGia)
+        {
+            try
+            {
+                string conn = ConnectDatabase.GetConnString();
+                string sql = "dbo.Insert_PhieuMuon";
+                SqlParameter[] pars =
+                {
+                    new SqlParameter("@maPhieuMuon", SqlDbType.Int) { Value = maPhieuMuon },
+                    new SqlParameter("@maDocGia", SqlDbType.Int) { Value = maDocGia },
+
+                };
+                int soLuongOK = SqlHelper.ExecuteNonQuery(conn, sql, CommandType.StoredProcedure, pars);
+
+                if (soLuongOK > 0) return true;
+                else  return false;
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                _conn.Close();
+            }
+            return false;
+        }
+
+        public static bool Insert_PhieuMuonChiTiet(int maSach, int maPhieuMuon, int maDauSach, DateTime ngayHenTra)
+        {
+            try
+            {
+                string conn = ConnectDatabase.GetConnString();
+                string sql = "dbo.Insert_PhieuMuonChiTiet";
+                SqlParameter[] pars =
+                {
+                    new SqlParameter("@maSach", SqlDbType.Int) { Value = maSach },
+                    new SqlParameter("@maPhieuMuon", SqlDbType.Int) { Value = maPhieuMuon },
+                    new SqlParameter("@maDauSach", SqlDbType.Int) { Value = maDauSach },
+                    new SqlParameter("@ngayHenTra", SqlDbType.DateTime) { Value = ngayHenTra },
+
+                };
+                int soLuongOK = SqlHelper.ExecuteNonQuery(conn, sql, CommandType.StoredProcedure, pars);
+
+                if (soLuongOK > 0) return true;
+
+                return false;
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                _conn.Close();
+            }
+            return false;
+        }
     }
 }
