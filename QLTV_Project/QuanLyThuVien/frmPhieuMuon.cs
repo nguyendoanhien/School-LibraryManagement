@@ -14,6 +14,10 @@ namespace QuanLyThuVien
     public partial class frmPhieuMuon : Form
     {
         PhieuMuon_BUS phieumuon_bus = new PhieuMuon_BUS();
+
+        
+
+        public DataGridView DgvSachMuon { get; set; }
         public frmPhieuMuon()
         {
             InitializeComponent();
@@ -78,7 +82,7 @@ namespace QuanLyThuVien
 
         private void btnChiTietSach_Click(object sender, EventArgs e)
         {
-            frmDauSachDuocMuon frm = new frmDauSachDuocMuon();
+            frmDauSachDuocMuon frm = new frmDauSachDuocMuon(dgvSachMuon);
             if (frm.ShowDialog() == DialogResult.OK)
             {
                 string MaDauSach = frm.MaDauSach;
@@ -116,6 +120,7 @@ namespace QuanLyThuVien
                     }
 
                 }
+                
                 if (KT == true)
                 {
                     var index = dgvSachMuon.Rows.Add();
@@ -138,7 +143,14 @@ namespace QuanLyThuVien
         {
             foreach (DataGridViewRow item in this.dgvSachMuon.SelectedRows)
             {
-                dgvSachMuon.Rows.RemoveAt(item.Index);
+                if (dgvSachMuon.Rows.Count == 1)
+                {
+                    MessageBox.Show("Không có dữ liệu", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    dgvSachMuon.Rows.RemoveAt(item.Index);
+                }
             }
         }
 

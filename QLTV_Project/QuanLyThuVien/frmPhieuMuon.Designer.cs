@@ -1,4 +1,6 @@
-﻿namespace QuanLyThuVien
+﻿using System.Windows.Forms;
+
+namespace QuanLyThuVien
 {
     partial class frmPhieuMuon
     {

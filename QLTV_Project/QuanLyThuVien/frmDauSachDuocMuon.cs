@@ -13,8 +13,11 @@ namespace QuanLyThuVien
 {
     public partial class frmDauSachDuocMuon : Form
     {
-        public frmDauSachDuocMuon()
+        DataGridView cuaFrmPhieuMuon;
+
+        public frmDauSachDuocMuon(DataGridView cuaFrmPhieuMuon)
         {
+            this.cuaFrmPhieuMuon = cuaFrmPhieuMuon;
             InitializeComponent();
             LoadComBoBoxLoaiDauSach();
             LoadBangDauSach();
@@ -35,7 +38,22 @@ namespace QuanLyThuVien
 
         public void LoadBangDauSach()
         {
+           
             dgvDSSach.DataSource = DauSach_BUS.LoadDauSach();
+            if (cuaFrmPhieuMuon.Rows.Count > 1)
+            {
+                for (int i = 0; i < dgvDSSach.Rows.Count-1; i++)
+                {
+                    for (int j = 0; j < cuaFrmPhieuMuon.Rows.Count - 1; j++)
+                    {
+                        if (cuaFrmPhieuMuon.Rows[j].Cells[1].Value.ToString() == dgvDSSach.Rows[i].Cells[0].Value.ToString())
+                        {
+                            dgvDSSach.Rows.RemoveAt(i);
+                            break;
+                        }
+                    }
+                }
+            }
         }
 
         private void txtTimSachMuon_TextChanged(object sender, EventArgs e)
@@ -59,6 +77,7 @@ namespace QuanLyThuVien
             this.tenDauSach = dgvDSSach.Rows[e.RowIndex].Cells[3].Value.ToString();
             this.NgayTra = int.Parse(dgvDSSach.Rows[e.RowIndex].Cells[5].Value.ToString());
             this.DialogResult = System.Windows.Forms.DialogResult.OK;
+            
         }
 
        
