@@ -157,29 +157,23 @@ namespace QuanLyThuVien
         private void btnLuu_Click(object sender, EventArgs e)
         {
             PhieuMuon_BUS phieuMuon_BUS = new PhieuMuon_BUS();
-            phieuMuon_BUS.Insert_Phieu(int.Parse(txtMaNhanVien.Text), dateMuon.Value);
-            phieuMuon_BUS.Insert_PhieuMuon(int.Parse(lblMaPhieuMuon.Text), int.Parse(txtMaDocGia.Text));
-            bool kqnho = false;
+            if (phieuMuon_BUS.Insert_Phieu(int.Parse(txtMaNhanVien.Text), dateMuon.Value))
+                MessageBox.Show("Đã thêm phiếu!!");
+            if (phieuMuon_BUS.Insert_PhieuMuon(int.Parse(lblMaPhieuMuon.Text), int.Parse(txtMaDocGia.Text)))
+                MessageBox.Show("Đã thêm phiếu mượn!!!");
             for (int i = 0; i < dgvSachMuon.Rows.Count - 1; i++)
             {
-                    string maDauSach = dgvSachMuon.Rows[i].Cells[0].Value.ToString();
-                    string maSach = dgvSachMuon.Rows[i].Cells[1].Value.ToString();
-                    string tenSach = dgvSachMuon.Rows[i].Cells[2].Value.ToString();
-                    DateTime ngayTra = DateTime.Parse(dgvSachMuon.Rows[i].Cells[3].Value.ToString());
-                    phieuMuon_BUS.Insert_PhieuMuonChiTiet(int.Parse(maSach), int.Parse(lblMaPhieuMuon.Text), int.Parse(maDauSach), ngayTra);
-                    if (phieuMuon_BUS.Insert_PhieuMuonChiTiet(int.Parse(maSach), int.Parse(lblMaPhieuMuon.Text), int.Parse(maDauSach),ngayTra))
-                    {
-                        kqnho = true;
-                    }
-                    else
-                        kqnho = false;
+                string maDauSach = dgvSachMuon.Rows[i].Cells[0].Value.ToString();
+                string maSach = dgvSachMuon.Rows[i].Cells[1].Value.ToString();
+                string tenSach = dgvSachMuon.Rows[i].Cells[2].Value.ToString();
+                DateTime ngayTra = DateTime.Parse(dgvSachMuon.Rows[i].Cells[3].Value.ToString());
+                string ngayTra1 = ngayTra.ToString("yyyy - MM - dd HH: mm:ss.fff");
+                if (phieuMuon_BUS.Insert_PhieuMuonChiTiet(int.Parse(maSach), int.Parse(lblMaPhieuMuon.Text), int.Parse(maDauSach), ngayTra1))
+                {
+                    MessageBox.Show("Đã thêm phiếu mượn chi tiết");
+                }
+
             }
-            if (phieuMuon_BUS.Insert_Phieu(int.Parse(txtMaNhanVien.Text), dateMuon.Value)
-                && phieuMuon_BUS.Insert_PhieuMuon(int.Parse(lblMaPhieuMuon.Text), int.Parse(txtMaDocGia.Text)) && kqnho)
-            {
-                MessageBox.Show("Thành công 1 nửa");
-            }
-            
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

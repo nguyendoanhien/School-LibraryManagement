@@ -40,7 +40,7 @@ namespace BUS
             }
             return kq;
         }
-        public bool Insert_PhieuMuonChiTiet(int maSach,int maPhieuMuon, int maDauSach, DateTime ngayHenTra)
+        public bool Insert_PhieuMuonChiTiet(int maSach,int maPhieuMuon, int maDauSach, string ngayHenTra)
         {
             bool kq = false;
             if (PhieuMuon_DAO.Insert_PhieuMuonChiTiet(maSach, maPhieuMuon, maDauSach, ngayHenTra))

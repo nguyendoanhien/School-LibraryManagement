@@ -50,13 +50,13 @@ namespace DAO
                 int gt = int.Parse(soLuongOK.ToString());
 
                 if (soLuongOK != null) return gt + 1;
-                else return 0;
+                else return 1;
             }
             catch (Exception e)
             {
 
             }
-            return 0;
+            return 1;
         }
 
         public static bool Insert_Phieu( int maNguoiLap, DateTime ngayLap)
@@ -118,7 +118,7 @@ namespace DAO
             return false;
         }
 
-        public static bool Insert_PhieuMuonChiTiet(int maSach, int maPhieuMuon, int maDauSach, DateTime ngayHenTra)
+        public static bool Insert_PhieuMuonChiTiet(int maSach, int maPhieuMuon, int maDauSach, string ngayHenTra)
         {
             try
             {
