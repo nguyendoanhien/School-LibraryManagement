@@ -37,8 +37,8 @@ namespace QuanLyThuVien
         public void HienThiMaNhanVien()
         {
             //Load "mã nhân viên" đăng nhập
-            NhanVien nv = (NhanVien)MySessions.Sessions["user"];
-            txtMaNhanVien.Text = nv.MaNhanVien + "";
+            //NhanVien nv = (NhanVien)MySessions.Sessions["user"];
+            //txtMaNhanVien.Text = nv.MaNhanVien + "";
 
 
         }

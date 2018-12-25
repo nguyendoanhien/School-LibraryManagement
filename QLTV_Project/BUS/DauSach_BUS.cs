@@ -11,15 +11,26 @@ namespace BUS
 {
     public class DauSach_BUS
     {
-        DauSach_DAO dausach_dao = new DauSach_DAO();
+        
         public static  DataTable LoadDauSach()
         {
             return DauSach_DAO.LoadDauSach();
         }
 
-       public static DataTable TimSach(string mucTim, string tenTim)
+        public static DataTable TimSach(string mucTim, string tenTim)
         {
             return DauSach_DAO.TimSach(mucTim, tenTim);
         }
+
+        public static DataTable LoadSachMuon(int maDauSach)
+        {
+            return DauSach_DAO.LoadSachMuon(maDauSach);
+        }
+
+        public static DataTable LoadDtgvSachMuon(int maSach, int maDocGia)
+        {
+            return DauSach_DAO.LoadDtgvMuon( maSach, maDocGia);
+        }
+
     }
 }
