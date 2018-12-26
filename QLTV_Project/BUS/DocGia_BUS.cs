@@ -51,14 +51,24 @@ namespace BUS
             return DocGia_DAO.LoadComBoBoxLoaiDocGia(tenbang);
         }
 
-        public int Kt_DocGia(int maDocGia)
+        public static bool KiemTraDuocMuon(int maDocGia)
         {
-            return DocGia_DAO.TimDocGia(maDocGia);
+            return DocGia_DAO.KiemTraDuocMuon(maDocGia);
         }
 
         public static bool Kt_SachMuon(int maDocGia, int maDauSach)
         {
             return DocGia_DAO.KT_SachMuon(maDocGia, maDauSach);
+        }
+
+        public static bool KiemTraDocGia(int maDocGia)
+        {
+            return DocGia_DAO.KiemTraDocGia(maDocGia);
+        }
+
+        public static int? LaySachMuonToiDa(int maDocGia)
+        {
+            return DocGia_DAO.LaySachMuonToiDa(maDocGia);
         }
     }
 }

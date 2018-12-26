@@ -22,13 +22,20 @@ namespace DAO
 
                 // Query string - vì mình để TV_ID là identity (giá trị tự tăng dần) nên ko cần fải insert ID
                 string sql = "INSERT INTO NguoiDung (HoVaTen,GioiTinh,Email,NgayTao) VALUES  (@HoVaTen, @GioiTinh, @Email, @NgayTao)";
-                SqlParameter[] pars =
-                {
-                    new SqlParameter("@HoVaTen", SqlDbType.NVarChar) { Value = ng.HoVaTen },
-                    new SqlParameter("@GioiTinh", SqlDbType.Bit) { Value = ng.GioiTinh },
-                    new SqlParameter("@Email", SqlDbType.VarChar) { Value = ng.Email },
-                    new SqlParameter("@NgayTao", SqlDbType.DateTime) { Value = ng.NgayTao }
-                };
+                SqlParameter[] pars = {
+     new SqlParameter("@HoVaTen", SqlDbType.NVarChar) {
+      Value = ng.HoVaTen
+     },
+     new SqlParameter("@GioiTinh", SqlDbType.Bit) {
+      Value = ng.GioiTinh
+     },
+     new SqlParameter("@Email", SqlDbType.VarChar) {
+      Value = ng.Email
+     },
+     new SqlParameter("@NgayTao", SqlDbType.DateTime) {
+      Value = ng.NgayTao
+     }
+    };
 
                 int soLuongOK = SqlHelper.ExecuteNonQuery(conn, sql, CommandType.Text, pars);
 
@@ -61,12 +68,15 @@ namespace DAO
 
                 // Query string - vì mình để TV_ID là identity (giá trị tự tăng dần) nên ko cần fải insert ID
                 string sql = "dbo.InsertDocGia";
-                SqlParameter[] pars =
-                {
-                    new SqlParameter("@maDG", SqlDbType.Int) { Value = dg.Ma },
-                    new SqlParameter("@maLoaiDG", SqlDbType.Int) { Value = dg.MaLoai },
+                SqlParameter[] pars = {
+     new SqlParameter("@maDG", SqlDbType.Int) {
+      Value = dg.Ma
+     },
+     new SqlParameter("@maLoaiDG", SqlDbType.Int) {
+      Value = dg.MaLoai
+     },
 
-                };
+    };
 
                 int soLuongOK = SqlHelper.ExecuteNonQuery(conn, sql, CommandType.StoredProcedure, pars);
 
@@ -93,11 +103,12 @@ namespace DAO
             {
                 string conn = ConnectDatabase.GetConnString();
                 string sql = "select MaLoaiDocGia from DocGiaLoai where TenLoaiDocGia = @tenloaiDG";
-                SqlParameter[] pars =
-                {
-                    new SqlParameter("@tenloaiDG", SqlDbType.NVarChar) { Value = TenLoaiDocGia },
+                SqlParameter[] pars = {
+     new SqlParameter("@tenloaiDG", SqlDbType.NVarChar) {
+      Value = TenLoaiDocGia
+     },
 
-                };
+    };
                 var soLuongOK = SqlHelper.ExecuteScalar(conn, sql, CommandType.Text, pars);
 
                 if (soLuongOK != null) return soLuongOK.ToString();
@@ -120,7 +131,7 @@ namespace DAO
             {
                 string conn = ConnectDatabase.GetConnString();
                 string sql = "select MAX(MaNguoiDung) from NguoiDung";
-                SqlParameter[] pars ={};
+                SqlParameter[] pars = { };
                 var soLuongOK = SqlHelper.ExecuteScalar(conn, sql, CommandType.Text, pars);
 
                 int gt = int.Parse(soLuongOK.ToString());
@@ -130,7 +141,7 @@ namespace DAO
             }
             catch (Exception ex)
             {
-                
+
             }
             finally
             {
@@ -188,10 +199,10 @@ namespace DAO
             {
                 // Ket noi
                 string conn = ConnectDatabase.GetConnString();
-                 
+
                 // Query string - vì mình để TV_ID là identity (giá trị tự tăng dần) nên ko cần fải insert ID
                 string sql = "SELECT * from DocGiaLoai";
-                return getdataset(sql, tenbang, _conn );
+                return getdataset(sql, tenbang, _conn);
 
                 // Query và kiểm tra
 
@@ -208,12 +219,14 @@ namespace DAO
         {
             try
             {
-                string conn = ConnectDatabase.GetConnString();string sql = "DocGia_Xoa";
-                SqlParameter[] pars =
-                {
-                    new SqlParameter("@maCanXoa", SqlDbType.Int) { Value = maDocGia },
-                    
-                };
+                string conn = ConnectDatabase.GetConnString();
+                string sql = "DocGia_Xoa";
+                SqlParameter[] pars = {
+     new SqlParameter("@maCanXoa", SqlDbType.Int) {
+      Value = maDocGia
+     },
+
+    };
 
                 int soLuongOK = SqlHelper.ExecuteNonQuery(conn, sql, CommandType.StoredProcedure, pars);
 
@@ -229,25 +242,40 @@ namespace DAO
         }
 
 
-        public static int TimDocGia(int maDocGia)
+        public static bool KiemTraDuocMuon(int maDocGia)
         {
-            string sql = "KT_DocGia";
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = _conn;
-            _conn.Open();
-            cmd.CommandText = sql;
-            cmd.CommandType = System.Data.CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@maDocGia", maDocGia).Direction = System.Data.ParameterDirection.Input;
-            cmd.Parameters.Add("@kq", System.Data.SqlDbType.Int).Direction = System.Data.ParameterDirection.Output;
-            cmd.ExecuteNonQuery();
-            int outval = (int)cmd.Parameters["@kq"].Value;
-            _conn.Close();
-            return outval;
+            string sql = "dbo.KiemTraDuocMuon";
+            List<SqlParameter> pars = new List<SqlParameter>();
+            pars.Add(new SqlParameter("@MaDocGia", maDocGia));
+
+            int? kq = SqlHelper.ExecuteScalar(GetConnString(), sql, CommandType.StoredProcedure, pars.ToArray()) as int?;
+            return (kq==null) ? true : (kq>0)?true:false;
+        }
+
+        public static bool KiemTraDocGia(int maDocGia)
+        {
+            string sql = "dbo.KiemTraDocGia";
+            List<SqlParameter> pars = new List<SqlParameter>();
+            pars.Add(new SqlParameter("@MaDocGia", maDocGia));
+
+            int? kq = SqlHelper.ExecuteScalar(GetConnString(), sql, CommandType.StoredProcedure, pars.ToArray()) as int?;
+            return (kq != null && kq > 0) ? true : false;
+
+        }
+        public static int? LaySachMuonToiDa(int maDocGia)
+        {
+            string sql = "dbo.KiemTraDuocMuon";
+            List<SqlParameter> pars = new List<SqlParameter>();
+            pars.Add(new SqlParameter("@MaDocGia", maDocGia));
+
+            int? kq = SqlHelper.ExecuteScalar(GetConnString(), sql, CommandType.StoredProcedure, pars.ToArray()) as int?;
+            return kq;
+
         }
 
         public static bool KT_SachMuon(int maDocGia, int maDauSach)
         {
-            string sql = "KT_SachMuon";
+            string sql = "KiemTraSachMuon";
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = _conn;
             _conn.Open();
@@ -261,7 +289,7 @@ namespace DAO
             cmd.ExecuteNonQuery();
             int outval = (int)cmd.Parameters["@kq"].Value;
             _conn.Close();
-            return (outval==1)?true:false;
+            return (outval == 1) ? true : false;
         }
     }
 }
