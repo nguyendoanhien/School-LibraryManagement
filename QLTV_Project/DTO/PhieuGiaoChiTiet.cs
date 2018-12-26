@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DTO
+﻿namespace DTO
 {
-    class PhieuGiaoChiTiet
+    internal class PhieuGiaoChiTiet
     {
-        int MaDauSach { get; set; }
-        int MaPhieuGiao { get; set; }
+        private int MaDauSach { get; set; }
+        private int MaPhieuGiao { get; set; }
     }
 }

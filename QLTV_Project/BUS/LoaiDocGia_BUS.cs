@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿#region
 using System.Data;
-using DTO;
 using DAO;
+#endregion
+
 namespace BUS
 {
     public class LoaiDocGia_BUS
     {
-        LoaiDocGia_DAO LoaiDocGia_dao = new LoaiDocGia_DAO();
+        private readonly LoaiDocGia_DAO LoaiDocGia_dao = new LoaiDocGia_DAO();
+
         public DataTable getLoaiDocGia()
         {
             return LoaiDocGia_dao.getLoaiDocGia();

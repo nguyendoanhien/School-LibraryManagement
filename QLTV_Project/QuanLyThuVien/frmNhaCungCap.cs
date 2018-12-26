@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
+using System;
 using System.Windows.Forms;
 using BUS;
+#endregion
+
 namespace QuanLyThuVien
 {
     public partial class frmNhaCungCap : Form
     {
-        NCC_BUS NCC_bus = new NCC_BUS();
+        private readonly NCC_BUS NCC_bus = new NCC_BUS();
+
         public frmNhaCungCap()
         {
             InitializeComponent();
@@ -22,7 +19,5 @@ namespace QuanLyThuVien
         {
             dgvNCC.DataSource = NCC_bus.getNCC();
         }
-
-        
     }
 }

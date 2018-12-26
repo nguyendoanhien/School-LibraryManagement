@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
 using System.Data;
-using System.Data.SqlClient;
-using DTO;
 using DAO;
+#endregion
+
 namespace BUS
 {
     public class DauSachLoai_BUS
@@ -15,7 +11,5 @@ namespace BUS
         {
             return DauSach_DAO.LoadComBoDauSach(tenbang);
         }
-
-
     }
 }

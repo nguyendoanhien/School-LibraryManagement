@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
+using System;
 using System.Windows.Forms;
 using BUS;
+#endregion
+
 namespace QuanLyThuVien
 {
     public partial class frmLoaiDocGia : Form
@@ -17,7 +13,7 @@ namespace QuanLyThuVien
             InitializeComponent();
         }
 
-        LoaiDocGia_BUS LoaiDocGia_bus = new LoaiDocGia_BUS();
+        private readonly LoaiDocGia_BUS LoaiDocGia_bus = new LoaiDocGia_BUS();
 
         private void frmLoaiDocGia_Load(object sender, EventArgs e)
         {

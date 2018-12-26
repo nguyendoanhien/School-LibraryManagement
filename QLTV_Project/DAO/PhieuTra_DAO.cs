@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DTO;
-using System.Data.SqlClient;
+﻿#region
+using System;
 using System.Data;
-
+using System.Data.SqlClient;
+#endregion
 
 namespace DAO
 {
@@ -16,29 +12,27 @@ namespace DAO
         {
             try
             {
-                string conn = ConnectDatabase.GetConnString();
-                string sql = "select MAX(MaPhieu) from Phieu";
+                var conn = ConnectDatabase.GetConnString();
+                var sql = "select MAX(MaPhieu) from Phieu";
                 SqlParameter[] pars = { };
                 var soLuongOK = SqlHelper.ExecuteScalar(conn, sql, CommandType.Text, pars);
 
-                int gt = int.Parse(soLuongOK.ToString());
+                var gt = int.Parse(soLuongOK.ToString());
 
                 if (soLuongOK != null) return gt + 1;
-                else return 0;
+                return 0;
             }
             catch (Exception e)
             {
-
             }
+
             return 0;
         }
 
-
         public bool LuuPhieuTra()
         {
-            bool s = true;
+            var s = true;
             return s;
         }
-
     }
 }

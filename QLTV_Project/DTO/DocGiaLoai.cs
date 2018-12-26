@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DTO
+﻿namespace DTO
 {
-    class DocGiaLoai
+    internal class DocGiaLoai
     {
-        int Ma { get; set; }
-        int Ten { get; set; }
-        int SoSachToiDa { get; set; }
+        private int Ma { get; set; }
+        private int Ten { get; set; }
+        private int SoSachToiDa { get; set; }
     }
 }

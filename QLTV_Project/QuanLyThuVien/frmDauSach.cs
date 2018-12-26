@@ -1,23 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
+using System;
 using System.Windows.Forms;
 using BUS;
+#endregion
+
 namespace QuanLyThuVien
 {
     public partial class frmDauSach : Form
     {
-        DauSach_BUS dausach_bus = new DauSach_BUS();
+        private DauSach_BUS dausach_bus = new DauSach_BUS();
+
         public frmDauSach()
         {
             InitializeComponent();
         }
-
 
         public void LoadDauSach()
         {
@@ -34,13 +30,13 @@ namespace QuanLyThuVien
             //int index = dgvDSDauSach.CurrentCell.RowIndex;
             //String dgvselected = dgvDSDauSach.Rows[index].Cells[0].Value.ToString().Trim();
             //MessageBox.Show(dgvselected);
-            DataGridView dgv = sender as DataGridView;
+            var dgv = sender as DataGridView;
             if (dgvDSDauSach == null)
                 return;
             if (dgvDSDauSach.CurrentRow.Selected)
             {
-                int index = dgvDSDauSach.CurrentCell.RowIndex;
-                String dgvselected = dgvDSDauSach.Rows[index].Cells[0].Value.ToString().Trim();
+                var index = dgvDSDauSach.CurrentCell.RowIndex;
+                var dgvselected = dgvDSDauSach.Rows[index].Cells[0].Value.ToString().Trim();
                 MessageBox.Show(dgvselected);
             }
         }

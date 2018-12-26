@@ -1,37 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿#region
 using System.Data;
-using DTO;
 using DAO;
+using DTO;
+#endregion
+
 namespace BUS
 {
     public class DocGia_BUS
     {
-        public bool ThemNguoiDung(DTO.NguoiDung ng)
+        public bool ThemNguoiDung(NguoiDung ng)
         {
-            DocGia_DAO docgia_dao = new DocGia_DAO();
+            var docgia_dao = new DocGia_DAO();
             return docgia_dao.themNguoiDung(ng);
         }
 
-        public bool ThemDocGia(DTO.DocGia dg)
+        public bool ThemDocGia(DocGia dg)
         {
-            DocGia_DAO docgia_dao = new DocGia_DAO();
+            var docgia_dao = new DocGia_DAO();
             return docgia_dao.ThemDocGia(dg);
         }
 
         public string TraVeGiaTriMaLoaiDG(string a)
         {
-            DocGia_DAO docgia_dao = new DocGia_DAO();
+            var docgia_dao = new DocGia_DAO();
             return docgia_dao.TraVeGiaTriMaLoaiDG(a);
         }
 
         public int MaMax()
         {
-            DocGia_DAO docgia_dao = new DocGia_DAO();
+            var docgia_dao = new DocGia_DAO();
             return docgia_dao.MaMax();
         }
 
@@ -42,7 +39,7 @@ namespace BUS
 
         public bool XoaDocGia(int maCanXoa)
         {
-            DocGia_DAO docgia_dao = new DocGia_DAO();
+            var docgia_dao = new DocGia_DAO();
             return docgia_dao.XoaDocGia(maCanXoa);
         }
 

@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
+using System;
+#endregion
 
 namespace DTO
 {
-    class PhieuNhap
+    internal class PhieuNhap
     {
-        int Ma { get; set; }
-        int MaNhanVienNhap { get; set; }
-        DateTime NgayLap { get; set; }
-        bool TrangThai { get; set; }
+        private int Ma { get; set; }
+        private int MaNhanVienNhap { get; set; }
+        private DateTime NgayLap { get; set; }
+        private bool TrangThai { get; set; }
     }
 }

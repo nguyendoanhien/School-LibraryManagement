@@ -1,21 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using DTO;
+﻿#region
 using System.Data;
 using System.Data.SqlClient;
+#endregion
+
 namespace DAO
 {
-    public class LoaiDocGia_DAO:ConnectDatabase
+    public class LoaiDocGia_DAO : ConnectDatabase
     {
-        SqlCommand cmd;
+        private SqlCommand cmd;
+
         public DataTable getLoaiDocGia()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM DocGiaLoai", _conn);
-            DataTable dtDocGiaLoai = new DataTable();
+            var da = new SqlDataAdapter("SELECT * FROM DocGiaLoai", _conn);
+            var dtDocGiaLoai = new DataTable();
             da.Fill(dtDocGiaLoai);
             return dtDocGiaLoai;
         }
@@ -27,8 +24,8 @@ namespace DAO
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "SELECT TenLoaiDocGia FROM DocGiaLoai order by TenLoaiDocGia asc";
             cmd.ExecuteNonQuery();
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            var dt = new DataTable();
+            var da = new SqlDataAdapter(cmd);
             da.Fill(dt);
             return dt;
         }

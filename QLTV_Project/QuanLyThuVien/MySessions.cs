@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections;
+﻿#region
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+#endregion
 
 namespace QuanLyThuVien
 {
     public class MySessions
     {
-        public static Dictionary<string, object> Sessions =new Dictionary<string, object>();
+        public static Dictionary<string, object> Sessions = new Dictionary<string, object>();
     }
 }

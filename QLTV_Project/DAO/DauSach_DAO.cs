@@ -1,40 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DTO;
-
-using System.Data.SqlClient;
+﻿#region
+using System;
 using System.Data;
+using System.Data.SqlClient;
+#endregion
+
 namespace DAO
 {
-    public class DauSach_DAO: ConnectDatabase
+    public class DauSach_DAO : ConnectDatabase
     {
         public static DataTable LoadDauSach()
         {
             try
             {
                 // Ket noi
-                string conn = ConnectDatabase.GetConnString();
+                var conn = GetConnString();
 
                 // Query string - vì mình để TV_ID là identity (giá trị tự tăng dần) nên ko cần fải insert ID
-                string sql = "LoadDauSach";
-                SqlParameter[] pars = {};
-                SqlDataReader soLuongOK = SqlHelper.ExecuteReader(conn, sql, CommandType.StoredProcedure, pars);
-            
+                var sql = "LoadDauSach";
+                SqlParameter[] pars = { };
+                var soLuongOK = SqlHelper.ExecuteReader(conn, sql, CommandType.StoredProcedure, pars);
+
                 var dataTable = new DataTable();
                 dataTable.Load(soLuongOK);
                 if (dataTable.Rows.Count > 0) return dataTable;
 
                 // Query và kiểm tra
-
-
             }
             catch (Exception e)
             {
-
             }
+
             return null;
         }
 
@@ -43,20 +38,18 @@ namespace DAO
             try
             {
                 // Ket noi
-                string conn = ConnectDatabase.GetConnString();
+                var conn = GetConnString();
 
                 // Query string - vì mình để TV_ID là identity (giá trị tự tăng dần) nên ko cần fải insert ID
-                string sql = "SELECT * from DauSachLoai ";
+                var sql = "SELECT * from DauSachLoai ";
                 return getdataset(sql, tenbang, _conn);
 
                 // Query và kiểm tra
-
-
             }
             catch (Exception e)
             {
-
             }
+
             return null;
         }
 
@@ -65,29 +58,27 @@ namespace DAO
             try
             {
                 // Ket noi
-                string conn = ConnectDatabase.GetConnString();
+                var conn = GetConnString();
 
                 // Query string - vì mình để TV_ID là identity (giá trị tự tăng dần) nên ko cần fải insert ID
-                string sql = "TimSachDeMuon";
-                SqlParameter[] pars = 
+                var sql = "TimSachDeMuon";
+                SqlParameter[] pars =
                 {
-                    new SqlParameter ("@mucTim", SqlDbType.NVarChar) {Value = mucTim},
-                    new SqlParameter ("@tenTim", SqlDbType.NVarChar) {Value = tenTim},
+                    new SqlParameter("@mucTim", SqlDbType.NVarChar) {Value = mucTim},
+                    new SqlParameter("@tenTim", SqlDbType.NVarChar) {Value = tenTim}
                 };
-                SqlDataReader soLuongOK = SqlHelper.ExecuteReader(conn, sql, CommandType.StoredProcedure, pars);
+                var soLuongOK = SqlHelper.ExecuteReader(conn, sql, CommandType.StoredProcedure, pars);
 
                 var dataTable = new DataTable();
                 dataTable.Load(soLuongOK);
                 if (dataTable.Rows.Count > 0) return dataTable;
 
                 // Query và kiểm tra
-
-
             }
             catch (Exception e)
             {
-
             }
+
             return null;
         }
 
@@ -96,64 +87,56 @@ namespace DAO
             try
             {
                 // Ket noi
-                string conn = ConnectDatabase.GetConnString();
+                var conn = GetConnString();
 
                 // Query string - vì mình để TV_ID là identity (giá trị tự tăng dần) nên ko cần fải insert ID
-                string sql = "LoadSachMuon";
-                SqlParameter[] pars = 
-                    {
-                        new SqlParameter ("@maDocGia", SqlDbType.Int) {Value = maDocGia},
-                    };
-                SqlDataReader soLuongOK = SqlHelper.ExecuteReader(conn, sql, CommandType.StoredProcedure, pars);
+                var sql = "LoadSachMuon";
+                SqlParameter[] pars =
+                {
+                    new SqlParameter("@maDocGia", SqlDbType.Int) {Value = maDocGia}
+                };
+                var soLuongOK = SqlHelper.ExecuteReader(conn, sql, CommandType.StoredProcedure, pars);
 
                 var dataTable = new DataTable();
                 dataTable.Load(soLuongOK);
                 if (dataTable.Rows.Count > 0) return dataTable;
 
                 // Query và kiểm tra
-
-
             }
             catch (Exception e)
             {
-
             }
+
             return null;
         }
 
-        public static DataTable LoadDtgvMuon( int maSach, int maDocGia)
+        public static DataTable LoadDtgvMuon(int maSach, int maDocGia)
         {
             try
             {
                 // Ket noi
-                string conn = ConnectDatabase.GetConnString();
+                var conn = GetConnString();
 
                 // Query string - vì mình để TV_ID là identity (giá trị tự tăng dần) nên ko cần fải insert ID
-                string sql = "LoadDtgvMuon";
+                var sql = "LoadDtgvMuon";
                 SqlParameter[] pars =
-                    {
-                        new SqlParameter ("@maSach", SqlDbType.Int) {Value = maSach},
-                        new SqlParameter ("@maDocGia", SqlDbType.Int) {Value = maDocGia},
-                    };
-                SqlDataReader soLuongOK = SqlHelper.ExecuteReader(conn, sql, CommandType.StoredProcedure, pars);
+                {
+                    new SqlParameter("@maSach", SqlDbType.Int) {Value = maSach},
+                    new SqlParameter("@maDocGia", SqlDbType.Int) {Value = maDocGia}
+                };
+                var soLuongOK = SqlHelper.ExecuteReader(conn, sql, CommandType.StoredProcedure, pars);
 
                 var dataTable = new DataTable();
                 dataTable.Load(soLuongOK);
                 if (dataTable.Rows.Count > 0) return dataTable;
 
                 // Query và kiểm tra
-
-
             }
             catch (Exception e)
             {
-
             }
+
             return null;
         }
-
     }
 }
-
-
-

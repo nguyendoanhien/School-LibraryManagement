@@ -1,26 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-// Tiếp cận với database
-
+﻿#region
 using System.Data;
 using System.Data.SqlClient;
+// Tiếp cận với database
+#endregion
 
 namespace DAO
 {
-    static class SqlHelper
+    internal static class SqlHelper
     {
         /// <summary>
-        /// Set the connection, command, and then execute the command with non query.
+        ///     Set the connection, command, and then execute the command with non query.
         /// </summary>
-        public static Int32 ExecuteNonQuery(String connectionString, String commandText,
+        public static int ExecuteNonQuery(string connectionString, string commandText,
             CommandType commandType, params SqlParameter[] parameters)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (var conn = new SqlConnection(connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand(commandText, conn))
+                using (var cmd = new SqlCommand(commandText, conn))
                 {
                     // There're three command types: StoredProcedure, Text, TableDirect. The TableDirect 
                     // type is only for OLE DB.  
@@ -34,14 +30,14 @@ namespace DAO
         }
 
         /// <summary>
-        /// Set the connection, command, and then execute the command and only return one value.
+        ///     Set the connection, command, and then execute the command and only return one value.
         /// </summary>
-        public static Object ExecuteScalar(String connectionString, String commandText,
+        public static object ExecuteScalar(string connectionString, string commandText,
             CommandType commandType, params SqlParameter[] parameters)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (var conn = new SqlConnection(connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand(commandText, conn))
+                using (var cmd = new SqlCommand(commandText, conn))
                 {
                     cmd.CommandType = commandType;
                     cmd.Parameters.AddRange(parameters);
@@ -53,14 +49,14 @@ namespace DAO
         }
 
         /// <summary>
-        /// Set the connection, command, and then execute the command with query and return the reader.
+        ///     Set the connection, command, and then execute the command with query and return the reader.
         /// </summary>
-        public static SqlDataReader ExecuteReader(String connectionString, String commandText,
+        public static SqlDataReader ExecuteReader(string connectionString, string commandText,
             CommandType commandType, params SqlParameter[] parameters)
         {
-            SqlConnection conn = new SqlConnection(connectionString);
+            var conn = new SqlConnection(connectionString);
 
-            using (SqlCommand cmd = new SqlCommand(commandText, conn))
+            using (var cmd = new SqlCommand(commandText, conn))
             {
                 cmd.CommandType = commandType;
                 cmd.Parameters.AddRange(parameters);
@@ -68,7 +64,7 @@ namespace DAO
                 conn.Open();
                 // When using CommandBehavior.CloseConnection, the connection will be closed when the 
                 // IDataReader is closed.
-                SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                var reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
 
                 return reader;
             }

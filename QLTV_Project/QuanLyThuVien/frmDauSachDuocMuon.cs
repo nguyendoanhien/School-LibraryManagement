@@ -1,19 +1,16 @@
-﻿using System;
+﻿#region
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
-using DTO;
+#endregion
+
 namespace QuanLyThuVien
 {
     public partial class frmDauSachDuocMuon : Form
     {
-        DataGridView cuaFrmPhieuMuon;
+        private readonly DataGridView cuaFrmPhieuMuon;
 
         public frmDauSachDuocMuon(DataGridView cuaFrmPhieuMuon)
         {
@@ -40,72 +37,43 @@ namespace QuanLyThuVien
         {
             dgvDSSach.DataSource = null;
             dgvDSSach.DataSource = DauSach_BUS.LoadDauSach();
-            List<int> vtSeXoa=new List<int>();
+            var vtSeXoa = new List<int>();
             if (cuaFrmPhieuMuon.Rows.Count > 1)
-            {
-                for (int i = 0; i < dgvDSSach.Rows.Count - 1; i++)
+                for (var i = 0; i < dgvDSSach.Rows.Count - 1; i++)
+                for (var j = 0; j < cuaFrmPhieuMuon.Rows.Count - 1; j++)
                 {
-                    for (int j = 0; j < cuaFrmPhieuMuon.Rows.Count - 1; j++)
+                    var meMaDauSach = dgvDSSach.Rows[i].Cells["MaDauSach"].Value.ToString();
+                    var meMaSach = dgvDSSach.Rows[i].Cells["STT"].Value.ToString();
+                    var youMaDauSach = cuaFrmPhieuMuon.Rows[j].Cells["MaDauSach"].Value.ToString();
+                    var youMaSach = cuaFrmPhieuMuon.Rows[j].Cells["MaSach"].Value.ToString();
+                    if (youMaDauSach == meMaDauSach && youMaSach == meMaSach)
                     {
-                        string meMaDauSach = dgvDSSach.Rows[i].Cells["MaDauSach"].Value.ToString();
-                        string meMaSach = dgvDSSach.Rows[i].Cells["STT"].Value.ToString();
-                        string youMaDauSach= cuaFrmPhieuMuon.Rows[j].Cells["MaDauSach"].Value.ToString();
-                        string youMaSach = cuaFrmPhieuMuon.Rows[j].Cells["MaSach"].Value.ToString();
-                        if (youMaDauSach == meMaDauSach && youMaSach==meMaSach) 
-                        {
-                            vtSeXoa.Add(i);
-                            break;
-                        }
+                        vtSeXoa.Add(i);
+                        break;
                     }
                 }
-            }
 
-            foreach (int i in vtSeXoa.ToArray().Reverse())
-            {
-                dgvDSSach.Rows.RemoveAt(i);
-            }
+            foreach (var i in vtSeXoa.ToArray().Reverse()) dgvDSSach.Rows.RemoveAt(i);
         }
 
         private void txtTimSachMuon_TextChanged(object sender, EventArgs e)
         {
-            string s = cbxMucTim.SelectedItem.ToString();
+            var s = cbxMucTim.SelectedItem.ToString();
             dgvDSSach.DataSource = DauSach_BUS.TimSach(s, txtTimSachMuon.Text);
         }
-        private string maDauSach;
-        private string maSach;
-        private string tenDauSach;
-        private int NgayTra;
-        public string MaDauSach
-        {
-            get => maDauSach;
-            set => maDauSach = value;
-        }
-        public string MaSach
-        {
-            get => maSach;
-            set => maSach = value;
-        }
-        public string TenDauSach
-        {
-            get => tenDauSach;
-            set => tenDauSach = value;
-        }
-        public int NgayTra1
-        {
-            get => NgayTra;
-            set => NgayTra = value;
-        }
+
+        public string MaDauSach { get; set; }
+        public string MaSach { get; set; }
+        public string TenDauSach { get; set; }
+        public int NgayTra1 { get; set; }
 
         public void dgvDSSach_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            this.maDauSach = dgvDSSach.Rows[e.RowIndex].Cells["MaDauSach"].Value.ToString();
-            this.maSach = dgvDSSach.Rows[e.RowIndex].Cells["STT"].Value.ToString();
-            this.tenDauSach = dgvDSSach.Rows[e.RowIndex].Cells["TenDauSach"].Value.ToString();
-            this.NgayTra = int.Parse(dgvDSSach.Rows[e.RowIndex].Cells["SoNgayMuonToiDa"].Value.ToString());
-            this.DialogResult = System.Windows.Forms.DialogResult.OK;
-
+            MaDauSach = dgvDSSach.Rows[e.RowIndex].Cells["MaDauSach"].Value.ToString();
+            MaSach = dgvDSSach.Rows[e.RowIndex].Cells["STT"].Value.ToString();
+            TenDauSach = dgvDSSach.Rows[e.RowIndex].Cells["TenDauSach"].Value.ToString();
+            NgayTra1 = int.Parse(dgvDSSach.Rows[e.RowIndex].Cells["SoNgayMuonToiDa"].Value.ToString());
+            DialogResult = DialogResult.OK;
         }
-
-
     }
 }

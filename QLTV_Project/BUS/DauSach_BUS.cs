@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DAO;
-using System.Data.SqlClient;
+﻿#region
 using System.Data;
+using DAO;
+#endregion
 
 namespace BUS
 {
     public class DauSach_BUS
     {
-        
-        public static  DataTable LoadDauSach()
+        public static DataTable LoadDauSach()
         {
             return DauSach_DAO.LoadDauSach();
         }
@@ -29,8 +24,7 @@ namespace BUS
 
         public static DataTable LoadDtgvSachMuon(int maSach, int maDocGia)
         {
-            return DauSach_DAO.LoadDtgvMuon( maSach, maDocGia);
+            return DauSach_DAO.LoadDtgvMuon(maSach, maDocGia);
         }
-
     }
 }
