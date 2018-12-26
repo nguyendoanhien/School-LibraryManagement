@@ -1,6 +1,4 @@
-﻿
-// chức năng xử lý nghiệp vụ
-namespace BUS
+﻿namespace BUS
 {
     public class Class1
     {

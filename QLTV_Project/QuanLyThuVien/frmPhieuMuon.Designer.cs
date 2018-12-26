@@ -34,6 +34,10 @@ namespace QuanLyThuVien
             this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgvSachMuon = new System.Windows.Forms.DataGridView();
+            this.MaDauSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenDauSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
@@ -51,7 +55,6 @@ namespace QuanLyThuVien
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnChiTietDG = new System.Windows.Forms.Button();
-            this.dateTra = new System.Windows.Forms.DateTimePicker();
             this.dateMuon = new System.Windows.Forms.DateTimePicker();
             this.txtMaDocGia = new System.Windows.Forms.TextBox();
             this.txtMaNhanVien = new System.Windows.Forms.Label();
@@ -59,14 +62,11 @@ namespace QuanLyThuVien
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.MaDauSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenDauSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateTra = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSachMuon)).BeginInit();
@@ -83,7 +83,7 @@ namespace QuanLyThuVien
             this.panel5.Controls.Add(this.groupBox3);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 581);
-            this.panel5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel5.Margin = new System.Windows.Forms.Padding(6);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1291, 182);
             this.panel5.TabIndex = 11;
@@ -94,9 +94,9 @@ namespace QuanLyThuVien
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox3.Size = new System.Drawing.Size(1291, 182);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
@@ -119,13 +119,33 @@ namespace QuanLyThuVien
             this.dgvSachMuon.Size = new System.Drawing.Size(1279, 143);
             this.dgvSachMuon.TabIndex = 0;
             // 
+            // MaDauSach
+            // 
+            this.MaDauSach.HeaderText = "Mã đầu sách";
+            this.MaDauSach.Name = "MaDauSach";
+            // 
+            // MaSach
+            // 
+            this.MaSach.HeaderText = "Mã sách";
+            this.MaSach.Name = "MaSach";
+            // 
+            // TenDauSach
+            // 
+            this.TenDauSach.HeaderText = "Tên đầu sách";
+            this.TenDauSach.Name = "TenDauSach";
+            // 
+            // NgayTra
+            // 
+            this.NgayTra.HeaderText = "Ngày Trả ";
+            this.NgayTra.Name = "NgayTra";
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.btnThoat);
             this.panel4.Controls.Add(this.btnLuu);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 763);
-            this.panel4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel4.Margin = new System.Windows.Forms.Padding(6);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1291, 110);
             this.panel4.TabIndex = 10;
@@ -137,7 +157,7 @@ namespace QuanLyThuVien
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThoat.Location = new System.Drawing.Point(1067, 10);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(6);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(148, 75);
             this.btnThoat.TabIndex = 5;
@@ -153,7 +173,7 @@ namespace QuanLyThuVien
             this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLuu.Location = new System.Drawing.Point(886, 10);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(6);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(148, 75);
             this.btnLuu.TabIndex = 4;
@@ -167,7 +187,7 @@ namespace QuanLyThuVien
             this.panel3.Controls.Add(this.groupBox2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 341);
-            this.panel3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel3.Margin = new System.Windows.Forms.Padding(6);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1291, 240);
             this.panel3.TabIndex = 9;
@@ -186,9 +206,9 @@ namespace QuanLyThuVien
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox2.Size = new System.Drawing.Size(1291, 266);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
@@ -243,7 +263,7 @@ namespace QuanLyThuVien
             this.btnXoaSach.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaSach.Image")));
             this.btnXoaSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXoaSach.Location = new System.Drawing.Point(906, 120);
-            this.btnXoaSach.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnXoaSach.Margin = new System.Windows.Forms.Padding(6);
             this.btnXoaSach.Name = "btnXoaSach";
             this.btnXoaSach.Size = new System.Drawing.Size(148, 75);
             this.btnXoaSach.TabIndex = 17;
@@ -259,7 +279,7 @@ namespace QuanLyThuVien
             this.btnThemSach.Image = ((System.Drawing.Image)(resources.GetObject("btnThemSach.Image")));
             this.btnThemSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThemSach.Location = new System.Drawing.Point(906, 32);
-            this.btnThemSach.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnThemSach.Margin = new System.Windows.Forms.Padding(6);
             this.btnThemSach.Name = "btnThemSach";
             this.btnThemSach.Size = new System.Drawing.Size(148, 69);
             this.btnThemSach.TabIndex = 12;
@@ -272,7 +292,7 @@ namespace QuanLyThuVien
             // 
             this.btnChiTietSach.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnChiTietSach.Location = new System.Drawing.Point(725, 32);
-            this.btnChiTietSach.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnChiTietSach.Margin = new System.Windows.Forms.Padding(6);
             this.btnChiTietSach.Name = "btnChiTietSach";
             this.btnChiTietSach.Size = new System.Drawing.Size(100, 54);
             this.btnChiTietSach.TabIndex = 9;
@@ -309,7 +329,7 @@ namespace QuanLyThuVien
             this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 86);
-            this.panel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel2.Margin = new System.Windows.Forms.Padding(6);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1291, 255);
             this.panel2.TabIndex = 8;
@@ -330,9 +350,9 @@ namespace QuanLyThuVien
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox1.Size = new System.Drawing.Size(1291, 255);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -343,7 +363,7 @@ namespace QuanLyThuVien
             this.btnChiTietDG.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnChiTietDG.Image = ((System.Drawing.Image)(resources.GetObject("btnChiTietDG.Image")));
             this.btnChiTietDG.Location = new System.Drawing.Point(725, 171);
-            this.btnChiTietDG.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnChiTietDG.Margin = new System.Windows.Forms.Padding(6);
             this.btnChiTietDG.Name = "btnChiTietDG";
             this.btnChiTietDG.Size = new System.Drawing.Size(100, 46);
             this.btnChiTietDG.TabIndex = 6;
@@ -351,26 +371,15 @@ namespace QuanLyThuVien
             this.btnChiTietDG.UseVisualStyleBackColor = true;
             this.btnChiTietDG.Click += new System.EventHandler(this.KT_DocGia_Click);
             // 
-            // dateTra
-            // 
-            this.dateTra.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTra.CustomFormat = "dd/MM/yyyy";
-            this.dateTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTra.Location = new System.Drawing.Point(975, 106);
-            this.dateTra.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.dateTra.Name = "dateTra";
-            this.dateTra.Size = new System.Drawing.Size(190, 39);
-            this.dateTra.TabIndex = 15;
-            // 
             // dateMuon
             // 
             this.dateMuon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateMuon.CustomFormat = "dd/MM/yyyy";
+            this.dateMuon.Enabled = false;
             this.dateMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateMuon.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateMuon.Location = new System.Drawing.Point(975, 54);
-            this.dateMuon.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dateMuon.Margin = new System.Windows.Forms.Padding(6);
             this.dateMuon.Name = "dateMuon";
             this.dateMuon.Size = new System.Drawing.Size(190, 39);
             this.dateMuon.TabIndex = 13;
@@ -380,7 +389,7 @@ namespace QuanLyThuVien
             this.txtMaDocGia.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMaDocGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaDocGia.Location = new System.Drawing.Point(341, 171);
-            this.txtMaDocGia.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtMaDocGia.Margin = new System.Windows.Forms.Padding(6);
             this.txtMaDocGia.Name = "txtMaDocGia";
             this.txtMaDocGia.Size = new System.Drawing.Size(368, 39);
             this.txtMaDocGia.TabIndex = 5;
@@ -444,18 +453,6 @@ namespace QuanLyThuVien
             this.label3.TabIndex = 4;
             this.label3.Text = "Mã độc giả";
             // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(785, 112);
-            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(121, 32);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Ngày trả";
-            // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -486,30 +483,36 @@ namespace QuanLyThuVien
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1291, 86);
             this.panel1.TabIndex = 7;
             // 
-            // MaDauSach
+            // dateTra
             // 
-            this.MaDauSach.HeaderText = "Mã đầu sách";
-            this.MaDauSach.Name = "MaDauSach";
+            this.dateTra.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTra.CustomFormat = "dd/MM/yyyy";
+            this.dateTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTra.Location = new System.Drawing.Point(975, 106);
+            this.dateTra.Margin = new System.Windows.Forms.Padding(6);
+            this.dateTra.Name = "dateTra";
+            this.dateTra.Size = new System.Drawing.Size(190, 39);
+            this.dateTra.TabIndex = 15;
+            this.dateTra.Visible = false;
             // 
-            // MaSach
+            // label7
             // 
-            this.MaSach.HeaderText = "Mã sách";
-            this.MaSach.Name = "MaSach";
-            // 
-            // TenDauSach
-            // 
-            this.TenDauSach.HeaderText = "Tên đầu sách";
-            this.TenDauSach.Name = "TenDauSach";
-            // 
-            // NgayTra
-            // 
-            this.NgayTra.HeaderText = "Ngày Trả ";
-            this.NgayTra.Name = "NgayTra";
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(785, 112);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(121, 32);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Ngày trả";
+            this.label7.Visible = false;
             // 
             // frmPhieuMuon
             // 
@@ -521,7 +524,7 @@ namespace QuanLyThuVien
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmPhieuMuon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phiếu mượn";
@@ -550,7 +553,6 @@ namespace QuanLyThuVien
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnChiTietDG;
-        private System.Windows.Forms.DateTimePicker dateTra;
         private System.Windows.Forms.DateTimePicker dateMuon;
         private System.Windows.Forms.TextBox txtMaDocGia;
         private System.Windows.Forms.Label txtMaNhanVien;
@@ -558,7 +560,6 @@ namespace QuanLyThuVien
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
@@ -577,5 +578,7 @@ namespace QuanLyThuVien
         private DataGridViewTextBoxColumn MaSach;
         private DataGridViewTextBoxColumn TenDauSach;
         private DataGridViewTextBoxColumn NgayTra;
+        private DateTimePicker dateTra;
+        private Label label7;
     }
 }

@@ -8,6 +8,27 @@ namespace DAO
 {
     public class PhieuMuon_DAO : ConnectDatabase
     {
+        public DataTable GetPhieuMuonFromMaDocGia(int maDocGia)
+        {
+            try
+            {
+                // Ket noi
+                var sql = string.Format("Select MaPhieuMuon from PhieuMuon Where MaDocGia='{0}'", maDocGia);
+                var dt = SqlHelper.ExecuteReader(GetConnString(), sql, CommandType.Text);
+
+                var dataTable = new DataTable();
+                dataTable.Load(dt);
+                if (dataTable.Rows.Count > 0) return dataTable;
+
+                // Query và kiểm tra
+            }
+            catch (Exception e)
+            {
+            }
+
+            return null;
+        }
+
         public DataTable LoadSachMuon(int maPhieuMuon)
         {
             try

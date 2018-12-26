@@ -8,11 +8,16 @@ namespace BUS
 {
     public class PhieuMuon_BUS
     {
-        private readonly PhieuMuon_DAO phieuMuon_DAO = new PhieuMuon_DAO();
+        private static readonly PhieuMuon_DAO phieuMuon_DAO = new PhieuMuon_DAO();
 
         public DataTable LoadSachMuon(int maPhieuMuon)
         {
             return phieuMuon_DAO.LoadSachMuon(maPhieuMuon);
+        }
+
+        public static DataTable GetPhieuMuonFromMaDocGia(int maDocGia)
+        {
+            return phieuMuon_DAO.GetPhieuMuonFromMaDocGia(maDocGia);
         }
 
         public int LayMaPhieuMuon()

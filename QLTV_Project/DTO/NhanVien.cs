@@ -1,6 +1,4 @@
-﻿
-// tạo 1 đối tượng
-namespace DTO
+﻿namespace DTO
 {
     public class NhanVien
     {
